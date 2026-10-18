@@ -31,7 +31,7 @@ export default function Footer() {
             </p>
 
             <p className="text-sm text-[#fcfbf7]/75 font-light leading-relaxed max-w-md">
-              Planet Root brings together exceptional stays, inspiring destinations, and thoughtfully planned holiday experiences. From premium resort escapes and private villas to Himalayan adventures, tropical island holidays, and unforgettable nights beneath the stars.
+              Planet Root brings together exceptional stays, inspiring destinations, and thoughtfully planned holiday experiences across God’s Own Country. From restored Nalukettu backwater manors and private houseboats to misty tea bungalows in Munnar and wild canopy treehouses in Wayanad.
             </p>
 
             <div className="pt-2">
@@ -45,37 +45,37 @@ export default function Footer() {
           {/* Quick Links Column */}
           <div className="space-y-4">
             <h4 className="text-xs font-semibold tracking-[0.2em] uppercase text-[#c5a86a]">
-              The Collection
+              Kerala Collection
             </h4>
             <ul className="space-y-2.5 text-sm text-[#fcfbf7]/80">
               <li>
                 <Link href="/stays" className="hover:text-[#c5a86a] transition-colors">
-                  Luxury Resorts & Stays
+                  All Kerala Stays
                 </Link>
               </li>
               <li>
-                <Link href="/stays?category=Private+Pool+Villa" className="hover:text-[#c5a86a] transition-colors">
-                  Private Pool Villas
+                <Link href="/destinations/kumarakom-alleppey" className="hover:text-[#c5a86a] transition-colors">
+                  Kumarakom Backwater Villas
                 </Link>
               </li>
               <li>
-                <Link href="/destinations/lakshadweep" className="hover:text-[#c5a86a] transition-colors">
-                  Lakshadweep Overwater Stays
+                <Link href="/destinations/munnar" className="hover:text-[#c5a86a] transition-colors">
+                  Munnar Tea Estate Chalets
                 </Link>
               </li>
               <li>
-                <Link href="/destinations/manali" className="hover:text-[#c5a86a] transition-colors">
-                  Himalayan Mountain Chalets
+                <Link href="/destinations/wayanad" className="hover:text-[#c5a86a] transition-colors">
+                  Wayanad Canopy Treehouses
                 </Link>
               </li>
               <li>
-                <Link href="/destinations/stargazing" className="hover:text-[#c5a86a] transition-colors">
-                  Dark Sky Stargazing Domes
+                <Link href="/destinations/marari-varkala" className="hover:text-[#c5a86a] transition-colors">
+                  Marari Barefoot Beach Cottages
                 </Link>
               </li>
               <li>
-                <Link href="/destinations/romantic-getaways" className="hover:text-[#c5a86a] transition-colors">
-                  Honeymoon & Romantic Escapes
+                <Link href="/stays/athirappilly-rainforest-falls-luxury-resort" className="hover:text-[#c5a86a] transition-colors">
+                  Athirappilly Waterfall Reserve
                 </Link>
               </li>
             </ul>
@@ -84,37 +84,37 @@ export default function Footer() {
           {/* Journeys Column */}
           <div className="space-y-4">
             <h4 className="text-xs font-semibold tracking-[0.2em] uppercase text-[#c5a86a]">
-              Curated Journeys
+              Kerala Journeys
             </h4>
             <ul className="space-y-2.5 text-sm text-[#fcfbf7]/80">
               <li>
-                <Link href="/packages/manali-mountain-escape" className="hover:text-[#c5a86a] transition-colors">
-                  Manali Mountain Escape
+                <Link href="/packages/the-grand-kerala-odyssey" className="hover:text-[#c5a86a] transition-colors">
+                  The Grand Kerala Odyssey (8D/7N)
                 </Link>
               </li>
               <li>
-                <Link href="/packages/lakshadweep-island-holiday" className="hover:text-[#c5a86a] transition-colors">
-                  Lakshadweep Island Holiday
+                <Link href="/packages/munnar-misty-highland-retreat" className="hover:text-[#c5a86a] transition-colors">
+                  Munnar Misty Highland Retreat
                 </Link>
               </li>
               <li>
-                <Link href="/packages/stargazing-weekend" className="hover:text-[#c5a86a] transition-colors">
-                  Stargazing Weekend Under Dark Skies
+                <Link href="/packages/backwaters-luxury-houseboat-voyage" className="hover:text-[#c5a86a] transition-colors">
+                  Backwaters Houseboat Voyage
                 </Link>
               </li>
               <li>
-                <Link href="/packages/luxury-resort-getaway" className="hover:text-[#c5a86a] transition-colors">
-                  Luxury Resort Getaway
+                <Link href="/packages/wayanad-deep-rainforest-escape" className="hover:text-[#c5a86a] transition-colors">
+                  Wayanad Deep Rainforest Escape
                 </Link>
               </li>
               <li>
-                <Link href="/packages/romantic-honeymoon-escape" className="hover:text-[#c5a86a] transition-colors">
-                  Romantic Honeymoon Escape
+                <Link href="/packages/romantic-kerala-honeymoon-haven" className="hover:text-[#c5a86a] transition-colors">
+                  Romantic Kerala Honeymoon
                 </Link>
               </li>
               <li>
-                <Link href="/packages/family-holiday-experience" className="hover:text-[#c5a86a] transition-colors">
-                  Family Holiday Experience
+                <Link href="/packages/ayurvedic-rejuvenation-monsoon-wellness" className="hover:text-[#c5a86a] transition-colors">
+                  Ayurvedic Rejuvenation Sanctuary
                 </Link>
               </li>
             </ul>
@@ -123,7 +123,7 @@ export default function Footer() {
           {/* Contact Column */}
           <div className="space-y-4">
             <h4 className="text-xs font-semibold tracking-[0.2em] uppercase text-[#c5a86a]">
-              Direct Contact
+              Direct Kerala Concierge
             </h4>
             <div className="space-y-3 text-sm text-[#fcfbf7]/85">
               <a
@@ -157,8 +157,8 @@ export default function Footer() {
                   <MapPin className="w-4 h-4" />
                 </div>
                 <div>
-                  <p className="text-[11px] text-[#fcfbf7]/60 uppercase tracking-wider">Brand Focus</p>
-                  <p className="text-xs text-[#fcfbf7]/80">Premium Resort Bookings & Tailored Escapes Across India & Beyond</p>
+                  <p className="text-[11px] text-[#fcfbf7]/60 uppercase tracking-wider">Kerala Base</p>
+                  <p className="text-xs text-[#fcfbf7]/80">Kochi & Kumarakom • Curating God’s Own Country and Beyond</p>
                 </div>
               </div>
             </div>
@@ -168,7 +168,7 @@ export default function Footer() {
                 href="/contact"
                 className="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-[#dfcaa2] hover:text-white transition-colors underline underline-offset-4"
               >
-                <span>Request Custom Itinerary</span>
+                <span>Request Custom Kerala Plan</span>
                 <ArrowRight className="w-3.5 h-3.5" />
               </Link>
             </div>
@@ -178,7 +178,7 @@ export default function Footer() {
         {/* Bottom Legal & Rights Strip */}
         <div className="pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-[#fcfbf7]/60 gap-4">
           <p>
-            © {currentYear} PLANET ROOT Travel & Tourism. All rights reserved.
+            © {currentYear} PLANET ROOT Travel & Tourism. All rights reserved. Beyond Borders.
           </p>
           <div className="flex items-center gap-6">
             <Link href="/privacy" className="hover:text-white transition-colors">
@@ -189,8 +189,8 @@ export default function Footer() {
               Terms & Cancellation Policy
             </Link>
             <span className="text-[#fcfbf7]/20">•</span>
-            <Link href="/destinations/lakshadweep" className="hover:text-white transition-colors">
-              Permit Advisories
+            <Link href="/contact" className="hover:text-white transition-colors">
+              Kerala Concierge
             </Link>
           </div>
         </div>

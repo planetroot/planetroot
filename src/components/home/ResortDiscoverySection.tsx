@@ -7,13 +7,12 @@ import { ArrowRight, MapPin, Check } from "lucide-react";
 import { RESORTS, Resort } from "@/data/resorts";
 
 const FILTER_TABS = [
-  { label: "All Curated Stays", value: "all" },
-  { label: "Private Pool Villas", value: "Private Pool Villa" },
-  { label: "Beachfront & Island", value: "Beachfront Stay" },
-  { label: "Mountain Retreats", value: "Mountain Retreat" },
-  { label: "Stargazing Escapes", value: "Stargazing Escape" },
-  { label: "Romantic Sanctuaries", value: "Romantic Resort" },
-  { label: "Boutique Nature", value: "Boutique Nature Stay" },
+  { label: "All Kerala Sanctuaries", value: "all" },
+  { label: "Heritage Backwaters", value: "Heritage Backwater Villa" },
+  { label: "Munnar Tea Bungalows", value: "Tea Estate Bungalow" },
+  { label: "Wayanad Rainforests", value: "Rainforest Treehouse" },
+  { label: "Beachfront & Coastal", value: "Beachfront Stay" },
+  { label: "Luxury Resorts", value: "Luxury Resort" },
 ];
 
 export default function ResortDiscoverySection() {
@@ -29,13 +28,13 @@ export default function ResortDiscoverySection() {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-14">
           <span className="text-xs font-semibold tracking-[0.25em] uppercase text-[#c5a86a] block mb-3">
-            Handpicked Luxury Accommodation
+            Handpicked Kerala Sanctuaries
           </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif-luxury text-[#181d1a] tracking-tight">
-            Stay Somewhere Extraordinary.
+            Stay Somewhere Extraordinary in Kerala.
           </h2>
           <p className="mt-4 text-base sm:text-lg text-[#525a55] font-light leading-relaxed font-sans-luxury">
-            Discover exceptional resorts, private villas, and secluded retreats selected for unforgettable escapes.
+            Discover 200-year-old restored Nalukettu timber palaces, private backwater plunge pools, misty tea bungalows, and canopy treehouses.
           </p>
           <div className="divider-luxury w-32 mx-auto mt-6" />
         </div>
@@ -70,7 +69,7 @@ export default function ResortDiscoverySection() {
             href="/stays"
             className="btn-luxury-secondary text-xs tracking-widest inline-flex items-center gap-2"
           >
-            <span>Explore Complete Luxury Stays Collection</span>
+            <span>Explore Complete Kerala Luxury Collection</span>
             <ArrowRight className="w-4 h-4" />
           </Link>
         </div>
@@ -92,7 +91,7 @@ function ResortCard({ resort }: { resort: Resort }) {
           className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
         />
         <div className="absolute top-4 left-4">
-          <span className="text-[10px] font-semibold tracking-widest uppercase px-3 py-1 bg-white/90 backdrop-blur-xs text-[#0e3826] shadow-xs">
+          <span className="text-[10px] font-semibold tracking-widest uppercase px-3 py-1 bg-white/95 backdrop-blur-xs text-[#0e3826] shadow-xs">
             {resort.category}
           </span>
         </div>

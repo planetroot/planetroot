@@ -14,8 +14,8 @@ interface EnquiryFormProps {
 export default function EnquiryForm({
   initialDestination = "",
   initialResortOrPackage = "",
-  formTitle = "Begin Your Personalized Escape",
-  formSubtitle = "Share your journey preferences with our private travel directors. We craft each stay with personal care.",
+  formTitle = "Begin Your Personalized Kerala Escape",
+  formSubtitle = "Share your journey preferences with our Kerala travel directors. We craft each stay with personal care.",
   className = "",
 }: EnquiryFormProps) {
   const [formData, setFormData] = useState({
@@ -105,7 +105,7 @@ export default function EnquiryForm({
 
   if (successResponse) {
     const waText = encodeURIComponent(
-      `Hello Planet Root! I just submitted enquiry ${successResponse.referenceCode} for ${successResponse.details.destination}. Please assist me with my booking.`
+      `Hello Planet Root! I just submitted enquiry ${successResponse.referenceCode} for ${successResponse.details.destination}. Please assist me with my Kerala luxury booking.`
     );
     return (
       <div className={`bg-[#fcfbf7] border border-[#c5a86a]/40 p-8 sm:p-12 text-center rounded-sm shadow-sm ${className}`}>
@@ -117,7 +117,7 @@ export default function EnquiryForm({
           Enquiry Registered
         </span>
         <h3 className="text-2xl sm:text-3xl font-serif-luxury text-[#181d1a] mt-2 mb-3">
-          Your Escape is in Thoughtful Hands
+          Your Kerala Escape is in Thoughtful Hands
         </h3>
 
         <div className="bg-[#f6f1e8] p-4 rounded-sm inline-block my-4 border border-[#0e3826]/10">
@@ -128,7 +128,7 @@ export default function EnquiryForm({
         </div>
 
         <p className="text-sm text-[#525a55] max-w-lg mx-auto leading-relaxed mb-8">
-          Thank you, <span className="font-semibold text-[#181d1a]">{successResponse.details.clientName}</span>. Our senior travel director is reviewing your preferences for{" "}
+          Thank you, <span className="font-semibold text-[#181d1a]">{successResponse.details.clientName}</span>. Our senior Kerala travel director is reviewing your preferences for{" "}
           <span className="font-semibold text-[#0e3826]">{successResponse.details.destination}</span>. You will receive a personalized consultation {successResponse.details.estimatedResponseTime.toLowerCase()}.
         </p>
 
@@ -202,7 +202,7 @@ export default function EnquiryForm({
               required
               value={formData.fullName}
               onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
-              placeholder="e.g. Vikramaditya Sharma"
+              placeholder="e.g. Rahul Menon"
               className={`w-full bg-white border ${
                 fieldErrors.fullName ? "border-rose-400" : "border-[#0e3826]/20"
               } px-4 py-3 text-sm text-[#181d1a] placeholder:text-[#525a55]/50 focus:outline-none focus:border-[#0e3826] transition-colors rounded-xs`}
@@ -255,7 +255,7 @@ export default function EnquiryForm({
 
           <div>
             <label className="block text-xs uppercase tracking-wider text-[#181d1a] font-medium mb-1.5">
-              Preferred Destination <span className="text-[#c5a86a]">*</span>
+              Preferred Kerala Destination <span className="text-[#c5a86a]">*</span>
             </label>
             <select
               value={formData.destination}
@@ -264,14 +264,15 @@ export default function EnquiryForm({
                 fieldErrors.destination ? "border-rose-400" : "border-[#0e3826]/20"
               } px-4 py-3 text-sm text-[#181d1a] focus:outline-none focus:border-[#0e3826] transition-colors rounded-xs`}
             >
-              <option value="">Select Destination...</option>
-              <option value="Manali & Himalayan Peaks">Manali & Himalayan Peaks</option>
-              <option value="Lakshadweep Island Atolls">Lakshadweep Island Atolls</option>
-              <option value="Stargazing Dark Sky (Spiti/Ladakh)">Stargazing Dark Sky (Spiti/Ladakh)</option>
-              <option value="South Goa Cliffside Sanctuary">South Goa Cliffside Sanctuary</option>
-              <option value="Udaipur Royal Lakeshore">Udaipur Royal Lakeshore</option>
-              <option value="Coorg Rainforest Estate">Coorg Rainforest Estate</option>
-              <option value="Custom Multi-Destination Journey">Custom Multi-Destination Journey</option>
+              <option value="">Select Kerala Destination...</option>
+              <option value="Kumarakom & Alleppey (Backwaters)">Kumarakom & Alleppey (Backwaters & Houseboat)</option>
+              <option value="Munnar Tea Highlands">Munnar Tea Highlands & Misty Peaks</option>
+              <option value="Wayanad Rainforest & Treehouses">Wayanad Rainforest & Canopy Treehouses</option>
+              <option value="Marari Beach & Coastal Haven">Marari Beach & Coastal Haven</option>
+              <option value="Thekkady & Periyar Spice Hills">Thekkady & Periyar Spice Hills</option>
+              <option value="Athirappilly Waterfall Reserve">Athirappilly Waterfall Reserve</option>
+              <option value="The Grand Kerala Odyssey (Multi-Destination)">The Grand Kerala Odyssey (Multi-Destination)</option>
+              <option value="Ayurvedic Panchakarma Wellness Sanctuary">Ayurvedic Panchakarma Wellness Sanctuary</option>
             </select>
             {fieldErrors.destination && (
               <p className="text-xs text-rose-600 mt-1">{fieldErrors.destination}</p>
@@ -283,27 +284,27 @@ export default function EnquiryForm({
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
           <div>
             <label className="block text-xs uppercase tracking-wider text-[#181d1a] font-medium mb-1.5">
-              Preferred Resort or Tour Package
+              Preferred Sanctuary or Package
             </label>
             <input
               type="text"
               value={formData.resortOrPackage}
               onChange={(e) => setFormData({ ...formData, resortOrPackage: e.target.value })}
-              placeholder="e.g. The Himalayan Sanctuary or Lakshadweep Holiday"
+              placeholder="e.g. Kumarakom Lakefront Palace or Munnar Retreat"
               className="w-full bg-white border border-[#0e3826]/20 px-4 py-3 text-sm text-[#181d1a] placeholder:text-[#525a55]/50 focus:outline-none focus:border-[#0e3826] transition-colors rounded-xs"
             />
           </div>
 
           <div>
             <label className="block text-xs uppercase tracking-wider text-[#181d1a] font-medium mb-1.5">
-              Dates or Intended Season <span className="text-[#c5a86a]">*</span>
+              Dates or Travel Season <span className="text-[#c5a86a]">*</span>
             </label>
             <input
               type="text"
               required
               value={formData.dates}
               onChange={(e) => setFormData({ ...formData, dates: e.target.value })}
-              placeholder="e.g. Dec 12 - Dec 18, 2026 or Spring 2027"
+              placeholder="e.g. Dec 15 - Dec 22, 2026 or Monsoon 2027"
               className={`w-full bg-white border ${
                 fieldErrors.dates ? "border-rose-400" : "border-[#0e3826]/20"
               } px-4 py-3 text-sm text-[#181d1a] placeholder:text-[#525a55]/50 focus:outline-none focus:border-[#0e3826] transition-colors rounded-xs`}
@@ -360,7 +361,7 @@ export default function EnquiryForm({
             rows={3}
             value={formData.specialRequirements}
             onChange={(e) => setFormData({ ...formData, specialRequirements: e.target.value })}
-            placeholder="e.g. Private pool preference, anniversary setup, dietary needs, permit questions for Lakshadweep..."
+            placeholder="e.g. Private plunge pool preference, private houseboat overnight, Ayurvedic consultation request, airport chauffeur pickup at Kochi..."
             className="w-full bg-white border border-[#0e3826]/20 px-4 py-3 text-sm text-[#181d1a] placeholder:text-[#525a55]/50 focus:outline-none focus:border-[#0e3826] transition-colors rounded-xs"
           />
         </div>
@@ -384,7 +385,7 @@ export default function EnquiryForm({
               </>
             ) : (
               <>
-                <span>Plan My Escape</span>
+                <span>Plan My Kerala Escape</span>
                 <ArrowRight className="w-4 h-4" />
               </>
             )}

@@ -22,29 +22,30 @@ const jakarta = Plus_Jakarta_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL("https://planetroot.in"),
   title: {
-    default: "PLANET ROOT | Luxury Resort Bookings & Curated Tour Packages — Beyond Borders",
+    default: "PLANET ROOT | Kerala Luxury Resorts, Houseboats & Curated Journeys — Beyond Borders",
     template: "%s | PLANET ROOT — Beyond Borders",
   },
   description:
-    "PLANET ROOT Travel & Tourism specializes in premium resort booking, private pool villas, bespoke Himalayan mountain retreats in Manali, pristine island holidays in Lakshadweep, and immersive stargazing experiences.",
+    "PLANET ROOT Travel & Tourism specializes in premium Kerala resort bookings, private pool villas, restored Nalukettu backwater manors in Kumarakom, misty Munnar tea estate bungalows, Wayanad rainforest treehouses, and private luxury houseboats.",
   keywords: [
     "PLANET ROOT",
     "Beyond Borders",
-    "Premium resort booking in India",
-    "Luxury resort stays",
-    "Manali holiday packages",
-    "Lakshadweep tour packages",
-    "Stargazing trips",
-    "Premium honeymoon packages",
-    "Private pool villas",
-    "Customized holiday packages",
-    "Luxury weekend getaways",
+    "Kerala luxury resort booking",
+    "Private pool villa Kerala",
+    "Kumarakom luxury houseboats",
+    "Alleppey private kettuvallam",
+    "Munnar tea estate resort",
+    "Wayanad rainforest treehouse",
+    "Kerala Ayurvedic wellness packages",
+    "Marari barefoot beach villas",
+    "Kerala honeymoon packages luxury",
+    "Customized Kerala tour packages",
   ],
   authors: [{ name: "PLANET ROOT Travel & Tourism" }],
   openGraph: {
-    title: "PLANET ROOT — Beyond Borders | Luxury Resorts & Curated Journeys",
+    title: "PLANET ROOT — Beyond Borders | Luxury Kerala Resorts & Curated Journeys",
     description:
-      "Exceptional stays. Remarkable journeys. Experiences that stay with you long after the journey ends.",
+      "Find Your Place in God’s Own Country. Exceptional stays, private houseboats, and personalized Kerala escapes.",
     url: "https://planetroot.in",
     siteName: "PLANET ROOT",
     images: [
