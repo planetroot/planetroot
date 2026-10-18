@@ -1,0 +1,170 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-forest: #0e3826;
+    --color-forest-dark: #071f15;
+    --color-forest-light: #164e36;
+    --color-forest-surface: #102d20;
+    
+    --color-gold: #c5a86a;
+    --color-gold-light: #dfcaa2;
+    --color-gold-dark: #997839;
+    
+    --color-ivory: #fcfbf7;
+    --color-cream: #f6f1e8;
+    --color-cream-dark: #ebe3d5;
+    --color-sand: #dfd4c0;
+    
+    --color-charcoal: #181d1a;
+    --color-charcoal-muted: #525a55;
+    --color-charcoal-light: #7b8580;
+    
+    --border-subtle: rgba(14, 56, 38, 0.12);
+    --border-gold: rgba(197, 168, 106, 0.35);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    color: var(--color-charcoal);
+    background-color: var(--color-ivory);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background-color: var(--color-ivory);
+    color: var(--color-charcoal);
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  ::selection {
+    background-color: #0e3826;
+    color: #fcfbf7;
+  }
+}
+
+/* Custom editorial typography styles */
+.font-serif-luxury {
+  font-family: var(--font-cormorant), Georgia, serif;
+}
+
+.font-sans-luxury {
+  font-family: var(--font-jakarta), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Luxury button styling */
+.btn-luxury-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: #0e3826;
+  color: #fcfbf7;
+  padding: 0.875rem 2rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  border: 1px solid #0e3826;
+}
+
+.btn-luxury-primary:hover {
+  background-color: #164e36;
+  border-color: #164e36;
+  color: #ffffff;
+}
+
+.btn-luxury-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: transparent;
+  color: #0e3826;
+  padding: 0.875rem 2rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  border: 1px solid rgba(14, 56, 38, 0.4);
+}
+
+.btn-luxury-secondary:hover {
+  background-color: rgba(14, 56, 38, 0.05);
+  border-color: #0e3826;
+}
+
+.btn-luxury-gold {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: #c5a86a;
+  color: #092015;
+  padding: 0.875rem 2rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  border: 1px solid #c5a86a;
+}
+
+.btn-luxury-gold:hover {
+  background-color: #dfcaa2;
+  border-color: #dfcaa2;
+}
+
+.btn-luxury-white {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: #ffffff;
+  color: #0e3826;
+  padding: 0.875rem 2rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  border: 1px solid #ffffff;
+}
+
+.btn-luxury-white:hover {
+  background-color: #f6f1e8;
+  border-color: #f6f1e8;
+}
+
+/* Subtle editorial dividers */
+.divider-luxury {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(14, 56, 38, 0.15) 30%, rgba(197, 168, 106, 0.35) 50%, rgba(14, 56, 38, 0.15) 70%, transparent);
+}
+
+.divider-luxury-light {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.15) 30%, rgba(197, 168, 106, 0.4) 50%, rgba(255, 255, 255, 0.15) 70%, transparent);
+}
+
+/* Restrained cinematic image zoom animation */
+@keyframes cinematicSlowZoom {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate-cinematic-zoom {
+  animation: cinematicSlowZoom 30s ease-in-out infinite alternate;
+}
