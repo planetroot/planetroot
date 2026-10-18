@@ -8,7 +8,6 @@ import { Phone, Mail, Menu, X, ArrowUpRight } from "lucide-react";
 
 const NAV_LINKS = [
   { label: "Home", href: "/" },
-  { label: "Luxury Stays", href: "/stays" },
   { label: "Destinations", href: "/destinations" },
   { label: "Tour Packages", href: "/packages" },
   { label: "Experiences", href: "/experiences" },

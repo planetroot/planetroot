@@ -11,7 +11,7 @@ export default function DestinationsSection() {
   const thekkady = DESTINATIONS.find((d) => d.slug === "thekkady-spices")!;
 
   return (
-    <section className="py-24 sm:py-32 bg-[#f6f1e8] relative overflow-hidden">
+    <section id="destinations-section" className="py-24 sm:py-32 bg-[#f6f1e8] relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="max-w-3xl mb-16">

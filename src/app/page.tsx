@@ -1,6 +1,4 @@
 import HeroSection from "@/components/home/HeroSection";
-import QuickBookingBar from "@/components/home/QuickBookingBar";
-import ResortDiscoverySection from "@/components/home/ResortDiscoverySection";
 import DestinationsSection from "@/components/home/DestinationsSection";
 import TourPackagesSection from "@/components/home/TourPackagesSection";
 import ExperiencesSection from "@/components/home/ExperiencesSection";
@@ -14,28 +12,22 @@ export default function HomePage() {
       {/* 1. Cinematic Hero Section */}
       <HeroSection />
 
-      {/* 2. Interactive Search & Filter Bar */}
-      <QuickBookingBar />
-
-      {/* 3. Section 4: Premium Resort Discovery (Primary Feature) */}
-      <ResortDiscoverySection />
-
-      {/* 4. Section 5: Destinations Collection */}
+      {/* 2. Section: Kerala Destinations Collection */}
       <DestinationsSection />
 
-      {/* 5. Section 6: Curated Tour Packages */}
+      {/* 3. Section: Curated Kerala Tour Packages */}
       <TourPackagesSection />
 
-      {/* 6. Section 7: Not Just Places. Feelings. */}
+      {/* 4. Section: Not Just Places. Feelings. */}
       <ExperiencesSection />
 
-      {/* 7. Section 8: Why Discerning Travelers Choose Planet Root */}
+      {/* 5. Section: Why Discerning Travelers Choose Planet Root */}
       <WhyChooseSection />
 
-      {/* 8. Section 9: About Planet Root */}
+      {/* 6. Section: About Planet Root */}
       <AboutSection />
 
-      {/* 9. Section 10 & 11: Booking Enquiry & Verified Contacts */}
+      {/* 7. Section: Booking Enquiry & Verified Contacts */}
       <HomeEnquirySection />
     </>
   );

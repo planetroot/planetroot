@@ -2,11 +2,11 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowDown, ArrowUpRight } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 
 export default function HeroSection() {
-  const scrollToResorts = () => {
-    const el = document.getElementById("luxury-resorts-section");
+  const scrollToDestinations = () => {
+    const el = document.getElementById("destinations-section");
     if (el) {
       el.scrollIntoView({ behavior: "smooth" });
     }
@@ -18,7 +18,7 @@ export default function HeroSection() {
       <div className="absolute inset-0 z-0">
         <Image
           src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=2400&q=85"
-          alt="Luxury Kerala Backwaters Resort by Planet Root"
+          alt="Luxury Kerala Backwaters by Planet Root"
           fill
           priority
           sizes="100vw"
@@ -47,16 +47,16 @@ export default function HeroSection() {
 
         {/* Supporting Text */}
         <p className="mt-6 sm:mt-8 text-base sm:text-lg md:text-xl font-light text-[#fcfbf7]/90 max-w-2xl mx-auto leading-relaxed font-sans-luxury">
-          Private backwater houseboats. Misty tea hill sanctuaries. Secluded Arabian Sea pool villas. Experiences crafted with the timeless soul of Kerala.
+          Private backwater houseboats. Misty tea hill sanctuaries. Secluded Arabian Sea shores. Journeys crafted with the timeless soul of Kerala.
         </p>
 
         {/* CTA Buttons */}
         <div className="mt-10 sm:mt-12 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
           <Link
-            href="/stays"
+            href="/destinations"
             className="w-full sm:w-auto btn-luxury-gold shadow-lg hover:shadow-xl"
           >
-            <span>Explore Kerala Stays</span>
+            <span>Explore Destinations</span>
             <ArrowUpRight className="w-4 h-4 ml-1" />
           </Link>
 
@@ -64,27 +64,27 @@ export default function HeroSection() {
             href="/packages"
             className="w-full sm:w-auto btn-luxury-white"
           >
-            <span>Discover Curated Journeys</span>
+            <span>Curated Tour Packages</span>
             <ArrowUpRight className="w-4 h-4 ml-1" />
           </Link>
         </div>
 
         {/* Kerala Brand Assurance Indicator */}
         <div className="mt-14 pt-8 border-t border-white/15 max-w-xl mx-auto flex items-center justify-center gap-6 sm:gap-8 text-[11px] tracking-[0.2em] uppercase text-white/75 flex-wrap">
-          <span>Private Pool Villas</span>
+          <span>Curated Kerala Journeys</span>
           <span className="w-1 h-1 rounded-full bg-[#c5a86a]" />
-          <span>Heritage Houseboats</span>
+          <span>Private Houseboats</span>
           <span className="w-1 h-1 rounded-full bg-[#c5a86a]" />
-          <span>Misty Tea Estates</span>
+          <span>Misty Tea Hills</span>
           <span className="w-1 h-1 rounded-full bg-[#c5a86a]" />
-          <span>Ayurvedic Sanctuaries</span>
+          <span>Ayurvedic Wellness</span>
         </div>
       </div>
 
       {/* Minimal Scroll Indicator */}
       <button
-        onClick={scrollToResorts}
-        aria-label="Scroll to luxury stays"
+        onClick={scrollToDestinations}
+        aria-label="Scroll to destinations"
         className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 text-white/70 hover:text-white transition-colors cursor-pointer group"
       >
         <span className="text-[10px] tracking-[0.25em] uppercase font-light">Scroll to Explore</span>

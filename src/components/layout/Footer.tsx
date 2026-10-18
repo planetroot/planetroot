@@ -49,33 +49,33 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2.5 text-sm text-[#fcfbf7]/80">
               <li>
-                <Link href="/stays" className="hover:text-[#c5a86a] transition-colors">
-                  All Kerala Stays
+                <Link href="/destinations" className="hover:text-[#c5a86a] transition-colors">
+                  All Destinations
                 </Link>
               </li>
               <li>
                 <Link href="/destinations/kumarakom-alleppey" className="hover:text-[#c5a86a] transition-colors">
-                  Kumarakom Backwater Villas
+                  Kumarakom Backwaters
                 </Link>
               </li>
               <li>
                 <Link href="/destinations/munnar" className="hover:text-[#c5a86a] transition-colors">
-                  Munnar Tea Estate Chalets
+                  Munnar Tea Highlands
                 </Link>
               </li>
               <li>
                 <Link href="/destinations/wayanad" className="hover:text-[#c5a86a] transition-colors">
-                  Wayanad Canopy Treehouses
+                  Wayanad Rainforests
                 </Link>
               </li>
               <li>
                 <Link href="/destinations/marari-varkala" className="hover:text-[#c5a86a] transition-colors">
-                  Marari Barefoot Beach Cottages
+                  Marari & Varkala Coast
                 </Link>
               </li>
               <li>
-                <Link href="/stays/athirappilly-rainforest-falls-luxury-resort" className="hover:text-[#c5a86a] transition-colors">
-                  Athirappilly Waterfall Reserve
+                <Link href="/destinations/thekkady-spices" className="hover:text-[#c5a86a] transition-colors">
+                  Thekkady Spice Hills
                 </Link>
               </li>
             </ul>
