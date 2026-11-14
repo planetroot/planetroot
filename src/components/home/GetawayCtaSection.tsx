@@ -1,7 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import { MessageCircle, Hotel, MapPin, Users } from "lucide-react";
+import { Hotel, MapPin, Users } from "lucide-react";
+import { WhatsAppIcon } from "@/components/common/WhatsAppIcon";
 import { SITE_CONFIG, createWhatsAppUrl, DEFAULT_WHATSAPP_MESSAGE } from "@/config/site";
 import { useEnquiryModal } from "@/context/EnquiryModalContext";
 
@@ -86,7 +87,7 @@ export default function GetawayCtaSection() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2.5 px-6 sm:px-8 py-3.5 sm:py-4 rounded-full bg-[#dfcaa2] hover:bg-[#c5a059] text-[#072016] font-semibold text-xs sm:text-sm tracking-wide transition-all shadow-xl hover:scale-105 duration-200 whitespace-nowrap cursor-pointer"
             >
-              <MessageCircle className="w-4 h-4 text-[#072016]" />
+              <WhatsAppIcon className="w-4 h-4 text-[#072016]" />
               <span>Contact Us on WhatsApp</span>
             </a>
           </div>

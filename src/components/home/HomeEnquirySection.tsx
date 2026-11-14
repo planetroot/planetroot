@@ -5,8 +5,8 @@ import {
   Mail,
   Clock,
   ShieldCheck,
-  MessageCircle,
 } from "lucide-react";
+import { WhatsAppIcon } from "@/components/common/WhatsAppIcon";
 import EnquiryForm from "@/components/forms/EnquiryForm";
 import { SITE_CONFIG, createWhatsAppUrl, DEFAULT_WHATSAPP_MESSAGE } from "@/config/site";
 
@@ -44,7 +44,7 @@ export default function HomeEnquirySection() {
               {/* WhatsApp Item */}
               <div className="flex items-start gap-4">
                 <div className="w-10 h-10 rounded-full bg-[#072016] text-[#dfcaa2] flex items-center justify-center shrink-0">
-                  <MessageCircle className="w-4 h-4 text-[#dfcaa2]" />
+                  <WhatsAppIcon className="w-4 h-4 text-[#dfcaa2]" />
                 </div>
                 <div>
                   <p className="text-[10px] uppercase tracking-wider text-stone-400 font-semibold">

@@ -2,12 +2,12 @@
 
 import { useState, useEffect } from "react";
 import {
-  MessageCircle,
   CheckCircle2,
   AlertCircle,
   ArrowRight,
   ExternalLink,
 } from "lucide-react";
+import { WhatsAppIcon } from "@/components/common/WhatsAppIcon";
 import { SITE_CONFIG, createWhatsAppUrl } from "@/config/site";
 
 export interface EnquiryFormProps {
@@ -786,7 +786,7 @@ export default function EnquiryForm({
             type="submit"
             className="w-full py-4 px-6 bg-[#072016] hover:bg-[#0c2e20] text-[#dfcaa2] hover:text-white font-medium text-sm sm:text-base tracking-wider rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 flex items-center justify-center gap-3 group cursor-pointer"
           >
-            <MessageCircle className="w-5 h-5 text-[#25D366] fill-[#25D366]" />
+            <WhatsAppIcon className="w-5 h-5 text-[#25D366]" />
             <span>Send Enquiry on WhatsApp</span>
             <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
           </button>

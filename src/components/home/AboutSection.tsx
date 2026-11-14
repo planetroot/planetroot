@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { MessageCircle } from "lucide-react";
+import { WhatsAppIcon } from "@/components/common/WhatsAppIcon";
 import { useEnquiryModal } from "@/context/EnquiryModalContext";
 
 export default function AboutSection() {
@@ -71,7 +71,7 @@ export default function AboutSection() {
                   onClick={() => openEnquiryModal({ destination: "Anywhere in Kerala" })}
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#072016] text-[#dfcaa2] hover:bg-[#0e3826] hover:text-white text-xs font-semibold uppercase tracking-wider transition-all shadow-md cursor-pointer"
                 >
-                  <MessageCircle className="w-3.5 h-3.5" />
+                  <WhatsAppIcon className="w-3.5 h-3.5" />
                   <span>Enquire on WhatsApp</span>
                 </button>
               </div>

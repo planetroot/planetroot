@@ -1,7 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
-import { ArrowRight, Phone, Mail, MessageCircle, ShieldCheck } from "lucide-react";
+import { ArrowRight, Phone, Mail, ShieldCheck } from "lucide-react";
+import { WhatsAppIcon } from "@/components/common/WhatsAppIcon";
 import { SITE_CONFIG, createWhatsAppUrl, DEFAULT_WHATSAPP_MESSAGE } from "@/config/site";
 
 export const metadata: Metadata = {
@@ -98,7 +99,7 @@ export default function AboutPage() {
                   rel="noopener noreferrer"
                   className="text-lg font-semibold text-[#0e3826] hover:text-[#c5a86a] transition-colors flex items-center gap-1.5"
                 >
-                  <MessageCircle className="w-4 h-4 text-[#25D366]" />
+                  <WhatsAppIcon className="w-4 h-4 text-[#25D366]" />
                   <span>{SITE_CONFIG.whatsappDisplay}</span>
                 </a>
               </div>

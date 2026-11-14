@@ -10,8 +10,8 @@ import {
   AlertCircle,
   Phone,
   Mail,
-  MessageCircle,
 } from "lucide-react";
+import { WhatsAppIcon } from "@/components/common/WhatsAppIcon";
 import { TOUR_PACKAGES, TourPackage } from "@/data/packages";
 import EnquiryForm from "@/components/forms/EnquiryForm";
 import { SITE_CONFIG, createWhatsAppUrl } from "@/config/site";
@@ -105,7 +105,7 @@ export default async function PackageDetailPage({ params }: PageProps) {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-4 py-2 bg-[#0e3826] text-[#dfcaa2] hover:bg-[#164e36] text-xs font-semibold uppercase tracking-wider rounded-xs transition-colors shadow-xs"
             >
-              <MessageCircle className="w-4 h-4 text-[#dfcaa2]" />
+              <WhatsAppIcon className="w-4 h-4 text-[#dfcaa2]" />
               <span>Enquire About This Package</span>
             </a>
           </div>
@@ -283,7 +283,7 @@ export default async function PackageDetailPage({ params }: PageProps) {
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 text-[#0e3826] font-semibold hover:text-[#c5a86a]"
                   >
-                    <MessageCircle className="w-3.5 h-3.5 text-[#25D366]" />
+                    <WhatsAppIcon className="w-3.5 h-3.5 text-[#25D366]" />
                     <span>WhatsApp: {SITE_CONFIG.whatsappDisplay}</span>
                   </a>
                   <a

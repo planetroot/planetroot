@@ -2,7 +2,8 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, MapPin, MessageCircle } from "lucide-react";
+import { ArrowRight, MapPin } from "lucide-react";
+import { WhatsAppIcon } from "@/components/common/WhatsAppIcon";
 import { DESTINATIONS } from "@/data/destinations";
 import { useEnquiryModal } from "@/context/EnquiryModalContext";
 
@@ -89,7 +90,7 @@ export default function DestinationsPage() {
                   onClick={() => openEnquiryModal({ destination: dest.name })}
                   className="inline-flex items-center gap-1.5 px-3.5 py-2 bg-[#0e3826] text-[#dfcaa2] text-xs font-medium uppercase tracking-wider rounded-xs hover:bg-[#164e36] transition-colors shadow-xs cursor-pointer"
                 >
-                  <MessageCircle className="w-3.5 h-3.5 text-[#dfcaa2]" />
+                  <WhatsAppIcon className="w-3.5 h-3.5 text-[#dfcaa2]" />
                   <span>Enquire</span>
                 </button>
               </div>

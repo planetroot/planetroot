@@ -2,7 +2,8 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { MessageCircle, Phone, Mail, MapPin } from "lucide-react";
+import { Phone, Mail, MapPin } from "lucide-react";
+import { WhatsAppIcon } from "@/components/common/WhatsAppIcon";
 import { SITE_CONFIG, createWhatsAppUrl, DEFAULT_WHATSAPP_MESSAGE } from "@/config/site";
 
 function InstagramIcon({ className = "w-4 h-4" }: { className?: string }) {
@@ -65,7 +66,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#dfcaa2] hover:bg-[#c5a059] text-[#072016] text-xs font-semibold uppercase tracking-wider transition-all shadow-md hover:scale-105 duration-200"
               >
-                <MessageCircle className="w-3.5 h-3.5 text-[#072016]" />
+                <WhatsAppIcon className="w-3.5 h-3.5 text-[#072016]" />
                 <span>WhatsApp Concierge</span>
               </a>
             </div>
@@ -150,9 +151,10 @@ export default function Footer() {
                   href={createWhatsAppUrl(DEFAULT_WHATSAPP_MESSAGE)}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-[#dfcaa2] transition-colors block text-white font-medium"
+                  className="hover:text-[#dfcaa2] transition-colors inline-flex items-center gap-2 text-white font-medium group"
                 >
-                  {SITE_CONFIG.whatsappDisplay}
+                  <WhatsAppIcon className="w-3.5 h-3.5 text-[#25D366] shrink-0 transition-transform group-hover:scale-110" />
+                  <span>{SITE_CONFIG.whatsappDisplay}</span>
                 </a>
               </p>
               <p>

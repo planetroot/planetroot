@@ -2,7 +2,8 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import { ArrowRight, MapPin, X, Check, MessageCircle, FileText } from "lucide-react";
+import { ArrowRight, MapPin, X, Check, FileText } from "lucide-react";
+import { WhatsAppIcon } from "@/components/common/WhatsAppIcon";
 import { RESORTS, Resort } from "@/data/resorts";
 import { useEnquiryModal } from "@/context/EnquiryModalContext";
 import { createWhatsAppUrl } from "@/config/site";
@@ -202,7 +203,7 @@ export default function ResortDiscoverySection() {
                     }}
                     className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#dfcaa2] hover:bg-[#c5a059] text-[#072016] text-xs font-semibold tracking-wider transition-all shadow-md cursor-pointer"
                   >
-                    <MessageCircle className="w-4 h-4 text-[#072016]" />
+                    <WhatsAppIcon className="w-4 h-4 text-[#072016]" />
                     <span>Enquire on WhatsApp</span>
                   </button>
                 </div>

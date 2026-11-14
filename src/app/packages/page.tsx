@@ -3,7 +3,8 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, MapPin, Clock, MessageCircle } from "lucide-react";
+import { ArrowRight, MapPin, Clock } from "lucide-react";
+import { WhatsAppIcon } from "@/components/common/WhatsAppIcon";
 import { TOUR_PACKAGES, TourPackage, PackageCategory } from "@/data/packages";
 import { useEnquiryModal } from "@/context/EnquiryModalContext";
 import { SITE_CONFIG, createWhatsAppUrl, DEFAULT_WHATSAPP_MESSAGE } from "@/config/site";
@@ -158,7 +159,7 @@ export default function PackagesPage() {
                   }
                   className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xs bg-[#0e3826] text-[#dfcaa2] hover:bg-[#164e36] text-xs font-semibold uppercase tracking-wider transition-colors shadow-xs cursor-pointer"
                 >
-                  <MessageCircle className="w-3.5 h-3.5 text-[#dfcaa2]" />
+                  <WhatsAppIcon className="w-3.5 h-3.5 text-[#dfcaa2]" />
                   <span>Enquire</span>
                 </button>
               </div>
@@ -187,7 +188,7 @@ export default function PackagesPage() {
             onClick={() => openEnquiryModal({ destination: "Anywhere in Kerala" })}
             className="px-6 py-3.5 bg-[#c5a86a] text-[#092015] hover:bg-[#dfcaa2] font-semibold text-xs uppercase tracking-wider rounded-xs transition-all shadow-md whitespace-nowrap cursor-pointer flex items-center gap-2"
           >
-            <MessageCircle className="w-4 h-4 text-[#092015]" />
+            <WhatsAppIcon className="w-4 h-4 text-[#092015]" />
             <span>Chat on WhatsApp</span>
           </button>
         </div>

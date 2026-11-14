@@ -2,7 +2,8 @@
 
 import { Suspense } from "react";
 import { useSearchParams } from "next/navigation";
-import { Phone, Mail, Clock, MapPin, ShieldCheck, MessageCircle } from "lucide-react";
+import { Phone, Mail, Clock, MapPin, ShieldCheck } from "lucide-react";
+import { WhatsAppIcon } from "@/components/common/WhatsAppIcon";
 import EnquiryForm from "@/components/forms/EnquiryForm";
 import { SITE_CONFIG, createWhatsAppUrl, DEFAULT_WHATSAPP_MESSAGE } from "@/config/site";
 
@@ -62,7 +63,7 @@ function ContactContent() {
               <div className="p-6 bg-white border border-[#0e3826]/12 rounded-xs shadow-xs">
                 <div className="flex items-center gap-3 mb-2">
                   <div className="w-10 h-10 rounded-full bg-[#0e3826] text-[#dfcaa2] flex items-center justify-center">
-                    <MessageCircle className="w-5 h-5 text-[#25D366]" />
+                    <WhatsAppIcon className="w-5 h-5 text-[#25D366]" />
                   </div>
                   <div>
                     <p className="text-[10px] uppercase font-semibold tracking-widest text-[#7b8580]">WhatsApp Concierge</p>

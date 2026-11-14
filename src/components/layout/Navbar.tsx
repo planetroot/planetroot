@@ -2,7 +2,8 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import { MessageCircle, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import { WhatsAppIcon } from "@/components/common/WhatsAppIcon";
 import { SITE_CONFIG, createWhatsAppUrl, DEFAULT_WHATSAPP_MESSAGE } from "@/config/site";
 import { useEnquiryModal } from "@/context/EnquiryModalContext";
 
@@ -101,7 +102,7 @@ export default function Navbar() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#dfcaa2] hover:bg-[#c5a059] text-[#072016] text-xs font-semibold tracking-wide transition-all shadow-md cursor-pointer hover:scale-105"
               >
-                <MessageCircle className="w-4 h-4 text-[#072016]" />
+                <WhatsAppIcon className="w-4 h-4 text-[#072016]" />
                 <span>Book on WhatsApp</span>
               </a>
             </div>
@@ -114,7 +115,7 @@ export default function Navbar() {
                 rel="noopener noreferrer"
                 className="text-[11px] font-semibold px-3 py-1.5 rounded-full bg-[#dfcaa2] text-[#072016] flex items-center gap-1 shadow-sm"
               >
-                <MessageCircle className="w-3.5 h-3.5" />
+                <WhatsAppIcon className="w-3.5 h-3.5 text-[#072016]" />
                 <span>WhatsApp</span>
               </a>
               <button
@@ -182,7 +183,7 @@ export default function Navbar() {
                 rel="noopener noreferrer"
                 className="w-full py-3.5 rounded-full bg-[#dfcaa2] text-[#072016] font-semibold text-xs uppercase tracking-wider flex items-center justify-center gap-2 shadow-lg"
               >
-                <MessageCircle className="w-4 h-4" />
+                <WhatsAppIcon className="w-4 h-4 text-[#072016]" />
                 <span>Chat on WhatsApp</span>
               </a>
 
