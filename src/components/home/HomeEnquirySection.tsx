@@ -48,7 +48,7 @@ export default function HomeEnquirySection() {
                 </div>
                 <div>
                   <p className="text-[10px] uppercase tracking-wider text-stone-400 font-semibold">
-                    Direct WhatsApp Concierge
+                    For Enquiry: WhatsApp
                   </p>
                   <a
                     href={createWhatsAppUrl(DEFAULT_WHATSAPP_MESSAGE)}

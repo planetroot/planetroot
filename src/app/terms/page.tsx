@@ -83,7 +83,7 @@ export default function TermsPage() {
           </section>
 
           <section className="space-y-3">
-            <h2 className="text-xl font-serif-luxury text-[#181d1a]">3. Concierge Contact for Policy Clarifications</h2>
+            <h2 className="text-xl font-serif-luxury text-[#181d1a]">3. Contact for Policy Clarifications &amp; Enquiries</h2>
             <p>
               For any clarification regarding hotel booking terms, cancellation terms, or custom payment schedules, please contact our director directly:
             </p>

@@ -1058,7 +1058,7 @@ export default function AdminPage() {
                 </div>
                 <div>
                   <h2 className="text-lg font-semibold text-[#181d1a]">5. Resort Story & Description</h2>
-                  <p className="text-xs text-stone-500">Concierge review, landscape description, and highlights</p>
+                  <p className="text-xs text-stone-500">Editorial review, landscape description, and highlights</p>
                 </div>
               </div>
 

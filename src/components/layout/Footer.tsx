@@ -55,10 +55,10 @@ export default function Footer() {
             </p>
 
             <p className="text-xs sm:text-sm text-stone-300/80 font-light leading-relaxed max-w-sm">
-              Handpicked luxury resorts, private pool villas, and curated domestic &amp; international holiday escapes. Experience God&apos;s Own Country with personalized WhatsApp concierge assistance.
+              Handpicked luxury resorts, private pool villas, and curated domestic &amp; international holiday escapes. Experience God&apos;s Own Country with personalized WhatsApp assistance for all your enquiries.
             </p>
 
-            {/* Direct WhatsApp Concierge Action */}
+            {/* Direct WhatsApp Action */}
             <div className="pt-2">
               <a
                 href={createWhatsAppUrl(DEFAULT_WHATSAPP_MESSAGE)}
@@ -67,7 +67,7 @@ export default function Footer() {
                 className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#dfcaa2] hover:bg-[#c5a059] text-[#072016] text-xs font-semibold uppercase tracking-wider transition-all shadow-md hover:scale-105 duration-200"
               >
                 <WhatsAppIcon className="w-3.5 h-3.5 text-[#072016]" />
-                <span>WhatsApp Concierge</span>
+                <span>For Enquiry</span>
               </a>
             </div>
           </div>
@@ -140,10 +140,10 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* 4. Concierge Directory (Span 2) */}
+          {/* 4. Enquiry Directory (Span 2) */}
           <div className="lg:col-span-2 space-y-3.5">
             <h4 className="text-[10px] sm:text-[11px] font-semibold tracking-[0.24em] uppercase text-[#dfcaa2]">
-              CONCIERGE
+              FOR ENQUIRY
             </h4>
             <div className="space-y-2.5 text-xs sm:text-[13px] text-stone-300/80 font-light">
               <p>

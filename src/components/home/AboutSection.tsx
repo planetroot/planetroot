@@ -62,7 +62,7 @@ export default function AboutSection() {
                 <p className="text-xs font-semibold tracking-[0.2em] uppercase text-[#072016]">
                   PLANET ROOT — BEYOND BORDERS
                 </p>
-                <p className="text-xs text-stone-500 mt-0.5">Kerala Luxury Resorts & Holiday Concierge</p>
+                <p className="text-xs text-stone-500 mt-0.5">Kerala Luxury Resorts & Stays for Enquiry</p>
               </div>
 
               <div>

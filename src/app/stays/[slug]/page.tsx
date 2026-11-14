@@ -380,10 +380,10 @@ export default async function ResortDetailPage({ params }: PageProps) {
                 formSubtitle="Our team will confirm room category availability, check seasonal rates, and prepare a personalized quote via WhatsApp."
               />
 
-              {/* Direct Concierge Contact Card */}
+              {/* Direct Enquiry Contact Card */}
               <div className="bg-[#f6f1e8] border border-[#c5a86a]/30 p-6 rounded-xs">
                 <p className="text-xs uppercase tracking-widest font-semibold text-[#c5a86a] mb-1.5">
-                  Direct Concierge Support
+                  Direct Support for Enquiry
                 </p>
                 <p className="text-xs text-[#525a55] leading-relaxed mb-4">
                   Prefer a quick chat? Talk directly with our travel director about customized dates or special arrangements.

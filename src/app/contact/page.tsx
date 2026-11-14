@@ -66,7 +66,7 @@ function ContactContent() {
                     <WhatsAppIcon className="w-5 h-5 text-[#25D366]" />
                   </div>
                   <div>
-                    <p className="text-[10px] uppercase font-semibold tracking-widest text-[#7b8580]">WhatsApp Concierge</p>
+                    <p className="text-[10px] uppercase font-semibold tracking-widest text-[#7b8580]">For Enquiry</p>
                     <a
                       href={createWhatsAppUrl(DEFAULT_WHATSAPP_MESSAGE)}
                       target="_blank"
@@ -146,7 +146,7 @@ function ContactContent() {
                     <Clock className="w-4 h-4 text-[#dfcaa2]" />
                   </div>
                   <div>
-                    <p className="text-[10px] uppercase font-semibold tracking-widest text-[#7b8580]">Concierge Hours</p>
+                    <p className="text-[10px] uppercase font-semibold tracking-widest text-[#7b8580]">Enquiry Hours</p>
                     <p className="text-base font-semibold text-[#181d1a]">{SITE_CONFIG.workingHours}</p>
                   </div>
                 </div>
@@ -182,7 +182,7 @@ function ContactContent() {
 
 export default function ContactPage() {
   return (
-    <Suspense fallback={<div className="pt-32 text-center">Loading contact concierge...</div>}>
+    <Suspense fallback={<div className="pt-32 text-center">Loading contact enquiries...</div>}>
       <ContactContent />
     </Suspense>
   );

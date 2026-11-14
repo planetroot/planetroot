@@ -35,7 +35,7 @@ export default function HomePage() {
       {/* 8. About Planet Root Travels (#about-section) */}
       <AboutSection />
 
-      {/* 9. Main WhatsApp Enquiry Form & Contact Concierge (#enquiry-section) */}
+      {/* 9. Main WhatsApp Enquiry Form & Contact for Enquiry (#enquiry-section) */}
       <HomeEnquirySection />
     </>
   );

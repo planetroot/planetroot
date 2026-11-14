@@ -77,7 +77,7 @@ export default function AboutPage() {
             </p>
 
             <p>
-              Our goal is to make every journey feel effortless, every stay feel special, and every experience become a lasting memory. We operate with a personal concierge approach — engaging directly on WhatsApp to listen to your preferences, verify resort standards, and tailor stays to your budget.
+              Our goal is to make every journey feel effortless, every stay feel special, and every experience become a lasting memory. We operate with a dedicated approach for every enquiry — engaging directly on WhatsApp to listen to your preferences, verify resort standards, and tailor stays to your budget.
             </p>
 
             <div className="p-6 bg-[#f6f1e8] border border-[#0e3826]/10 rounded-xs my-6">
@@ -92,7 +92,7 @@ export default function AboutPage() {
 
             <div className="pt-4 border-t border-[#0e3826]/10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
               <div>
-                <p className="text-xs uppercase tracking-widest text-[#7b8580]">WhatsApp Concierge</p>
+                <p className="text-xs uppercase tracking-widest text-[#7b8580]">For Enquiry</p>
                 <a
                   href={createWhatsAppUrl(DEFAULT_WHATSAPP_MESSAGE)}
                   target="_blank"

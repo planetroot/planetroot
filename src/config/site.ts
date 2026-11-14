@@ -25,7 +25,7 @@ export const SITE_CONFIG = {
   
   // Operational Hours
   workingHours: "Monday – Saturday: 9:00 AM – 8:00 PM IST",
-  supportNote: "Priority concierge assistance available 24/7 for traveling guests",
+  supportNote: "Priority assistance available 24/7 for all enquiries and traveling guests",
   
   // Social Links
   socials: {

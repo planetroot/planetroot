@@ -30,7 +30,7 @@ export default function FloatingWhatsApp() {
           aria-hidden="true"
         >
           <span className="w-1.5 h-1.5 rounded-full bg-[#25D366] animate-pulse" />
-          <span>WhatsApp Concierge</span>
+          <span>For Enquiry</span>
         </span>
 
         {/* Authentic WhatsApp Icon */}

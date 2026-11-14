@@ -192,7 +192,7 @@ export default function StaysPage() {
               Looking for a Specific Resort or Pool Villa?
             </span>
             <h3 className="text-2xl sm:text-3xl font-serif-luxury">
-              Let Our Concierge Verify Availability For You
+              Let Us Verify Availability for Your Enquiry
             </h3>
             <p className="mt-2 text-xs sm:text-sm text-[#fcfbf7]/80 font-light leading-relaxed">
               Tell us your dates, group size, and budget. We provide customized recommendations and confirmed rates within hours.
