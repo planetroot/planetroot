@@ -1,6 +1,5 @@
 import { NextResponse } from "next/server";
 import path from "path";
-import fs from "fs";
 
 export async function POST(request: Request) {
   try {
@@ -21,36 +20,32 @@ export async function POST(request: Request) {
     const ext = path.extname(originalName).toLowerCase();
     const isPdf = ext === ".pdf" || file.type === "application/pdf";
 
-    const baseName = path
-      .basename(originalName, ext)
-      .toLowerCase()
-      .replace(/[^a-z0-9_-]/g, "-")
-      .slice(0, 30) || "document";
+    const baseName =
+      path
+        .basename(originalName, ext)
+        .toLowerCase()
+        .replace(/[^a-z0-9_-]/g, "-")
+        .slice(0, 30) || "document";
 
-    let uploadDir: string;
-    let uniqueName: string;
-    let publicUrl: string;
     const fileType = isPdf ? "pdf" : "image";
+    let mimeType: string;
 
     if (isPdf) {
-      uploadDir = path.join(process.cwd(), "public", "brochures");
-      uniqueName = `brochure-${baseName}-${Date.now()}.pdf`;
-      publicUrl = `/brochures/${uniqueName}`;
+      mimeType = "application/pdf";
     } else {
       const cleanExt = [".jpg", ".jpeg", ".png", ".webp", ".avif"].includes(ext)
-        ? ext
-        : ".jpg";
-      uploadDir = path.join(process.cwd(), "public", "images", "uploads");
-      uniqueName = `resort-${baseName}-${Date.now()}${cleanExt}`;
-      publicUrl = `/images/uploads/${uniqueName}`;
+        ? ext.replace(".", "")
+        : "jpeg";
+      mimeType = cleanExt === "jpg" ? "image/jpeg" : `image/${cleanExt}`;
     }
 
-    if (!fs.existsSync(uploadDir)) {
-      fs.mkdirSync(uploadDir, { recursive: true });
-    }
+    const uniqueName = isPdf
+      ? `brochure-${baseName}-${Date.now()}.pdf`
+      : `resort-${baseName}-${Date.now()}${ext || ".jpg"}`;
 
-    const filePath = path.join(uploadDir, uniqueName);
-    fs.writeFileSync(filePath, buffer);
+    // Base64 Data URL (100% Vercel & serverless compatible without filesystem writes)
+    const base64Data = buffer.toString("base64");
+    const publicUrl = `data:${mimeType};base64,${base64Data}`;
 
     return NextResponse.json({
       success: true,

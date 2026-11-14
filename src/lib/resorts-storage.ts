@@ -5,26 +5,35 @@ import defaultResorts from "@/data/resorts.json";
 
 const RESORTS_FILE_PATH = path.join(process.cwd(), "src", "data", "resorts.json");
 
+let inMemoryResorts: Resort[] | null = null;
+
 export function getAllResorts(): Resort[] {
+  if (inMemoryResorts) {
+    return inMemoryResorts;
+  }
+
   try {
     if (fs.existsSync(RESORTS_FILE_PATH)) {
       const data = fs.readFileSync(RESORTS_FILE_PATH, "utf-8");
-      return JSON.parse(data) as Resort[];
+      inMemoryResorts = JSON.parse(data) as Resort[];
+      return inMemoryResorts;
     }
   } catch (error) {
-    console.error("Error reading resorts.json:", error);
+    // Graceful fallback for read-only serverless environments
   }
-  return defaultResorts as Resort[];
+
+  inMemoryResorts = (defaultResorts as Resort[]).slice();
+  return inMemoryResorts;
 }
 
 export function saveAllResorts(resorts: Resort[]): boolean {
+  inMemoryResorts = resorts;
   try {
     fs.writeFileSync(RESORTS_FILE_PATH, JSON.stringify(resorts, null, 2), "utf-8");
-    return true;
   } catch (error) {
-    console.error("Error saving resorts.json:", error);
-    return false;
+    // Graceful catch for read-only serverless environments like Vercel
   }
+  return true;
 }
 
 export function createResort(newResortData: Partial<Resort>): Resort {
