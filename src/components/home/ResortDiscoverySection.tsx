@@ -1,155 +1,295 @@
 "use client";
 
-import { useState } from "react";
-import Link from "next/link";
+import { useState, useEffect } from "react";
 import Image from "next/image";
-import { ArrowRight, MapPin, Check } from "lucide-react";
+import { ArrowRight, MapPin, X, Check, MessageCircle, FileText } from "lucide-react";
 import { RESORTS, Resort } from "@/data/resorts";
-
-const FILTER_TABS = [
-  { label: "All Kerala Sanctuaries", value: "all" },
-  { label: "Heritage Backwaters", value: "Heritage Backwater Villa" },
-  { label: "Munnar Tea Bungalows", value: "Tea Estate Bungalow" },
-  { label: "Wayanad Rainforests", value: "Rainforest Treehouse" },
-  { label: "Beachfront & Coastal", value: "Beachfront Stay" },
-  { label: "Luxury Resorts", value: "Luxury Resort" },
-];
+import { useEnquiryModal } from "@/context/EnquiryModalContext";
+import { createWhatsAppUrl } from "@/config/site";
 
 export default function ResortDiscoverySection() {
-  const [activeTab, setActiveTab] = useState("all");
+  const [resorts, setResorts] = useState<Resort[]>(RESORTS);
+  const [showAll, setShowAll] = useState(false);
+  const [selectedResort, setSelectedResort] = useState<Resort | null>(null);
+  const { openEnquiryModal } = useEnquiryModal();
 
-  const filteredResorts = activeTab === "all"
-    ? RESORTS
-    : RESORTS.filter((r) => r.category === activeTab);
+  useEffect(() => {
+    fetch("/api/resorts")
+      .then((res) => {
+        if (!res.ok) throw new Error("Network response was not ok");
+        return res.json();
+      })
+      .then((data) => {
+        if (Array.isArray(data) && data.length > 0) {
+          setResorts(data);
+        }
+      })
+      .catch((err) => {
+        // Silently keep default RESORTS if fetch fails
+      });
+  }, []);
+
+  const displayResorts = showAll ? resorts : resorts.slice(0, 3);
 
   return (
-    <section id="luxury-resorts-section" className="py-24 sm:py-32 bg-[#fcfbf7]">
+    <section id="featured-resorts-section" className="py-16 sm:py-20 bg-[#fcfbf7]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-14">
-          <span className="text-xs font-semibold tracking-[0.25em] uppercase text-[#c5a86a] block mb-3">
-            Handpicked Kerala Sanctuaries
-          </span>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif-luxury text-[#181d1a] tracking-tight">
-            Stay Somewhere Extraordinary in Kerala.
-          </h2>
-          <p className="mt-4 text-base sm:text-lg text-[#525a55] font-light leading-relaxed font-sans-luxury">
-            Discover 200-year-old restored Nalukettu timber palaces, private backwater plunge pools, misty tea bungalows, and canopy treehouses.
-          </p>
-          <div className="divider-luxury w-32 mx-auto mt-6" />
-        </div>
-
-        {/* Filter Tabs */}
-        <div className="flex items-center justify-start sm:justify-center overflow-x-auto pb-4 mb-12 gap-2 no-scrollbar">
-          {FILTER_TABS.map((tab) => (
-            <button
-              key={tab.value}
-              onClick={() => setActiveTab(tab.value)}
-              className={`px-5 py-2.5 text-xs uppercase tracking-[0.12em] transition-all duration-300 whitespace-nowrap rounded-xs ${
-                activeTab === tab.value
-                  ? "bg-[#0e3826] text-[#fcfbf7] font-medium shadow-xs"
-                  : "bg-white text-[#525a55] hover:text-[#0e3826] hover:bg-[#f6f1e8] border border-[#0e3826]/10"
-              }`}
-            >
-              {tab.label}
-            </button>
-          ))}
-        </div>
-
-        {/* Resort Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
-          {filteredResorts.map((resort) => (
-            <ResortCard key={resort.id} resort={resort} />
-          ))}
-        </div>
-
-        {/* Bottom Collection Link */}
-        <div className="mt-16 text-center">
-          <Link
-            href="/stays"
-            className="btn-luxury-secondary text-xs tracking-widest inline-flex items-center gap-2"
-          >
-            <span>Explore Complete Kerala Luxury Collection</span>
-            <ArrowRight className="w-4 h-4" />
-          </Link>
-        </div>
-      </div>
-    </section>
-  );
-}
-
-function ResortCard({ resort }: { resort: Resort }) {
-  return (
-    <article className="group bg-white border border-[#0e3826]/10 flex flex-col h-full overflow-hidden transition-all duration-500 hover:shadow-lg hover:border-[#0e3826]/30">
-      {/* Property Image with subtle hover zoom */}
-      <div className="relative aspect-16/10 w-full overflow-hidden bg-[#e8e0d2]">
-        <Image
-          src={resort.heroImage}
-          alt={resort.name}
-          fill
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-        />
-        <div className="absolute top-4 left-4">
-          <span className="text-[10px] font-semibold tracking-widest uppercase px-3 py-1 bg-white/95 backdrop-blur-xs text-[#0e3826] shadow-xs">
-            {resort.category}
-          </span>
-        </div>
-      </div>
-
-      {/* Content */}
-      <div className="p-6 sm:p-7 flex flex-col flex-1">
-        {/* Destination & Location */}
-        <div className="flex items-center gap-1.5 text-xs text-[#c5a86a] font-medium tracking-wider uppercase mb-2">
-          <MapPin className="w-3.5 h-3.5 shrink-0" />
-          <span>{resort.destination}</span>
-        </div>
-
-        {/* Property Name */}
-        <h3 className="text-xl sm:text-2xl font-serif-luxury text-[#181d1a] group-hover:text-[#0e3826] transition-colors leading-snug mb-3">
-          <Link href={`/stays/${resort.slug}`}>
-            {resort.name}
-          </Link>
-        </h3>
-
-        {/* Sophisticated Description */}
-        <p className="text-xs sm:text-sm text-[#525a55] font-light leading-relaxed mb-5 line-clamp-3 flex-1">
-          {resort.description}
-        </p>
-
-        {/* Verified Amenities (Top 3) */}
-        <div className="pt-4 border-t border-[#0e3826]/10 mb-5">
-          <div className="flex flex-wrap gap-2">
-            {resort.verifiedAmenities.slice(0, 3).map((amenity, idx) => (
-              <span
-                key={idx}
-                className="text-[11px] text-[#525a55] bg-[#f6f1e8] px-2.5 py-1 rounded-xs flex items-center gap-1"
-              >
-                <Check className="w-3 h-3 text-[#0e3826]" />
-                <span>{amenity}</span>
-              </span>
-            ))}
-          </div>
-        </div>
-
-        {/* Price & Link */}
-        <div className="pt-2 flex items-center justify-between border-t border-[#0e3826]/10">
+        <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-8 gap-4">
           <div>
-            <p className="text-xs text-[#7b8580] uppercase tracking-wider">Verified Stay</p>
-            <p className="text-sm font-semibold text-[#0e3826] mt-0.5">
-              {resort.pricePerNight}
+            <p className="text-[10px] sm:text-[11px] font-semibold tracking-[0.25em] uppercase text-[#c5a059] mb-1">
+              CURATED SANCTUARIES
+            </p>
+            <h2 className="text-3xl sm:text-4xl font-serif-luxury font-normal text-[#181d1a] tracking-tight">
+              Featured <span className="text-[#c5a059]">Resorts</span>
+            </h2>
+            <p className="mt-1 text-xs sm:text-sm text-stone-500 font-light font-sans-luxury">
+              Handpicked stays for your perfect holiday
             </p>
           </div>
 
-          <Link
-            href={`/stays/${resort.slug}`}
-            className="text-xs font-semibold uppercase tracking-[0.15em] text-[#0e3826] group-hover:text-[#c5a86a] flex items-center gap-1.5 transition-colors"
-          >
-            <span>View Stay</span>
-            <ArrowRight className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1" />
-          </Link>
+          <div>
+            <button
+              type="button"
+              onClick={() => setShowAll(!showAll)}
+              className="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-full border border-stone-300 text-stone-700 hover:border-[#0e3826] hover:bg-[#0e3826] hover:text-white text-xs font-medium tracking-wide transition-colors cursor-pointer"
+            >
+              <span>{showAll ? "Show Top Stays" : "View All Resorts"}</span>
+              <ArrowRight className="w-3.5 h-3.5" />
+            </button>
+          </div>
+        </div>
+
+        {/* Featured Resort Cards Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+          {displayResorts.map((resort) => (
+            <article
+              key={resort.id}
+              className="group bg-white border border-stone-200/80 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
+            >
+              <div
+                onClick={() => setSelectedResort(resort)}
+                className="block cursor-pointer"
+              >
+                {/* Resort Photograph */}
+                <div className="relative aspect-16/10 w-full overflow-hidden bg-[#e8e0d2]">
+                  <Image
+                    src={resort.heroImage}
+                    alt={resort.name}
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                  />
+                </div>
+
+                {/* Content */}
+                <div className="p-5 sm:p-6 pb-2">
+                  <h3 className="text-lg sm:text-xl font-serif-luxury font-medium text-[#181d1a] group-hover:text-[#0e3826] transition-colors leading-snug">
+                    {resort.name}
+                  </h3>
+
+                  <div className="flex items-center gap-1.5 text-xs text-stone-500 font-medium mt-1 mb-2">
+                    <MapPin className="w-3.5 h-3.5 text-stone-400 shrink-0" />
+                    <span>{resort.destination}</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Bottom Price & View Details Pill Button */}
+              <div className="px-5 pb-5 sm:px-6 sm:pb-6 pt-3 flex items-center justify-between border-t border-stone-100">
+                <div>
+                  <p className="text-sm sm:text-base font-serif-luxury font-semibold text-[#0e3826]">
+                    {resort.pricePerNight}
+                  </p>
+                </div>
+
+                <div>
+                  <button
+                    type="button"
+                    onClick={() => setSelectedResort(resort)}
+                    className="inline-flex items-center px-4 py-1.5 rounded-full border border-stone-300 text-stone-700 hover:border-[#0e3826] hover:bg-[#0e3826] hover:text-white text-xs font-semibold tracking-wider transition-all cursor-pointer"
+                  >
+                    View Details
+                  </button>
+                </div>
+              </div>
+            </article>
+          ))}
         </div>
       </div>
-    </article>
+
+      {/* ======================================================== */}
+      {/* IN-PAGE RESORT DETAILS MODAL (Keeps user on single page) */}
+      {/* ======================================================== */}
+      {selectedResort && (
+        <div
+          role="dialog"
+          aria-modal="true"
+          onClick={() => setSelectedResort(null)}
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-black/80 backdrop-blur-sm animate-fadeIn overflow-y-auto"
+        >
+          <div
+            onClick={(e) => e.stopPropagation()}
+            className="relative bg-white rounded-2xl max-w-3xl w-full max-h-[90vh] overflow-y-auto shadow-2xl border border-stone-200"
+          >
+            {/* Close button */}
+            <button
+              onClick={() => setSelectedResort(null)}
+              className="absolute top-4 right-4 z-20 w-9 h-9 rounded-full bg-black/50 hover:bg-black/80 text-white flex items-center justify-center cursor-pointer transition-all"
+              aria-label="Close details"
+            >
+              <X className="w-5 h-5" />
+            </button>
+
+            {/* Modal Hero Image */}
+            <div className="relative aspect-16/9 w-full bg-stone-100">
+              <Image
+                src={selectedResort.heroImage}
+                alt={selectedResort.name}
+                fill
+                priority
+                sizes="(max-width: 768px) 100vw, 800px"
+                className="object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
+              <div className="absolute bottom-5 left-5 right-5 text-white">
+                <span className="text-[11px] font-semibold uppercase tracking-wider px-2.5 py-1 bg-[#0e3826] rounded-sm text-[#dfcaa2]">
+                  {selectedResort.category}
+                </span>
+                <h3 className="text-2xl sm:text-3xl font-serif-luxury font-normal text-white mt-2">
+                  {selectedResort.name}
+                </h3>
+                <p className="text-xs text-stone-200 flex items-center gap-1 mt-1">
+                  <MapPin className="w-3.5 h-3.5 text-[#dfcaa2]" />
+                  <span>{selectedResort.destination}</span>
+                </p>
+              </div>
+            </div>
+
+            {/* Modal Body Content */}
+            <div className="p-6 sm:p-8 space-y-6">
+              {/* Pricing & Tagline */}
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-4 border-b border-stone-200">
+                <div>
+                  <p className="text-[11px] uppercase tracking-wider text-stone-400 font-semibold">Starting Rate</p>
+                  <p className="text-2xl font-bold text-[#0e3826]">{selectedResort.pricePerNight}</p>
+                </div>
+
+                <div className="flex flex-wrap items-center gap-3">
+                  {selectedResort.brochurePdf && (
+                    <a
+                      href={selectedResort.brochurePdf}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      download
+                      className="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-white hover:bg-stone-50 text-[#0e3826] border border-[#0e3826]/30 text-xs font-semibold tracking-wider transition-all shadow-xs"
+                    >
+                      <FileText className="w-4 h-4 text-[#c5a059]" />
+                      <span>Brochure (PDF)</span>
+                    </a>
+                  )}
+
+                  <button
+                    type="button"
+                    onClick={() => {
+                      const resortToEnquire = selectedResort;
+                      setSelectedResort(null);
+                      openEnquiryModal({
+                        destination: resortToEnquire.destination,
+                        resortOrProperty: resortToEnquire.name,
+                        stayType: resortToEnquire.category,
+                      });
+                    }}
+                    className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#dfcaa2] hover:bg-[#c5a059] text-[#072016] text-xs font-semibold tracking-wider transition-all shadow-md cursor-pointer"
+                  >
+                    <MessageCircle className="w-4 h-4 text-[#072016]" />
+                    <span>Enquire on WhatsApp</span>
+                  </button>
+                </div>
+              </div>
+
+              {/* Description */}
+              <div>
+                <h4 className="text-sm uppercase tracking-wider font-semibold text-stone-800 mb-2">
+                  About the Sanctuary
+                </h4>
+                <p className="text-sm text-stone-600 font-light leading-relaxed">
+                  {selectedResort.longDescription || selectedResort.description}
+                </p>
+              </div>
+
+              {/* Verified Amenities */}
+              {selectedResort.verifiedAmenities && selectedResort.verifiedAmenities.length > 0 && (
+                <div>
+                  <h4 className="text-sm uppercase tracking-wider font-semibold text-stone-800 mb-3">
+                    Verified Amenities & Experiences
+                  </h4>
+                  <div className="grid grid-cols-2 sm:grid-cols-3 gap-2.5">
+                    {selectedResort.verifiedAmenities.map((amenity, i) => (
+                      <div
+                        key={i}
+                        className="flex items-center gap-2 p-2.5 rounded-lg bg-stone-50 border border-stone-200/60 text-xs text-stone-700 font-medium"
+                      >
+                        <Check className="w-3.5 h-3.5 text-[#0e3826] shrink-0" />
+                        <span>{amenity}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Photo Thumbnails */}
+              {selectedResort.galleryImages && selectedResort.galleryImages.length > 1 && (
+                <div>
+                  <h4 className="text-sm uppercase tracking-wider font-semibold text-stone-800 mb-3">
+                    Resort Photography
+                  </h4>
+                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
+                    {selectedResort.galleryImages.slice(0, 4).map((img, i) => (
+                      <div key={i} className="relative aspect-4/3 rounded-lg overflow-hidden bg-stone-100 border border-stone-200">
+                        <Image
+                          src={img}
+                          alt={`${selectedResort.name} photo ${i + 1}`}
+                          fill
+                          sizes="(max-width: 768px) 50vw, 200px"
+                          className="object-cover"
+                        />
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Room Categories */}
+              {selectedResort.villas && selectedResort.villas.length > 0 && (
+                <div>
+                  <h4 className="text-sm uppercase tracking-wider font-semibold text-stone-800 mb-3">
+                    Available Villas & Suites
+                  </h4>
+                  <div className="space-y-3">
+                    {selectedResort.villas.map((villa) => (
+                      <div
+                        key={villa.id}
+                        className="p-4 rounded-xl border border-stone-200 bg-stone-50 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3"
+                      >
+                        <div>
+                          <p className="text-sm font-bold text-stone-900">{villa.name}</p>
+                          <p className="text-xs text-stone-500 mt-0.5">{villa.view} • {villa.size}</p>
+                        </div>
+                        {villa.priceIndication && (
+                          <span className="text-xs font-semibold text-[#0e3826] bg-white px-3 py-1 rounded-full border border-stone-200">
+                            {villa.priceIndication}
+                          </span>
+                        )}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+      )}
+    </section>
   );
 }

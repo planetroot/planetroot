@@ -2,8 +2,19 @@
 
 import { Suspense } from "react";
 import { useSearchParams } from "next/navigation";
-import { Phone, Mail, Clock, MapPin, ShieldCheck, MessageCircle, ArrowRight } from "lucide-react";
+import { Phone, Mail, Clock, MapPin, ShieldCheck, MessageCircle } from "lucide-react";
 import EnquiryForm from "@/components/forms/EnquiryForm";
+import { SITE_CONFIG, createWhatsAppUrl, DEFAULT_WHATSAPP_MESSAGE } from "@/config/site";
+
+function InstagramIcon({ className = "w-4 h-4" }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+      <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+    </svg>
+  );
+}
 
 function ContactContent() {
   const searchParams = useSearchParams();
@@ -11,24 +22,23 @@ function ContactContent() {
   const destParam = searchParams.get("destination") || "";
   const stayParam = searchParams.get("stay") || "";
 
-  const defaultDestination = destParam || (pkgParam.includes("Manali") ? "Manali & Himalayan Peaks" : pkgParam.includes("Lakshadweep") ? "Lakshadweep Island Atolls" : pkgParam.includes("Stargazing") ? "Stargazing Dark Sky (Spiti/Ladakh)" : "");
+  const defaultDestination = destParam || "";
   const defaultResortOrPkg = pkgParam || stayParam || "";
 
   return (
     <div className="pt-28 pb-24 bg-[#fcfbf7] min-h-screen">
       {/* Header */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
         <div className="text-center max-w-3xl mx-auto">
-          <span className="text-xs font-semibold tracking-[0.25em] uppercase text-[#c5a86a] block mb-2">
-            Private Travel Concierge
-          </span>
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-serif-luxury text-[#181d1a] tracking-tight">
-            Plan Your Extraordinary Escape
-          </h1>
-          <p className="mt-4 text-base sm:text-lg text-[#525a55] font-light leading-relaxed">
-            Connect directly with Planet Root travel directors to begin designing your bespoke journey.
+          <p className="text-xs font-semibold tracking-[0.25em] uppercase text-[#c5a059] mb-2.5">
+            GET IN TOUCH
           </p>
-          <div className="divider-luxury w-28 mx-auto mt-6" />
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-serif-luxury text-[#181d1a] tracking-tight">
+            Contact <span className="text-[#c5a059]">Planet Root</span>
+          </h1>
+          <p className="mt-3 text-base text-stone-600 font-light leading-relaxed max-w-2xl mx-auto">
+            Connect directly with our travel team on WhatsApp, phone, or via the enquiry form below to plan your ideal holiday.
+          </p>
         </div>
       </section>
 
@@ -41,106 +51,126 @@ function ContactContent() {
               <h2 className="text-2xl font-serif-luxury text-[#181d1a] mb-3">
                 Direct Communication Channels
               </h2>
-              <p className="text-sm text-[#525a55] font-light leading-relaxed">
-                We believe exceptional hospitality begins with attentive human listening. Whether you need assistance choosing between overwater villas or require high-altitude acclimatization planning, our team is directly accessible.
+              <p className="text-sm text-[#525a55] font-light leading-relaxed font-sans-luxury">
+                We believe exceptional hospitality begins with personal listening. Whether you need assistance choosing between private pool villas or require custom holiday package planning, our team is directly accessible.
               </p>
             </div>
 
             {/* Direct Cards */}
             <div className="space-y-4">
-              {/* Telephone */}
-              <div className="p-6 bg-white border border-[#0e3826]/10 rounded-xs shadow-xs">
+              {/* WhatsApp Direct */}
+              <div className="p-6 bg-white border border-[#0e3826]/12 rounded-xs shadow-xs">
                 <div className="flex items-center gap-3 mb-2">
-                  <div className="w-9 h-9 rounded-full bg-[#0e3826] text-[#dfcaa2] flex items-center justify-center">
-                    <Phone className="w-4 h-4" />
+                  <div className="w-10 h-10 rounded-full bg-[#0e3826] text-[#dfcaa2] flex items-center justify-center">
+                    <MessageCircle className="w-5 h-5 text-[#25D366]" />
                   </div>
                   <div>
-                    <p className="text-[10px] uppercase font-semibold tracking-widest text-[#7b8580]">Direct Line</p>
+                    <p className="text-[10px] uppercase font-semibold tracking-widest text-[#7b8580]">WhatsApp Concierge</p>
                     <a
-                      href="tel:9605990306"
+                      href={createWhatsAppUrl(DEFAULT_WHATSAPP_MESSAGE)}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="text-lg font-semibold text-[#0e3826] hover:text-[#c5a86a] transition-colors"
                     >
-                      9605990306
+                      {SITE_CONFIG.whatsappDisplay}
                     </a>
                   </div>
                 </div>
-                <p className="text-xs text-[#525a55] mt-1">Available for calls and direct WhatsApp messaging.</p>
+                <p className="text-xs text-[#525a55] mt-1">Instant chat, live resort quotes, and photo sharing.</p>
+              </div>
+
+              {/* Telephone */}
+              <div className="p-6 bg-white border border-[#0e3826]/12 rounded-xs shadow-xs">
+                <div className="flex items-center gap-3 mb-2">
+                  <div className="w-10 h-10 rounded-full bg-[#0e3826] text-[#dfcaa2] flex items-center justify-center">
+                    <Phone className="w-4 h-4 text-[#dfcaa2]" />
+                  </div>
+                  <div>
+                    <p className="text-[10px] uppercase font-semibold tracking-widest text-[#7b8580]">Direct Phone</p>
+                    <a
+                      href={`tel:${SITE_CONFIG.phone}`}
+                      className="text-lg font-semibold text-[#0e3826] hover:text-[#c5a86a] transition-colors"
+                    >
+                      {SITE_CONFIG.phoneDisplay}
+                    </a>
+                  </div>
+                </div>
+                <p className="text-xs text-[#525a55] mt-1">Available for direct voice calls Monday to Saturday.</p>
               </div>
 
               {/* Email */}
-              <div className="p-6 bg-white border border-[#0e3826]/10 rounded-xs shadow-xs">
+              <div className="p-6 bg-white border border-[#0e3826]/12 rounded-xs shadow-xs">
                 <div className="flex items-center gap-3 mb-2">
-                  <div className="w-9 h-9 rounded-full bg-[#0e3826] text-[#dfcaa2] flex items-center justify-center">
-                    <Mail className="w-4 h-4" />
+                  <div className="w-10 h-10 rounded-full bg-[#0e3826] text-[#dfcaa2] flex items-center justify-center">
+                    <Mail className="w-4 h-4 text-[#dfcaa2]" />
                   </div>
                   <div>
                     <p className="text-[10px] uppercase font-semibold tracking-widest text-[#7b8580]">Electronic Mail</p>
                     <a
-                      href="mailto:planetroot98@gmail.com"
+                      href={`mailto:${SITE_CONFIG.email}`}
                       className="text-lg font-semibold text-[#0e3826] hover:text-[#c5a86a] transition-colors break-all"
                     >
-                      planetroot98@gmail.com
+                      {SITE_CONFIG.email}
                     </a>
                   </div>
                 </div>
-                <p className="text-xs text-[#525a55] mt-1">Written itinerary briefs and corporate queries.</p>
+                <p className="text-xs text-[#525a55] mt-1">Written itinerary briefs and corporate group queries.</p>
+              </div>
+
+              {/* Instagram */}
+              <div className="p-6 bg-white border border-[#0e3826]/12 rounded-xs shadow-xs">
+                <div className="flex items-center gap-3 mb-2">
+                  <div className="w-10 h-10 rounded-full bg-[#0e3826] text-[#dfcaa2] flex items-center justify-center">
+                    <InstagramIcon className="w-4 h-4 text-[#dfcaa2]" />
+                  </div>
+                  <div>
+                    <p className="text-[10px] uppercase font-semibold tracking-widest text-[#7b8580]">Social Media</p>
+                    <a
+                      href={SITE_CONFIG.socials.instagram}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-base font-semibold text-[#0e3826] hover:text-[#c5a86a] transition-colors"
+                    >
+                      @planetroottravels
+                    </a>
+                  </div>
+                </div>
+                <p className="text-xs text-[#525a55] mt-1">Follow our journeys and resort spotlights.</p>
               </div>
 
               {/* Working Hours */}
-              <div className="p-6 bg-white border border-[#0e3826]/10 rounded-xs shadow-xs">
+              <div className="p-6 bg-white border border-[#0e3826]/12 rounded-xs shadow-xs">
                 <div className="flex items-center gap-3 mb-2">
-                  <div className="w-9 h-9 rounded-full bg-[#0e3826] text-[#dfcaa2] flex items-center justify-center">
-                    <Clock className="w-4 h-4" />
+                  <div className="w-10 h-10 rounded-full bg-[#0e3826] text-[#dfcaa2] flex items-center justify-center">
+                    <Clock className="w-4 h-4 text-[#dfcaa2]" />
                   </div>
                   <div>
                     <p className="text-[10px] uppercase font-semibold tracking-widest text-[#7b8580]">Concierge Hours</p>
-                    <p className="text-base font-semibold text-[#181d1a]">Mon – Sat: 9:00 AM – 8:00 PM IST</p>
+                    <p className="text-base font-semibold text-[#181d1a]">{SITE_CONFIG.workingHours}</p>
                   </div>
                 </div>
-                <p className="text-xs text-[#525a55] mt-1">24/7 dedicated crisis & arrival support for active traveling guests.</p>
+                <p className="text-xs text-[#525a55] mt-1">24/7 dedicated support for active traveling guests.</p>
               </div>
-            </div>
-
-            {/* Instant WhatsApp Quick Link */}
-            <div className="p-6 bg-[#092015] text-[#fcfbf7] rounded-xs border border-[#c5a86a]/30">
-              <div className="flex items-center gap-3 mb-2">
-                <MessageCircle className="w-5 h-5 text-[#dfcaa2]" />
-                <h3 className="text-sm font-semibold uppercase tracking-wider text-white">
-                  Instant WhatsApp Consultation
-                </h3>
-              </div>
-              <p className="text-xs text-[#fcfbf7]/80 leading-relaxed mb-4">
-                Prefer immediate messaging? Chat directly with our private travel directors to share dates and questions.
-              </p>
-              <a
-                href={`https://wa.me/919605990306?text=${encodeURIComponent(
-                  "Hello Planet Root! I am interested in your premium resort bookings and holiday packages. Please help me plan my trip."
-                )}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-luxury-gold text-xs w-full justify-center"
-              >
-                <span>Open WhatsApp Chat</span>
-                <ArrowRight className="w-3.5 h-3.5 ml-1" />
-              </a>
             </div>
 
             {/* Integrity assurance */}
-            <div className="p-4 bg-[#f6f1e8] border border-[#0e3826]/10 rounded-xs flex items-start gap-3">
-              <ShieldCheck className="w-5 h-5 text-[#0e3826] shrink-0 mt-0.5" />
-              <p className="text-xs text-[#525a55] leading-relaxed">
-                <strong>Transparent Reservation Guarantee:</strong> All bookings are conducted under an enquiry-based reservation workflow with transparent pricing, official receipts, and documented terms.
-              </p>
+            <div className="pt-4 border-t border-[#0e3826]/10">
+              <div className="flex items-start gap-3 text-xs text-[#525a55] leading-relaxed">
+                <ShieldCheck className="w-5 h-5 text-[#0e3826] shrink-0 mt-0.5" />
+                <span>
+                  <strong>Planet Root Integrity:</strong> All bookings are arranged with transparent communication. We personally confirm property availability and room views before finalizing your journey.
+                </span>
+              </div>
             </div>
           </div>
 
-          {/* Right Column: Interactive Enquiry Form (7 cols) */}
+          {/* Right Column: Full WhatsApp Enquiry Form (7 cols) */}
           <div className="lg:col-span-7">
             <EnquiryForm
               initialDestination={defaultDestination}
               initialResortOrPackage={defaultResortOrPkg}
-              formTitle="Request a Tailored Proposal"
-              formSubtitle="Please provide your approximate dates, guest count, and preferences. A dedicated travel director will curate your escape."
+              formTitle="Plan Your Perfect Getaway"
+              formSubtitle="Tell us about your ideal holiday, and our team will help you explore suitable resorts and travel experiences within your budget."
             />
           </div>
         </div>
@@ -151,7 +181,7 @@ function ContactContent() {
 
 export default function ContactPage() {
   return (
-    <Suspense fallback={<div className="pt-40 text-center text-[#525a55]">Loading Contact Portal...</div>}>
+    <Suspense fallback={<div className="pt-32 text-center">Loading contact concierge...</div>}>
       <ContactContent />
     </Suspense>
   );

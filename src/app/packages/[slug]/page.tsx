@@ -4,22 +4,17 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import {
   ArrowLeft,
-  ArrowRight,
   Clock,
   MapPin,
   Check,
-  X,
-  ShieldCheck,
-  Calendar,
-  Sparkles,
+  AlertCircle,
   Phone,
   Mail,
-  Car,
-  Home,
-  AlertCircle,
+  MessageCircle,
 } from "lucide-react";
 import { TOUR_PACKAGES, TourPackage } from "@/data/packages";
 import EnquiryForm from "@/components/forms/EnquiryForm";
+import { SITE_CONFIG, createWhatsAppUrl } from "@/config/site";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -37,10 +32,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   if (!pkg) return { title: "Package Not Found" };
 
   return {
-    title: `${pkg.title} | ${pkg.duration} Curated Journey`,
+    title: `${pkg.title} | ${pkg.duration} Curated Holiday`,
     description: pkg.overview,
     openGraph: {
-      title: `${pkg.title} | PLANET ROOT`,
+      title: `${pkg.title} | Planet Root Travels`,
       description: pkg.overview,
       images: [{ url: pkg.heroImage }],
     },
@@ -55,6 +50,9 @@ export default async function PackageDetailPage({ params }: PageProps) {
     notFound();
   }
 
+  const quickEnquiryText = `Hello Planet Root Travels! I would like to enquire about the "${pkg.title}" package (${pkg.duration}, ${pkg.destination}).`;
+  const directWhatsAppUrl = createWhatsAppUrl(quickEnquiryText);
+
   return (
     <div className="pt-24 pb-24 bg-[#fcfbf7]">
       {/* Top Back Link */}
@@ -64,7 +62,7 @@ export default async function PackageDetailPage({ params }: PageProps) {
           className="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-[#0e3826] hover:text-[#c5a86a] transition-colors"
         >
           <ArrowLeft className="w-3.5 h-3.5" />
-          <span>Back to All Journeys</span>
+          <span>Back to All Packages</span>
         </Link>
       </div>
 
@@ -87,16 +85,29 @@ export default async function PackageDetailPage({ params }: PageProps) {
             </p>
           </div>
 
-          <div className="lg:text-right">
-            <span className="text-[10px] font-semibold tracking-widest uppercase text-[#7b8580] block">
-              Indicative Journey Price
-            </span>
-            <p className="text-2xl font-serif-luxury font-semibold text-[#0e3826] mt-0.5">
-              {pkg.startingPrice}
-            </p>
-            <p className="text-[11px] text-[#525a55] mt-1 max-w-xs lg:ml-auto">
-              {pkg.priceNote}
-            </p>
+          <div className="lg:text-right flex flex-col items-start lg:items-end gap-2">
+            <div>
+              <span className="text-[10px] font-semibold tracking-widest uppercase text-[#7b8580] block">
+                Starting Rate
+              </span>
+              <p className="text-2xl font-serif-luxury font-semibold text-[#0e3826] mt-0.5">
+                {pkg.startingPrice}
+              </p>
+              {pkg.priceNote && (
+                <p className="text-[11px] text-[#525a55] mt-1 max-w-xs">{pkg.priceNote}</p>
+              )}
+            </div>
+
+            {/* Quick WhatsApp Action */}
+            <a
+              href={directWhatsAppUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-4 py-2 bg-[#0e3826] text-[#dfcaa2] hover:bg-[#164e36] text-xs font-semibold uppercase tracking-wider rounded-xs transition-colors shadow-xs"
+            >
+              <MessageCircle className="w-4 h-4 text-[#dfcaa2]" />
+              <span>Enquire About This Package</span>
+            </a>
           </div>
         </div>
       </section>
@@ -138,7 +149,7 @@ export default async function PackageDetailPage({ params }: PageProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
           {/* Left Column: Itinerary, Stays, Transport, Inclusions (7 cols) */}
-          <div className="lg:col-span-7 space-y-14">
+          <div className="lg:col-span-7 space-y-12">
             {/* 1. Overview */}
             <div>
               <span className="text-xs font-semibold tracking-[0.25em] uppercase text-[#c5a86a] block mb-2">
@@ -152,7 +163,7 @@ export default async function PackageDetailPage({ params }: PageProps) {
               </p>
             </div>
 
-            {/* 2. Advisory Notice (if any, e.g. Lakshadweep) */}
+            {/* 2. Advisory Notice (if any) */}
             {pkg.advisoryNotice && (
               <div className="p-6 bg-[#f6f1e8] border border-[#c5a86a]/40 rounded-xs flex items-start gap-3">
                 <AlertCircle className="w-5 h-5 text-[#0e3826] shrink-0 mt-0.5" />
@@ -173,7 +184,7 @@ export default async function PackageDetailPage({ params }: PageProps) {
                 Detailed Itinerary
               </span>
               <h2 className="text-2xl font-serif-luxury text-[#181d1a] mb-6">
-                Day-by-Day Journey
+                Day-by-Day Experience
               </h2>
 
               <div className="space-y-6">
@@ -199,143 +210,95 @@ export default async function PackageDetailPage({ params }: PageProps) {
                       {day.description}
                     </p>
 
-                    <div className="pt-3 border-t border-[#0e3826]/10">
-                      <span className="text-[10px] uppercase font-semibold tracking-wider text-[#7b8580] block mb-1.5">
-                        Key Experiences:
-                      </span>
-                      <div className="flex flex-wrap gap-2">
-                        {day.highlights.map((h, i) => (
-                          <span
-                            key={i}
-                            className="text-[11px] text-[#0e3826] bg-[#fcfbf7] border border-[#0e3826]/10 px-2 py-0.5 rounded-xs"
-                          >
-                            ✓ {h}
-                          </span>
-                        ))}
-                      </div>
+                    <div className="flex flex-wrap gap-2 pt-3 border-t border-[#0e3826]/10">
+                      {day.highlights.map((item, idx) => (
+                        <span
+                          key={idx}
+                          className="text-[11px] text-[#0e3826] bg-[#f6f1e8] px-2.5 py-1 rounded-xs"
+                        >
+                          ✓ {item}
+                        </span>
+                      ))}
                     </div>
                   </div>
                 ))}
               </div>
             </div>
 
-            {/* 4. Accommodation & Transport Arrangements */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            {/* 4. Inclusions & Exclusions */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="p-6 bg-white border border-[#0e3826]/10 rounded-xs">
-                <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-[#0e3826] mb-3">
-                  <Home className="w-4 h-4 text-[#c5a86a]" />
-                  <span>Curated Accommodation</span>
-                </div>
-                <h4 className="text-base font-serif-luxury text-[#181d1a] mb-1">
-                  {pkg.accommodationDetails.stayType}
-                </h4>
-                <p className="text-xs text-[#525a55] leading-relaxed">
-                  {pkg.accommodationDetails.description}
-                </p>
-              </div>
-
-              <div className="p-6 bg-white border border-[#0e3826]/10 rounded-xs">
-                <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-[#0e3826] mb-3">
-                  <Car className="w-4 h-4 text-[#c5a86a]" />
-                  <span>Transport & Logistics</span>
-                </div>
-                <p className="text-xs text-[#525a55] leading-relaxed">
-                  {pkg.transportArrangements}
-                </p>
-              </div>
-            </div>
-
-            {/* 5. Inclusions and Exclusions */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-              <div className="p-6 bg-white border border-[#0e3826]/10 rounded-xs">
-                <h3 className="text-sm font-semibold uppercase tracking-wider text-[#0e3826] mb-4 flex items-center gap-2">
-                  <Check className="w-4 h-4 text-emerald-600" />
-                  <span>What is Included</span>
+                <h3 className="text-base font-serif-luxury text-[#0e3826] font-semibold mb-4 flex items-center gap-2">
+                  <Check className="w-4 h-4 text-[#0e3826]" />
+                  <span>Curated Inclusions</span>
                 </h3>
                 <ul className="space-y-2 text-xs text-[#525a55]">
-                  {pkg.inclusions.map((item, i) => (
+                  {pkg.inclusions.map((inc, i) => (
                     <li key={i} className="flex items-start gap-2">
-                      <span className="text-emerald-600 font-bold">✓</span>
-                      <span>{item}</span>
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#0e3826] mt-1 shrink-0" />
+                      <span>{inc}</span>
                     </li>
                   ))}
                 </ul>
               </div>
 
               <div className="p-6 bg-white border border-[#0e3826]/10 rounded-xs">
-                <h3 className="text-sm font-semibold uppercase tracking-wider text-[#7b8580] mb-4 flex items-center gap-2">
-                  <X className="w-4 h-4 text-rose-500" />
-                  <span>What is Excluded</span>
+                <h3 className="text-base font-serif-luxury text-[#7b8580] font-semibold mb-4">
+                  Exclusions
                 </h3>
-                <ul className="space-y-2 text-xs text-[#525a55]">
-                  {pkg.exclusions.map((item, i) => (
+                <ul className="space-y-2 text-xs text-[#7b8580]">
+                  {pkg.exclusions.map((exc, i) => (
                     <li key={i} className="flex items-start gap-2">
-                      <span className="text-rose-500 font-bold">✕</span>
-                      <span>{item}</span>
+                      <span className="w-1.5 h-1.5 rounded-full bg-stone-300 mt-1 shrink-0" />
+                      <span>{exc}</span>
                     </li>
                   ))}
                 </ul>
-              </div>
-            </div>
-
-            {/* 6. Customization & Cancellation Terms */}
-            <div className="p-6 bg-white border border-[#0e3826]/15 rounded-xs space-y-4">
-              <h3 className="text-lg font-serif-luxury text-[#181d1a] border-b border-[#0e3826]/10 pb-3">
-                Customization & Cancellation Flexibility
-              </h3>
-              <div>
-                <span className="font-semibold text-xs uppercase tracking-wider text-[#0e3826] block mb-1.5">
-                  Available Trip Customizations:
-                </span>
-                <div className="flex flex-wrap gap-2">
-                  {pkg.customizationOptions.map((opt, i) => (
-                    <span
-                      key={i}
-                      className="text-xs bg-[#f6f1e8] text-[#181d1a] px-3 py-1 rounded-xs border border-[#0e3826]/10"
-                    >
-                      + {opt}
-                    </span>
-                  ))}
-                </div>
-              </div>
-              <div className="pt-3 border-t border-[#0e3826]/10 text-xs text-[#525a55]">
-                <strong>Cancellation Policy:</strong> {pkg.cancellationTerms}
               </div>
             </div>
           </div>
 
-          {/* Right Column: Sticky Enquiry Form & Buttons (5 cols) */}
+          {/* Right Column: Sticky WhatsApp Enquiry Form (5 cols) */}
           <div className="lg:col-span-5">
             <div className="sticky top-28 space-y-6">
               <EnquiryForm
                 initialDestination={pkg.destination}
                 initialResortOrPackage={pkg.title}
-                formTitle={`Book or Customize ${pkg.title}`}
-                formSubtitle="Our private travel director will confirm schedule feasibility and provide an all-inclusive quotation."
+                formTitle={`Enquire for ${pkg.title}`}
+                formSubtitle="Our senior travel director will verify seasonal rates, vehicle logistics, and present your bespoke itinerary on WhatsApp."
               />
 
-              {/* Direct Concierge Assist */}
+              {/* Direct Concierge Contact Card */}
               <div className="bg-[#f6f1e8] border border-[#c5a86a]/30 p-6 rounded-xs">
-                <p className="text-xs uppercase tracking-widest font-semibold text-[#c5a86a] mb-2">
-                  Prefer a Direct Conversation?
+                <p className="text-xs uppercase tracking-widest font-semibold text-[#c5a86a] mb-1.5">
+                  Have Custom Dates or Questions?
                 </p>
                 <p className="text-xs text-[#525a55] leading-relaxed mb-4">
-                  Call or WhatsApp our private travel directors directly to discuss flight timings, dietary requests, or bespoke additions.
+                  We modify any itinerary to match your family size, honeymoon preferences, or flight schedules.
                 </p>
                 <div className="space-y-2 text-xs">
                   <a
-                    href="tel:9605990306"
+                    href={directWhatsAppUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-[#0e3826] font-semibold hover:text-[#c5a86a]"
+                  >
+                    <MessageCircle className="w-3.5 h-3.5 text-[#25D366]" />
+                    <span>WhatsApp: {SITE_CONFIG.whatsappDisplay}</span>
+                  </a>
+                  <a
+                    href={`tel:${SITE_CONFIG.phone}`}
                     className="flex items-center gap-2 text-[#0e3826] font-medium hover:text-[#c5a86a]"
                   >
                     <Phone className="w-3.5 h-3.5" />
-                    <span>+91 9605990306</span>
+                    <span>Call: {SITE_CONFIG.phoneDisplay}</span>
                   </a>
                   <a
-                    href="mailto:planetroot98@gmail.com"
+                    href={`mailto:${SITE_CONFIG.email}`}
                     className="flex items-center gap-2 text-[#0e3826] font-medium hover:text-[#c5a86a] break-all"
                   >
                     <Mail className="w-3.5 h-3.5" />
-                    <span>planetroot98@gmail.com</span>
+                    <span>{SITE_CONFIG.email}</span>
                   </a>
                 </div>
               </div>

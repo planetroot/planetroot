@@ -2,195 +2,209 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { Phone, Mail, MapPin, Clock, ArrowRight } from "lucide-react";
+import { MessageCircle, Phone, Mail, MapPin } from "lucide-react";
+import { SITE_CONFIG, createWhatsAppUrl, DEFAULT_WHATSAPP_MESSAGE } from "@/config/site";
+
+function InstagramIcon({ className = "w-4 h-4" }: { className?: string }) {
+  return (
+    <svg
+      className={className}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+      <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+    </svg>
+  );
+}
 
 export default function Footer() {
   const currentYear = 2026;
 
   return (
-    <footer className="bg-[#092015] text-[#fcfbf7] border-t border-[#c5a86a]/20 pt-16 pb-12 relative overflow-hidden">
-      {/* Subtle background ambient highlight */}
-      <div className="absolute top-0 right-1/4 w-96 h-96 bg-[#0e3826]/40 rounded-full blur-3xl pointer-events-none" />
+    <footer className="bg-[#051811] text-[#fcfbf7] border-t border-[#c5a86a]/20 pt-18 sm:pt-20 pb-12 relative overflow-hidden">
+      {/* Subtle Ambient Glow */}
+      <div className="absolute top-0 right-1/3 w-[500px] h-[300px] bg-[radial-gradient(ellipse_at_top,rgba(22,78,54,0.22),transparent_70%)] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 pb-14 border-b border-[#fcfbf7]/10">
-          {/* Brand Column (Span 2) */}
-          <div className="lg:col-span-2 space-y-6">
-            <Link href="/" className="inline-block bg-[#fcfbf7] p-2.5 rounded-md shadow-xs">
+        {/* Main Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-12 pb-14 border-b border-white/[0.08]">
+          {/* 1. Brand Column (Span 5) */}
+          <div className="lg:col-span-5 space-y-4">
+            <a
+              href="#home"
+              className="inline-block transition-opacity hover:opacity-90 cursor-pointer"
+            >
               <Image
-                src="/images/planet-root-logo.png"
+                src="/images/planet-root-logo-gold-trimmed.png"
                 alt="PLANET ROOT — Beyond Borders"
-                width={200}
-                height={65}
-                className="h-11 w-auto object-contain"
+                width={260}
+                height={60}
+                className="h-10 sm:h-11 w-auto object-contain drop-shadow-sm"
               />
-            </Link>
+            </a>
 
-            <p className="text-xs uppercase tracking-[0.25em] text-[#c5a86a] font-medium">
-              Beyond Borders.
+            <p className="text-[10px] sm:text-[11px] uppercase tracking-[0.28em] text-[#dfcaa2] font-medium">
+              BEYOND BORDERS • KERALA LUXURY TRAVEL
             </p>
 
-            <p className="text-sm text-[#fcfbf7]/75 font-light leading-relaxed max-w-md">
-              Planet Root brings together exceptional stays, inspiring destinations, and thoughtfully planned holiday experiences across God’s Own Country. From restored Nalukettu backwater manors and private houseboats to misty tea bungalows in Munnar and wild canopy treehouses in Wayanad.
+            <p className="text-xs sm:text-sm text-stone-300/80 font-light leading-relaxed max-w-sm">
+              Handpicked luxury resorts, private pool villas, and curated domestic &amp; international holiday escapes. Experience God&apos;s Own Country with personalized WhatsApp concierge assistance.
             </p>
 
+            {/* Direct WhatsApp Concierge Action */}
             <div className="pt-2">
-              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-sm bg-[#164e36]/60 border border-[#c5a86a]/30 text-xs text-[#dfcaa2]">
-                <Clock className="w-3.5 h-3.5 text-[#c5a86a]" />
-                <span>Concierge Desk: 9:00 AM – 8:00 PM IST</span>
-              </div>
+              <a
+                href={createWhatsAppUrl(DEFAULT_WHATSAPP_MESSAGE)}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#dfcaa2] hover:bg-[#c5a059] text-[#072016] text-xs font-semibold uppercase tracking-wider transition-all shadow-md hover:scale-105 duration-200"
+              >
+                <MessageCircle className="w-3.5 h-3.5 text-[#072016]" />
+                <span>WhatsApp Concierge</span>
+              </a>
             </div>
           </div>
 
-          {/* Quick Links Column */}
-          <div className="space-y-4">
-            <h4 className="text-xs font-semibold tracking-[0.2em] uppercase text-[#c5a86a]">
-              Kerala Collection
+          {/* 2. Quick Navigation (Span 2, offset) */}
+          <div className="lg:col-span-2 lg:col-start-7 space-y-3.5">
+            <h4 className="text-[10px] sm:text-[11px] font-semibold tracking-[0.24em] uppercase text-[#dfcaa2]">
+              EXPLORE
             </h4>
-            <ul className="space-y-2.5 text-sm text-[#fcfbf7]/80">
+            <ul className="space-y-2.5 text-xs sm:text-[13px] text-stone-300/80 font-light">
               <li>
-                <Link href="/destinations" className="hover:text-[#c5a86a] transition-colors">
-                  All Destinations
-                </Link>
+                <a href="#featured-resorts-section" className="hover:text-[#dfcaa2] transition-colors">
+                  Featured Resorts
+                </a>
               </li>
               <li>
-                <Link href="/destinations/kumarakom-alleppey" className="hover:text-[#c5a86a] transition-colors">
-                  Kumarakom Backwaters
-                </Link>
+                <a href="#featured-resorts-section" className="hover:text-[#dfcaa2] transition-colors">
+                  Private Pool Villas
+                </a>
               </li>
               <li>
-                <Link href="/destinations/munnar" className="hover:text-[#c5a86a] transition-colors">
-                  Munnar Tea Highlands
-                </Link>
+                <a href="#packages-section" className="hover:text-[#dfcaa2] transition-colors">
+                  Holiday Packages
+                </a>
               </li>
               <li>
-                <Link href="/destinations/wayanad" className="hover:text-[#c5a86a] transition-colors">
-                  Wayanad Rainforests
-                </Link>
+                <a href="#resort-gallery-section" className="hover:text-[#dfcaa2] transition-colors">
+                  Visual Gallery
+                </a>
               </li>
               <li>
-                <Link href="/destinations/marari-varkala" className="hover:text-[#c5a86a] transition-colors">
-                  Marari & Varkala Coast
-                </Link>
-              </li>
-              <li>
-                <Link href="/destinations/thekkady-spices" className="hover:text-[#c5a86a] transition-colors">
-                  Thekkady Spice Hills
-                </Link>
+                <a href="#about-section" className="hover:text-[#dfcaa2] transition-colors">
+                  About Planet Root
+                </a>
               </li>
             </ul>
           </div>
 
-          {/* Journeys Column */}
-          <div className="space-y-4">
-            <h4 className="text-xs font-semibold tracking-[0.2em] uppercase text-[#c5a86a]">
-              Kerala Journeys
+          {/* 3. Destinations (Span 2) */}
+          <div className="lg:col-span-2 space-y-3.5">
+            <h4 className="text-[10px] sm:text-[11px] font-semibold tracking-[0.24em] uppercase text-[#dfcaa2]">
+              DESTINATIONS
             </h4>
-            <ul className="space-y-2.5 text-sm text-[#fcfbf7]/80">
+            <ul className="space-y-2.5 text-xs sm:text-[13px] text-stone-300/80 font-light">
               <li>
-                <Link href="/packages/the-grand-kerala-odyssey" className="hover:text-[#c5a86a] transition-colors">
-                  The Grand Kerala Odyssey (8D/7N)
-                </Link>
+                <a href="#destinations-section" className="hover:text-[#dfcaa2] transition-colors">
+                  Wayanad
+                </a>
               </li>
               <li>
-                <Link href="/packages/munnar-misty-highland-retreat" className="hover:text-[#c5a86a] transition-colors">
-                  Munnar Misty Highland Retreat
-                </Link>
+                <a href="#destinations-section" className="hover:text-[#dfcaa2] transition-colors">
+                  Munnar
+                </a>
               </li>
               <li>
-                <Link href="/packages/backwaters-luxury-houseboat-voyage" className="hover:text-[#c5a86a] transition-colors">
-                  Backwaters Houseboat Voyage
-                </Link>
+                <a href="#destinations-section" className="hover:text-[#dfcaa2] transition-colors">
+                  Alleppey
+                </a>
               </li>
               <li>
-                <Link href="/packages/wayanad-deep-rainforest-escape" className="hover:text-[#c5a86a] transition-colors">
-                  Wayanad Deep Rainforest Escape
-                </Link>
+                <a href="#destinations-section" className="hover:text-[#dfcaa2] transition-colors">
+                  Thekkady &amp; Vagamon
+                </a>
               </li>
               <li>
-                <Link href="/packages/romantic-kerala-honeymoon-haven" className="hover:text-[#c5a86a] transition-colors">
-                  Romantic Kerala Honeymoon
-                </Link>
-              </li>
-              <li>
-                <Link href="/packages/ayurvedic-rejuvenation-monsoon-wellness" className="hover:text-[#c5a86a] transition-colors">
-                  Ayurvedic Rejuvenation Sanctuary
-                </Link>
+                <a href="#packages-section" className="hover:text-[#dfcaa2] transition-colors">
+                  Domestic &amp; Beyond
+                </a>
               </li>
             </ul>
           </div>
 
-          {/* Contact Column */}
-          <div className="space-y-4">
-            <h4 className="text-xs font-semibold tracking-[0.2em] uppercase text-[#c5a86a]">
-              Direct Kerala Concierge
+          {/* 4. Concierge Directory (Span 2) */}
+          <div className="lg:col-span-2 space-y-3.5">
+            <h4 className="text-[10px] sm:text-[11px] font-semibold tracking-[0.24em] uppercase text-[#dfcaa2]">
+              CONCIERGE
             </h4>
-            <div className="space-y-3 text-sm text-[#fcfbf7]/85">
-              <a
-                href="tel:9605990306"
-                className="flex items-center gap-3 group hover:text-[#c5a86a] transition-colors"
-              >
-                <div className="w-8 h-8 rounded-full bg-[#164e36] flex items-center justify-center text-[#c5a86a] group-hover:bg-[#c5a86a] group-hover:text-[#092015] transition-colors">
-                  <Phone className="w-4 h-4" />
-                </div>
-                <div>
-                  <p className="text-[11px] text-[#fcfbf7]/60 uppercase tracking-wider">Phone / WhatsApp</p>
-                  <p className="font-medium text-white">9605990306</p>
-                </div>
-              </a>
-
-              <a
-                href="mailto:planetroot98@gmail.com"
-                className="flex items-center gap-3 group hover:text-[#c5a86a] transition-colors"
-              >
-                <div className="w-8 h-8 rounded-full bg-[#164e36] flex items-center justify-center text-[#c5a86a] group-hover:bg-[#c5a86a] group-hover:text-[#092015] transition-colors">
-                  <Mail className="w-4 h-4" />
-                </div>
-                <div>
-                  <p className="text-[11px] text-[#fcfbf7]/60 uppercase tracking-wider">Email Concierge</p>
-                  <p className="font-medium text-white break-all">planetroot98@gmail.com</p>
-                </div>
-              </a>
-
-              <div className="flex items-start gap-3 pt-1">
-                <div className="w-8 h-8 rounded-full bg-[#164e36] flex items-center justify-center text-[#c5a86a] shrink-0">
-                  <MapPin className="w-4 h-4" />
-                </div>
-                <div>
-                  <p className="text-[11px] text-[#fcfbf7]/60 uppercase tracking-wider">Kerala Base</p>
-                  <p className="text-xs text-[#fcfbf7]/80">Kochi & Kumarakom • Curating God’s Own Country and Beyond</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="pt-2">
-              <Link
-                href="/contact"
-                className="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-[#dfcaa2] hover:text-white transition-colors underline underline-offset-4"
-              >
-                <span>Request Custom Kerala Plan</span>
-                <ArrowRight className="w-3.5 h-3.5" />
-              </Link>
+            <div className="space-y-2.5 text-xs sm:text-[13px] text-stone-300/80 font-light">
+              <p>
+                <a
+                  href={createWhatsAppUrl(DEFAULT_WHATSAPP_MESSAGE)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-[#dfcaa2] transition-colors block text-white font-medium"
+                >
+                  {SITE_CONFIG.whatsappDisplay}
+                </a>
+              </p>
+              <p>
+                <a
+                  href={`mailto:${SITE_CONFIG.email}`}
+                  className="hover:text-[#dfcaa2] transition-colors block break-all"
+                >
+                  {SITE_CONFIG.email}
+                </a>
+              </p>
+              <p>
+                <a
+                  href={SITE_CONFIG.socials.instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-[#dfcaa2] transition-colors inline-flex items-center gap-1.5"
+                >
+                  <InstagramIcon className="w-3.5 h-3.5 text-[#dfcaa2]" />
+                  <span>@planetroottravels</span>
+                </a>
+              </p>
+              <p className="text-stone-400 text-xs">
+                {SITE_CONFIG.location}
+              </p>
             </div>
           </div>
         </div>
 
-        {/* Bottom Legal & Rights Strip */}
-        <div className="pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-[#fcfbf7]/60 gap-4">
-          <p>
-            © {currentYear} PLANET ROOT Travel & Tourism. All rights reserved. Beyond Borders.
+        {/* Bottom Legal Strip */}
+        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-stone-400/80 gap-4">
+          <p className="font-light">
+            © {currentYear} {SITE_CONFIG.legalName}. All rights reserved. Beyond Borders.
           </p>
-          <div className="flex items-center gap-6">
-            <Link href="/privacy" className="hover:text-white transition-colors">
+
+          <div className="flex items-center gap-5 sm:gap-6 flex-wrap justify-center font-light">
+            <Link href="/privacy" className="hover:text-[#dfcaa2] transition-colors">
               Privacy Policy
             </Link>
-            <span className="text-[#fcfbf7]/20">•</span>
-            <Link href="/terms" className="hover:text-white transition-colors">
-              Terms & Cancellation Policy
+            <span className="text-white/20">•</span>
+            <Link href="/terms" className="hover:text-[#dfcaa2] transition-colors">
+              Terms &amp; Cancellation
             </Link>
-            <span className="text-[#fcfbf7]/20">•</span>
-            <Link href="/contact" className="hover:text-white transition-colors">
-              Kerala Concierge
+            <span className="text-white/20">•</span>
+            <Link href="/contact" className="hover:text-[#dfcaa2] transition-colors">
+              Contact
+            </Link>
+            <span className="text-white/20">•</span>
+            <Link
+              href="/admin"
+              className="text-[#dfcaa2]/80 hover:text-[#dfcaa2] transition-colors font-medium"
+            >
+              Admin Portal
             </Link>
           </div>
         </div>

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
-import { ArrowRight, Sparkles, Heart, Compass } from "lucide-react";
+import { ArrowRight, Heart, Compass } from "lucide-react";
 import { EXPERIENCES } from "@/data/experiences";
 
 export const metadata: Metadata = {

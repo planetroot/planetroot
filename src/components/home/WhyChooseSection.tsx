@@ -1,68 +1,82 @@
+"use client";
+
+import {
+  Bed,
+  ShieldCheck,
+  Tag,
+  Users,
+  Leaf,
+  Headphones,
+} from "lucide-react";
+
 export default function WhyChooseSection() {
-  const pillars = [
+  const benefits = [
     {
-      num: "01",
-      title: "Thoughtfully Curated Stays",
-      description:
-        "Discover accommodation suited to your preferences and travel plans. Every property in our collection is personally evaluated for architectural character, seclusion, and genuine hospitality.",
+      icon: Bed,
+      title: "Premium",
+      subtitle: "Resort Bookings",
     },
     {
-      num: "02",
-      title: "Personalized Journeys",
-      description:
-        "Customize your holiday around your interests, dates, and budget. Our private travel directors shape every itinerary without rigid group templates or hurried schedules.",
+      icon: ShieldCheck,
+      title: "Verified",
+      subtitle: "Properties",
     },
     {
-      num: "03",
-      title: "Exceptional Experiences",
-      description:
-        "Explore distinctive stays, inspiring destinations, and memorable activities — from high-altitude dark sky observatories to private lagoon sandbanks.",
+      icon: Tag,
+      title: "Best Price",
+      subtitle: "Guarantee",
     },
     {
-      num: "04",
-      title: "Clear Booking Assistance",
-      description:
-        "Receive transparent information, personalized recommendations, and end-to-end assistance with permits, private aviation, and luxury ground transport.",
+      icon: Users,
+      title: "Family Friendly",
+      subtitle: "Stays",
+    },
+    {
+      icon: Leaf,
+      title: "Nature & Luxury",
+      subtitle: "Experiences",
+    },
+    {
+      icon: Headphones,
+      title: "24/7",
+      subtitle: "Support",
     },
   ];
 
   return (
-    <section className="py-24 sm:py-32 bg-[#fcfbf7] border-y border-[#0e3826]/10">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="why-choose-section" className="py-12 sm:py-16 bg-[#072016] text-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Section Header */}
-        <div className="max-w-3xl mx-auto text-center mb-20">
-          <span className="text-xs font-semibold tracking-[0.25em] uppercase text-[#c5a86a] block mb-3">
-            The Planet Root Philosophy
-          </span>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif-luxury text-[#181d1a] tracking-tight">
-            Why Discerning Travelers Choose Planet Root.
+        <div className="mb-10 text-center">
+          <p className="text-[10px] sm:text-[11px] font-semibold tracking-[0.25em] uppercase text-[#dfcaa2] mb-1.5">
+            THE PLANET ROOT DISTINCTION
+          </p>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif-luxury font-normal tracking-tight text-white">
+            Why Choose <span className="text-[#c5a059]">Planet Root</span>
           </h2>
-          <div className="divider-luxury w-32 mx-auto mt-6" />
         </div>
 
-        {/* Minimalist 4-Pillar Layout with Thin Dividers & Typography (No generic cards) */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
-          {pillars.map((pillar, idx) => (
-            <div
-              key={idx}
-              className="flex flex-col justify-start relative pt-6 border-t border-[#0e3826]/15 lg:border-t-0 lg:border-l lg:first:border-l-0 lg:pl-8 lg:first:pl-0"
-            >
-              {/* Refined numeral indicator */}
-              <span className="font-serif-luxury text-3xl font-light text-[#c5a86a] mb-4">
-                {pillar.num}
-              </span>
-
-              {/* Title */}
-              <h3 className="text-xl font-serif-luxury text-[#181d1a] mb-3 leading-snug">
-                {pillar.title}
-              </h3>
-
-              {/* Description */}
-              <p className="text-sm text-[#525a55] font-light leading-relaxed font-sans-luxury">
-                {pillar.description}
-              </p>
-            </div>
-          ))}
+        {/* 6 Icons & Labels Row */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6 lg:gap-4 items-center justify-center">
+          {benefits.map((item, idx) => {
+            const Icon = item.icon;
+            return (
+              <div
+                key={idx}
+                className="flex flex-col items-center justify-center text-center group"
+              >
+                <div className="w-12 h-12 flex items-center justify-center text-[#dfcaa2] group-hover:scale-110 group-hover:text-white transition-transform mb-2.5">
+                  <Icon className="w-8 h-8 stroke-1 text-[#dfcaa2]" />
+                </div>
+                <h3 className="text-xs sm:text-sm font-serif-luxury font-medium text-white/95 leading-tight">
+                  {item.title}
+                </h3>
+                <p className="text-[11px] sm:text-xs text-[#dfcaa2]/80 font-light mt-0.5">
+                  {item.subtitle}
+                </p>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>

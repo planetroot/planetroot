@@ -1,0 +1,312 @@
+[
+  {
+    "id": "resort-zeno-village",
+    "slug": "zeno-village-resort-wayanad",
+    "name": "Zeno Village Resort",
+    "tagline": "Serene glass-walled private pool villas hidden in the cloud forests of 900 Kandi.",
+    "destination": "900 Kandi, Wayanad",
+    "destinationSlug": "wayanad",
+    "locationSummary": "900 Kandi, Wayanad, India.",
+    "category": "Private Pool Villa",
+    "description": "An architectural marvel nestled inside mist-veiled rainforests, featuring luxury private heated plunge pools, glass bay suites, and uninterrupted valley views.",
+    "longDescription": "Perched along the emerald slopes of 900 Kandi, Zeno Village Resort redefines mountain luxury in Wayanad. The resort features private pool villas designed with natural stone and floor-to-ceiling glass that frame dramatic mountain sunsets. Wake up to swirling mist, swim in your private temperature-balanced pool, and enjoy farm-to-table Kerala dining on private wooden decks overlooking tropical valleys.",
+    "heroImage": "/images/zeno-village/zeno-infinity-pool-valley.jpg",
+    "brochurePdf": "/brochures/zeno-village-resort-brochure.pdf",
+    "galleryImages": [
+      "/images/zeno-village/zeno-infinity-pool-valley.jpg",
+      "/images/zeno-village/zeno-pool-forest-panoramic.jpg",
+      "/images/zeno-village/zeno-aframe-glass-cabin.jpg",
+      "/images/zeno-village/zeno-canopy-treehouse.jpg",
+      "/images/zeno-village/zeno-glamping-pod-deck.jpg",
+      "/images/zeno-village/zeno-round-wooden-cottage.jpg",
+      "/images/zeno-village/zeno-elevated-chalet.jpg",
+      "/images/zeno-village/zeno-stone-lodge.jpg"
+    ],
+    "pricePerNight": "₹ 15,000 / Night",
+    "priceNote": "Includes estate breakfast, nature trails, and sunset high tea.",
+    "verifiedAmenities": [
+      "Mountain Valley Infinity Pool",
+      "A-Frame Glass Forest Cabins",
+      "Thatched Canopy Treehouses",
+      "Timber Glamping Pods",
+      "900 Kandi Plantation Trails",
+      "Scenic Mountain View Decks"
+    ],
+    "curatedHighlights": [
+      "Infinity pool on timber deck overlooking mist-shrouded 900 Kandi mountain ridges",
+      "Architectural glass A-frame cabins nestled over rainforest streams with private bridge walkway",
+      "Thatched-roof treehouses secluded 40 feet in virgin rainforest canopy",
+      "Curved wooden glamping pods with private balconies amidst coffee groves"
+    ],
+    "villas": [
+      {
+        "id": "v-zeno-1",
+        "name": "Valley Infinity Pool Suite",
+        "size": "950 sq.ft.",
+        "view": "Misty Mountain Valley & Cloud Forest",
+        "occupancy": "2-3 Guests",
+        "bedType": "Plush King Bed with Valley Vista",
+        "features": [
+          "Mountain Infinity Pool Access",
+          "Panoramic Timber Deck",
+          "Rainforest Vista",
+          "Cardamom Trail Access"
+        ],
+        "priceIndication": "₹ 15,000 / Night",
+        "image": "/images/zeno-village/zeno-infinity-pool-valley.jpg"
+      },
+      {
+        "id": "v-zeno-2",
+        "name": "Glass A-Frame Forest Cabin",
+        "size": "800 sq.ft.",
+        "view": "Virgin Jungle Canopy & Canopy Bridge",
+        "occupancy": "2 Adults",
+        "bedType": "Custom Teak King Bed",
+        "features": [
+          "Private Suspended Bridge Access",
+          "Floor-to-Ceiling Glass Front",
+          "Forest Deck",
+          "Deep Soak Tub"
+        ],
+        "priceIndication": "₹ 16,500 / Night",
+        "image": "/images/zeno-village/zeno-aframe-glass-cabin.jpg"
+      },
+      {
+        "id": "v-zeno-3",
+        "name": "Thatched Canopy Treehouse",
+        "size": "750 sq.ft.",
+        "view": "Dense Rainforest Canopy & Mountain Mist",
+        "occupancy": "2 Adults",
+        "bedType": "Rustic Teak Bed",
+        "features": [
+          "Elevated Treehouse Deck",
+          "Thatched Eco Architecture",
+          "Valley Birdwatching",
+          "Campfire Access"
+        ],
+        "priceIndication": "₹ 14,000 / Night",
+        "image": "/images/zeno-village/zeno-canopy-treehouse.jpg"
+      },
+      {
+        "id": "v-zeno-4",
+        "name": "Wooden Glamping Dome Pod",
+        "size": "650 sq.ft.",
+        "view": "Coffee Plantation & Forest Ridge",
+        "occupancy": "2 Adults",
+        "bedType": "Queen Size Bed",
+        "features": [
+          "Arched Timber Architecture",
+          "Private View Balcony",
+          "Coffee Grove Surroundings",
+          "Sunset Vistas"
+        ],
+        "priceIndication": "₹ 12,500 / Night",
+        "image": "/images/zeno-village/zeno-glamping-pod-deck.jpg"
+      }
+    ],
+    "policies": {
+      "checkIn": "2:00 PM",
+      "checkOut": "11:00 AM",
+      "cancellation": "Complimentary alteration up to 7 days before arrival.",
+      "childPolicy": "Children welcome. Safe enclosed pool villas.",
+      "additionalNote": "Private 4WD escort arranged from Meppadi base."
+    },
+    "featured": true
+  },
+  {
+    "id": "resort-mountain-shadow",
+    "slug": "mountain-shadow-resort-wayanad",
+    "name": "Mountain Shadow",
+    "tagline": "Eco-luxury sanctuary perched on an exclusive peninsula surrounded by lake waters.",
+    "destination": "Meppadi, Wayanad",
+    "destinationSlug": "wayanad",
+    "locationSummary": "Set on a private waterfront peninsula in Meppadi overlooking Karapuzha reservoir and Chembra Peak.",
+    "category": "Private Pool Villa",
+    "description": "An extraordinary eco-resort built with recycled wood and thatch, commanding infinity pool views across tranquil reservoir waters and high Western Ghats ridges.",
+    "longDescription": "Set upon a secluded peninsula surrounded by calm waters and framed by Chembra Peak, Mountain Shadow offers unmatched tranquility. Each villa is an ode to understated luxury, featuring private wooden balconies, deep soaking bathtubs, private plunge pools, and uninterrupted horizons of blue waters and lush greenery.",
+    "heroImage": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1920&q=85",
+    "galleryImages": [
+      "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1502784444187-359ac186c5bb?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "pricePerNight": "₹ 18,000 / Night",
+    "priceNote": "Includes gourmet waterfront breakfast, kayak access, and guided tea walks.",
+    "verifiedAmenities": [
+      "Private Lakefront Plunge Pool",
+      "Waterfront Infinity Pool",
+      "Ayurvedic Dhanwanthari Spa",
+      "Lake Kayaking & Bamboo Rafting",
+      "Fine Dining Restaurant with 360° Views",
+      "Eco-Conscious Architecture"
+    ],
+    "curatedHighlights": [
+      "Wake up to 360° water and mountain panoramas from your bed",
+      "Private infinity pool floating above the reservoir shoreline",
+      "Sunset kayaking along quiet uninhabited island banks",
+      "Traditional Kerala Sadya prepared by master chefs"
+    ],
+    "villas": [
+      {
+        "id": "v-ms-1",
+        "name": "Peninsula Jacuzzi & Pool Villa",
+        "size": "1,100 sq.ft.",
+        "view": "Uninterrupted Lake & Chembra Peak",
+        "occupancy": "2 Adults",
+        "bedType": "Custom Teak King Bed",
+        "features": [
+          "Private Plunge Pool",
+          "Outdoor Jacuzzi",
+          "Lakefront Timber Veranda",
+          "Rain Shower"
+        ],
+        "priceIndication": "₹ 18,000 / Night",
+        "image": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1000&q=80"
+      }
+    ],
+    "policies": {
+      "checkIn": "2:00 PM",
+      "checkOut": "11:00 AM",
+      "cancellation": "Full flexibility with 7 days advance notice.",
+      "childPolicy": "Children welcome. Kayak life jackets provided for all ages.",
+      "additionalNote": "2.5-hour scenic drive from Calicut Airport (CCJ)."
+    },
+    "featured": true
+  },
+  {
+    "id": "resort-pepper-trail",
+    "slug": "pepper-trail-resort-wayanad",
+    "name": "Pepper Trail",
+    "tagline": "200-year-old colonial plantation manor and luxury treehouses in a 200-acre coffee estate.",
+    "destination": "Sultan Bathery, Wayanad",
+    "destinationSlug": "wayanad",
+    "locationSummary": "Historic 200-acre coffee, pepper and clove estate in Sultan Bathery, near Edakkal Caves.",
+    "category": "Heritage Backwater Villa",
+    "description": "A heritage sanctuary rooted in the planter era of the 1800s, featuring restored colonial suites, elevated canopy treehouses, and private swimming pool villas inside aromatic spice groves.",
+    "longDescription": "Step into an era of graceful hospitality at Pepper Trail. Nestled amidst 200 acres of working coffee, clove, and pepper plantations, the estate preserves ancestral heritage with antique four-poster beds, hand-carved teak verandas, and open courtyards. Reside in private pool villas secluded amidst flowering shrubs or treehouses 40 feet in ancient trees.",
+    "heroImage": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1920&q=85",
+    "galleryImages": [
+      "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "pricePerNight": "₹ 25,000 / Night",
+    "priceNote": "Includes planter's breakfast, plantation tour, coracle rides on private lake, and high tea.",
+    "verifiedAmenities": [
+      "Private Plantation Pool Villa",
+      "Luxury Canopy Treehouses",
+      "Ayurvedic Rejuvenation Center",
+      "Private Estate Lake with Coracles",
+      "Historic Planter Dining Pavilion",
+      "Organic Farm-to-Fork Cuisine"
+    ],
+    "curatedHighlights": [
+      "Private pool villa encircled by flowering coffee and pepper vines",
+      "Early morning coracle ride on the private estate lake with resident naturalists",
+      "Traditional Syrian Christian and Malabar culinary masterclasses",
+      "Authentic 19th-century colonial furniture and heritage craftsmanship"
+    ],
+    "villas": [
+      {
+        "id": "v-pt-1",
+        "name": "Plantation Heritage Pool Villa",
+        "size": "1,200 sq.ft.",
+        "view": "Spice Plantation & Private Lotus Garden",
+        "occupancy": "2-3 Guests",
+        "bedType": "Four-Poster Antique Rosewood King Bed",
+        "features": [
+          "Private Heated Plunge Pool",
+          "Charupady Wooden Veranda",
+          "Open-Sky Courtyard Shower",
+          "Estate Tea Bar"
+        ],
+        "priceIndication": "₹ 25,000 / Night",
+        "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1000&q=80"
+      }
+    ],
+    "policies": {
+      "checkIn": "1:00 PM",
+      "checkOut": "11:00 AM",
+      "cancellation": "Full refund 7 days prior to arrival.",
+      "childPolicy": "Children welcome. Treehouses suitable for ages 10+.",
+      "additionalNote": "Accessible from Calicut (2.5 hrs), Mysore (2 hrs) or Bangalore (5.5 hrs)."
+    },
+    "featured": true
+  },
+  {
+    "id": "resort-munnar",
+    "slug": "munnar-cloud-reserve-tea-estate",
+    "name": "Munnar Cloud Reserve",
+    "tagline": "Perched 1,600 meters above sea level where emerald tea hills meet morning mountain mist.",
+    "destination": "Chinnakanal, Munnar",
+    "destinationSlug": "munnar",
+    "locationSummary": "Private colonial tea estate in Chinnakanal, overlooking Anayirankal Dam.",
+    "category": "Tea Estate Bungalow",
+    "description": "An intimate mountain hideaway set inside sprawling organic tea slopes, featuring roaring wood fireplaces, heated infinity pool facing the clouds, and panoramic valley views.",
+    "longDescription": "Escape to the cool highlands of Munnar, where the scent of eucalyptus and tea blossoms fills the mountain breeze. Munnar Cloud Reserve offers stone chalets with heated plunge tubs, tea plucking experiences, and fireside evenings.",
+    "heroImage": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?auto=format&fit=crop&w=1920&q=85",
+    "galleryImages": [
+      "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "pricePerNight": "₹ 22,000 / Night",
+    "priceNote": "Includes artisanal planter's breakfast and guided estate walks.",
+    "verifiedAmenities": [
+      "Heated Mountain Infinity Pool",
+      "Private Wood-Burning Fireplaces",
+      "Panoramic Tea Valley Decks",
+      "Artisan Tea Tasting Room"
+    ],
+    "curatedHighlights": [
+      "Unbroken vistas of morning mist cascading over tea slopes",
+      "4WD sunrise expedition to Kolukkumalai"
+    ],
+    "villas": [],
+    "policies": {
+      "checkIn": "2:00 PM",
+      "checkOut": "11:00 AM",
+      "cancellation": "Full flexibility with 7 days notice.",
+      "childPolicy": "Welcomes families."
+    },
+    "featured": true
+  },
+  {
+    "id": "resort-alleppey",
+    "slug": "alleppey-lakefront-heritage-pool-sanctuary",
+    "name": "Alleppey Lakefront Heritage Sanctuary",
+    "tagline": "Restored Kerala Nalukettu courtyards bordering the tranquil Vembanad Lake.",
+    "destination": "Vembanad Backwaters, Alleppey",
+    "destinationSlug": "alleppey",
+    "locationSummary": "Secluded lakefront peninsula on Vembanad Lake, 75 minutes from Kochi Airport.",
+    "category": "Heritage Backwater Villa",
+    "description": "An authentic tribute to traditional Kerala architecture featuring private plunge pools, open-to-sky courtyards, and uninterrupted sunsets over the backwaters.",
+    "longDescription": "Set upon the peaceful shores of Vembanad Lake, master carpenters have restored ancestral Tharavadu manors dating back to the 18th century, integrating private plunge pools and sunset boat cruises.",
+    "heroImage": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=1920&q=85",
+    "galleryImages": [
+      "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "pricePerNight": "₹ 28,000 / Night",
+    "priceNote": "Includes traditional breakfast, sunset boat cruise, and afternoon tea.",
+    "verifiedAmenities": [
+      "Private Heritage Plunge Pool",
+      "Ayurvedic Spa Pavilion",
+      "Sunset Houseboat Cruise Included"
+    ],
+    "curatedHighlights": [
+      "Authentic Nalukettu timber architecture restored by master wood artisans",
+      "Private sunset cruise aboard traditional kettuvallam"
+    ],
+    "villas": [],
+    "policies": {
+      "checkIn": "2:00 PM",
+      "checkOut": "11:00 AM",
+      "cancellation": "Flexible up to 7 days before arrival.",
+      "childPolicy": "Children welcome."
+    },
+    "featured": true
+  }
+]

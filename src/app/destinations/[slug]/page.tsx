@@ -2,7 +2,7 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
-import { ArrowLeft, ArrowRight, Calendar, Compass, AlertCircle, ShieldCheck, MapPin, Sparkles } from "lucide-react";
+import { ArrowLeft, ArrowRight, Calendar, Compass, AlertCircle, ShieldCheck, MapPin } from "lucide-react";
 import { DESTINATIONS, Destination } from "@/data/destinations";
 import { RESORTS } from "@/data/resorts";
 import { TOUR_PACKAGES } from "@/data/packages";

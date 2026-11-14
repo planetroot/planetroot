@@ -1,245 +1,122 @@
+"use client";
+
+import { useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, Compass } from "lucide-react";
+import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 import { DESTINATIONS } from "@/data/destinations";
+import { useEnquiryModal } from "@/context/EnquiryModalContext";
+
+// Exact category label mapping matching reference image
+const DEST_LABELS: Record<string, string> = {
+  wayanad: "Resorts",
+  munnar: "Resorts",
+  vagamon: "Resorts",
+  alleppey: "Backwaters",
+  thekkady: "Nature Stays",
+  kovalam: "Beach Stays",
+};
 
 export default function DestinationsSection() {
-  const kumarakom = DESTINATIONS.find((d) => d.slug === "kumarakom-alleppey")!;
-  const munnar = DESTINATIONS.find((d) => d.slug === "munnar")!;
-  const wayanad = DESTINATIONS.find((d) => d.slug === "wayanad")!;
-  const marari = DESTINATIONS.find((d) => d.slug === "marari-varkala")!;
-  const thekkady = DESTINATIONS.find((d) => d.slug === "thekkady-spices")!;
+  const scrollRef = useRef<HTMLDivElement>(null);
+  const { openEnquiryModal } = useEnquiryModal();
+
+  const handleScroll = (direction: "left" | "right") => {
+    if (scrollRef.current) {
+      const scrollAmount = 320;
+      scrollRef.current.scrollBy({
+        left: direction === "left" ? -scrollAmount : scrollAmount,
+        behavior: "smooth",
+      });
+    }
+  };
 
   return (
-    <section id="destinations-section" className="py-24 sm:py-32 bg-[#f6f1e8] relative overflow-hidden">
+    <section id="destinations-section" className="py-16 sm:py-20 bg-[#fcfbf7] relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="max-w-3xl mb-16">
-          <div className="flex items-center gap-2 text-xs font-semibold tracking-[0.25em] uppercase text-[#c5a86a] mb-3">
-            <Compass className="w-4 h-4 text-[#0e3826]" />
-            <span>The Kerala Destinations Collection</span>
+        <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-8 gap-4">
+          <div>
+            <p className="text-[10px] sm:text-[11px] font-semibold tracking-[0.25em] uppercase text-[#c5a059] mb-1">
+              GOD&apos;S OWN COUNTRY & BEYOND
+            </p>
+            <h2 className="text-3xl sm:text-4xl font-serif-luxury font-normal text-[#181d1a] tracking-tight">
+              Popular <span className="text-[#c5a059]">Destinations</span>
+            </h2>
+            <p className="mt-1 text-xs sm:text-sm text-stone-500 font-light font-sans-luxury">
+              Experience the most beautiful places with Planet Root
+            </p>
           </div>
-          <h2 className="text-3xl sm:text-5xl font-serif-luxury text-[#181d1a] tracking-tight leading-tight">
-            Territories of God’s Own Country.
-          </h2>
-          <p className="mt-4 text-base sm:text-lg text-[#525a55] font-light leading-relaxed">
-            From the silent waters of Vembanad Lake to the cool mist of Munnar tea hills, ancient Wayanad rainforests, and golden Arabian Sea beaches.
-          </p>
-        </div>
 
-        {/* Feature 1: KUMARAKOM & ALLEPPEY (Large Horizontal Editorial Feature) */}
-        <div className="mb-20 bg-white border border-[#0e3826]/10 overflow-hidden shadow-xs">
-          <div className="grid grid-cols-1 lg:grid-cols-12 items-center">
-            <div className="lg:col-span-7 relative aspect-16/10 lg:aspect-auto lg:h-[480px] overflow-hidden">
-              <Image
-                src={kumarakom.heroImage}
-                alt={kumarakom.name}
-                fill
-                sizes="(max-width: 1024px) 100vw, 60vw"
-                className="object-cover transition-transform duration-700 hover:scale-105"
-              />
-            </div>
-            <div className="lg:col-span-5 p-8 sm:p-12 flex flex-col justify-center">
-              <span className="text-xs font-semibold tracking-[0.25em] uppercase text-[#c5a86a] mb-2">
-                Tranquil Waterways & Houseboats
-              </span>
-              <h3 className="text-3xl sm:text-4xl font-serif-luxury text-[#181d1a] mb-2">
-                {kumarakom.name}
-              </h3>
-              <p className="text-sm font-serif-luxury italic text-[#0e3826] mb-4">
-                {kumarakom.tagline}
-              </p>
-              <p className="text-sm text-[#525a55] font-light leading-relaxed mb-6 font-sans-luxury">
-                {kumarakom.shortDescription}
-              </p>
-              <div className="space-y-2 mb-8">
-                {kumarakom.highlights.slice(0, 2).map((h, i) => (
-                  <p key={i} className="text-xs text-[#181d1a] flex items-center gap-2">
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#c5a86a]" />
-                    <span>{h}</span>
-                  </p>
-                ))}
-              </div>
-              <div>
-                <Link
-                  href={kumarakom.ctaLink}
-                  className="btn-luxury-primary text-xs tracking-widest inline-flex items-center gap-2"
-                >
-                  <span>{kumarakom.ctaText}</span>
-                  <ArrowRight className="w-4 h-4" />
-                </Link>
-              </div>
-            </div>
+          <div>
+            <a
+              href="#destinations-section"
+              className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full border border-stone-300 text-stone-700 hover:border-[#0e3826] hover:text-[#0e3826] text-xs font-medium tracking-wide transition-colors cursor-pointer"
+            >
+              <span>View All Destinations</span>
+              <ArrowRight className="w-3.5 h-3.5" />
+            </a>
           </div>
         </div>
 
-        {/* Feature 2: MUNNAR & WAYANAD (Asymmetric Two-Column Editorial) */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-20">
-          {/* MUNNAR */}
-          <div className="bg-white border border-[#0e3826]/10 overflow-hidden flex flex-col justify-between shadow-xs">
-            <div className="relative aspect-16/10 w-full overflow-hidden">
-              <Image
-                src={munnar.heroImage}
-                alt={munnar.name}
-                fill
-                sizes="(max-width: 1024px) 100vw, 50vw"
-                className="object-cover transition-transform duration-700 hover:scale-105"
-              />
-              <div className="absolute top-4 left-4">
-                <span className="text-[10px] font-semibold tracking-widest uppercase px-3 py-1 bg-white/95 text-[#0e3826]">
-                  Emerald Highlands
-                </span>
-              </div>
-            </div>
-            <div className="p-8 sm:p-10 flex-1 flex flex-col">
-              <h3 className="text-2xl sm:text-3xl font-serif-luxury text-[#181d1a] mb-1">
-                {munnar.name}
-              </h3>
-              <p className="text-xs font-serif-luxury italic text-[#0e3826] mb-3">
-                {munnar.tagline}
-              </p>
-              <p className="text-sm text-[#525a55] font-light leading-relaxed mb-6 font-sans-luxury">
-                {munnar.shortDescription}
-              </p>
-              <div className="space-y-2 mb-8">
-                {munnar.highlights.slice(0, 2).map((h, i) => (
-                  <p key={i} className="text-xs text-[#181d1a] flex items-center gap-2">
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#c5a86a]" />
-                    <span>{h}</span>
-                  </p>
-                ))}
-              </div>
-              <div className="mt-auto">
-                <Link
-                  href={munnar.ctaLink}
-                  className="btn-luxury-secondary text-xs tracking-widest inline-flex items-center gap-2"
+        {/* Carousel Container with Left/Right Arrow Buttons */}
+        <div className="relative group/carousel">
+          {/* Left Arrow Button */}
+          <button
+            type="button"
+            onClick={() => handleScroll("left")}
+            aria-label="Scroll left"
+            className="absolute -left-3 sm:-left-5 top-1/2 -translate-y-1/2 z-20 w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white shadow-lg border border-stone-200 flex items-center justify-center text-stone-700 hover:text-black hover:scale-105 transition-all cursor-pointer"
+          >
+            <ChevronLeft className="w-5 h-5" />
+          </button>
+
+          {/* Right Arrow Button */}
+          <button
+            type="button"
+            onClick={() => handleScroll("right")}
+            aria-label="Scroll right"
+            className="absolute -right-3 sm:-right-5 top-1/2 -translate-y-1/2 z-20 w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white shadow-lg border border-stone-200 flex items-center justify-center text-stone-700 hover:text-black hover:scale-105 transition-all cursor-pointer"
+          >
+            <ChevronRight className="w-5 h-5" />
+          </button>
+
+          {/* Scrollable Destination Cards Row */}
+          <div
+            ref={scrollRef}
+            className="flex items-center gap-4 overflow-x-auto pb-4 no-scrollbar scroll-smooth"
+          >
+            {DESTINATIONS.map((dest) => {
+              const label = DEST_LABELS[dest.slug] || "Resorts";
+              return (
+                <div
+                  key={dest.id}
+                  onClick={() => openEnquiryModal({ destination: dest.name })}
+                  className="group relative shrink-0 w-[200px] sm:w-[220px] aspect-3/4 rounded-2xl overflow-hidden cursor-pointer shadow-md hover:shadow-xl transition-all duration-300"
                 >
-                  <span>{munnar.ctaText}</span>
-                  <ArrowRight className="w-4 h-4" />
-                </Link>
-              </div>
-            </div>
-          </div>
+                  <Image
+                    src={dest.heroImage}
+                    alt={dest.name}
+                    fill
+                    sizes="(max-width: 768px) 50vw, 220px"
+                    className="object-cover transition-transform duration-700 ease-out group-hover:scale-108"
+                  />
 
-          {/* WAYANAD */}
-          <div className="bg-[#092015] text-[#fcfbf7] border border-[#c5a86a]/30 overflow-hidden flex flex-col justify-between shadow-xs">
-            <div className="relative aspect-16/10 w-full overflow-hidden">
-              <Image
-                src={wayanad.heroImage}
-                alt={wayanad.name}
-                fill
-                sizes="(max-width: 1024px) 100vw, 50vw"
-                className="object-cover transition-transform duration-700 hover:scale-105"
-              />
-              <div className="absolute top-4 left-4">
-                <span className="text-[10px] font-semibold tracking-widest uppercase px-3 py-1 bg-[#092015]/90 text-[#dfcaa2] border border-[#c5a86a]/40">
-                  Virgin Rainforest Bio-Reserve
-                </span>
-              </div>
-            </div>
-            <div className="p-8 sm:p-10 flex-1 flex flex-col">
-              <h3 className="text-2xl sm:text-3xl font-serif-luxury text-[#fcfbf7] mb-1">
-                {wayanad.name}
-              </h3>
-              <p className="text-xs font-serif-luxury italic text-[#dfcaa2] mb-3">
-                {wayanad.tagline}
-              </p>
-              <p className="text-sm text-[#fcfbf7]/80 font-light leading-relaxed mb-6">
-                {wayanad.shortDescription}
-              </p>
-              <div className="space-y-2 mb-8">
-                {wayanad.highlights.slice(0, 2).map((h, i) => (
-                  <p key={i} className="text-xs text-[#dfcaa2] flex items-center gap-2">
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#c5a86a]" />
-                    <span>{h}</span>
-                  </p>
-                ))}
-              </div>
-              <div className="mt-auto">
-                <Link
-                  href={wayanad.ctaLink}
-                  className="btn-luxury-gold text-xs tracking-widest inline-flex items-center gap-2"
-                >
-                  <span>{wayanad.ctaText}</span>
-                  <ArrowRight className="w-4 h-4" />
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
+                  {/* Gradient Overlay for Readable White Text */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent" />
 
-        {/* Feature 3: MARARI COAST & THEKKADY SPICES (Two-Card Row) */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {/* Marari & Varkala Coast */}
-          <div className="group relative bg-white border border-[#0e3826]/10 p-8 sm:p-10 flex flex-col justify-between hover:shadow-md transition-all">
-            <div className="relative aspect-16/9 w-full mb-6 overflow-hidden">
-              <Image
-                src={marari.heroImage}
-                alt={marari.name}
-                fill
-                sizes="(max-width: 768px) 100vw, 50vw"
-                className="object-cover transition-transform duration-700 group-hover:scale-105"
-              />
-            </div>
-            <div>
-              <span className="text-[11px] font-semibold tracking-widest uppercase text-[#c5a86a] block mb-2">
-                Barefoot Malabar Shores
-              </span>
-              <h3 className="text-2xl font-serif-luxury text-[#181d1a] mb-2">
-                {marari.name}
-              </h3>
-              <p className="text-sm font-serif-luxury italic text-[#0e3826] mb-3">
-                {marari.tagline}
-              </p>
-              <p className="text-sm text-[#525a55] font-light leading-relaxed mb-6">
-                {marari.shortDescription}
-              </p>
-            </div>
-            <div>
-              <Link
-                href={marari.ctaLink}
-                className="text-xs font-semibold uppercase tracking-[0.15em] text-[#0e3826] hover:text-[#c5a86a] inline-flex items-center gap-1.5 transition-colors"
-              >
-                <span>{marari.ctaText}</span>
-                <ArrowRight className="w-4 h-4" />
-              </Link>
-            </div>
-          </div>
-
-          {/* Thekkady & Spice Hills */}
-          <div className="group relative bg-white border border-[#0e3826]/10 p-8 sm:p-10 flex flex-col justify-between hover:shadow-md transition-all">
-            <div className="relative aspect-16/9 w-full mb-6 overflow-hidden">
-              <Image
-                src={thekkady.heroImage}
-                alt={thekkady.name}
-                fill
-                sizes="(max-width: 768px) 100vw, 50vw"
-                className="object-cover transition-transform duration-700 group-hover:scale-105"
-              />
-            </div>
-            <div>
-              <span className="text-[11px] font-semibold tracking-widest uppercase text-[#c5a86a] block mb-2">
-                Wild Cardamom & Elephant Corridors
-              </span>
-              <h3 className="text-2xl font-serif-luxury text-[#181d1a] mb-2">
-                {thekkady.name}
-              </h3>
-              <p className="text-sm font-serif-luxury italic text-[#0e3826] mb-3">
-                {thekkady.tagline}
-              </p>
-              <p className="text-sm text-[#525a55] font-light leading-relaxed mb-6">
-                {thekkady.shortDescription}
-              </p>
-            </div>
-            <div>
-              <Link
-                href={thekkady.ctaLink}
-                className="text-xs font-semibold uppercase tracking-[0.15em] text-[#0e3826] hover:text-[#c5a86a] inline-flex items-center gap-1.5 transition-colors"
-              >
-                <span>{thekkady.ctaText}</span>
-                <ArrowRight className="w-4 h-4" />
-              </Link>
-            </div>
+                  {/* Bottom Text Matching Reference Image */}
+                  <div className="absolute bottom-4 left-4 right-4 text-white">
+                    <h3 className="text-base sm:text-lg font-bold leading-tight drop-shadow-sm">
+                      {dest.name}
+                    </h3>
+                    <p className="text-xs text-stone-200/90 font-light mt-0.5">
+                      {label}
+                    </p>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>

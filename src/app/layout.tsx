@@ -1,9 +1,23 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Plus_Jakarta_Sans } from "next/font/google";
+import { Playfair_Display, Outfit, Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import FloatingWhatsApp from "@/components/common/FloatingWhatsApp";
+import { EnquiryModalProvider } from "@/context/EnquiryModalContext";
+import EnquiryModal from "@/components/forms/EnquiryModal";
+
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  variable: "--font-playfair",
+  display: "swap",
+});
+
+const outfit = Outfit({
+  subsets: ["latin"],
+  variable: "--font-outfit",
+  display: "swap",
+});
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
@@ -12,48 +26,41 @@ const cormorant = Cormorant_Garamond({
   display: "swap",
 });
 
-const jakarta = Plus_Jakarta_Sans({
-  subsets: ["latin"],
-  variable: "--font-jakarta",
-  weight: ["300", "400", "500", "600", "700"],
-  display: "swap",
-});
-
 export const metadata: Metadata = {
   metadataBase: new URL("https://planetroot.in"),
   title: {
-    default: "PLANET ROOT | Kerala Luxury Resorts, Houseboats & Curated Journeys — Beyond Borders",
-    template: "%s | PLANET ROOT — Beyond Borders",
+    default: "Planet Root Travels | Premium Kerala Resorts, Private Pool Villas & Holiday Packages",
+    template: "%s | Planet Root Travels — Beyond Borders",
   },
   description:
-    "PLANET ROOT Travel & Tourism specializes in premium Kerala resort bookings, private pool villas, restored Nalukettu backwater manors in Kumarakom, misty Munnar tea estate bungalows, Wayanad rainforest treehouses, and private luxury houseboats.",
+    "Discover handpicked luxury resorts, private pool villas, romantic escapes, family holidays, and unforgettable travel experiences across Kerala, domestic India, and international destinations.",
   keywords: [
-    "PLANET ROOT",
+    "Planet Root Travels",
     "Beyond Borders",
     "Kerala luxury resort booking",
     "Private pool villa Kerala",
-    "Kumarakom luxury houseboats",
-    "Alleppey private kettuvallam",
-    "Munnar tea estate resort",
-    "Wayanad rainforest treehouse",
-    "Kerala Ayurvedic wellness packages",
-    "Marari barefoot beach villas",
-    "Kerala honeymoon packages luxury",
-    "Customized Kerala tour packages",
+    "Wayanad resorts",
+    "Munnar luxury stays",
+    "Vagamon chalets",
+    "Alleppey houseboats",
+    "Thekkady resorts",
+    "Kovalam beach villas",
+    "WhatsApp travel enquiry",
+    "Kerala honeymoon packages",
   ],
-  authors: [{ name: "PLANET ROOT Travel & Tourism" }],
+  authors: [{ name: "Planet Root Travels" }],
   openGraph: {
-    title: "PLANET ROOT — Beyond Borders | Luxury Kerala Resorts & Curated Journeys",
+    title: "Planet Root Travels — Beyond Borders | Luxury Kerala Resorts & Curated Holidays",
     description:
-      "Find Your Place in God’s Own Country. Exceptional stays, private houseboats, and personalized Kerala escapes.",
+      "Discover handpicked luxury resorts, private pool villas, romantic escapes, family holidays, and unforgettable travel experiences across Kerala and beyond.",
     url: "https://planetroot.in",
-    siteName: "PLANET ROOT",
+    siteName: "Planet Root Travels",
     images: [
       {
         url: "/images/planet-root-logo.png",
         width: 1024,
         height: 512,
-        alt: "PLANET ROOT — Beyond Borders",
+        alt: "Planet Root Travels — Beyond Borders",
       },
     ],
     locale: "en_IN",
@@ -73,13 +80,17 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${cormorant.variable} ${jakarta.variable} font-sans-luxury scroll-smooth`}
+      data-scroll-behavior="smooth"
+      className={`${playfair.variable} ${outfit.variable} ${cormorant.variable} font-sans-luxury scroll-smooth`}
     >
       <body className="min-h-screen flex flex-col bg-[#fcfbf7] text-[#181d1a] selection:bg-[#0e3826] selection:text-[#fcfbf7]">
-        <Navbar />
-        <main className="flex-1">{children}</main>
-        <Footer />
-        <FloatingWhatsApp />
+        <EnquiryModalProvider>
+          <Navbar />
+          <main className="flex-1">{children}</main>
+          <Footer />
+          <FloatingWhatsApp />
+          <EnquiryModal />
+        </EnquiryModalProvider>
       </body>
     </html>
   );

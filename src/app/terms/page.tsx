@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import { ShieldCheck, AlertCircle, Phone, Mail } from "lucide-react";
+import { ShieldCheck, AlertCircle } from "lucide-react";
+import { SITE_CONFIG } from "@/config/site";
 
 export const metadata: Metadata = {
-  title: "Terms & Cancellation Policy | PLANET ROOT — Beyond Borders",
-  description: "Terms of service, enquiry-based booking integrity, and cancellation policies for PLANET ROOT Travel & Tourism.",
+  title: "Terms & Cancellation Policy | Planet Root Travels — Beyond Borders",
+  description: "Terms of service, enquiry-based booking integrity, and cancellation policies for Planet Root Travels.",
 };
 
 export default function TermsPage() {
@@ -19,9 +19,9 @@ export default function TermsPage() {
             Terms & Cancellation Policy
           </h1>
           <p className="mt-3 text-xs uppercase tracking-widest text-[#7b8580]">
-            Effective Date: October 2026 | PLANET ROOT Travel & Tourism
+            Effective Date: October 2026 | Planet Root Travels
           </p>
-          <div className="divider-luxury w-24 mt-6" />
+          <div className="w-24 h-[1px] bg-[#c5a86a] mt-6" />
         </div>
 
         <div className="space-y-10 text-sm text-[#525a55] font-light leading-relaxed font-sans-luxury">
@@ -34,7 +34,7 @@ export default function TermsPage() {
                   Booking Integrity & Enquiry-Based Reservation Standard
                 </h3>
                 <p className="text-xs sm:text-sm text-[#525a55] mt-2 leading-relaxed">
-                  PLANET ROOT operates on an authentic, human-managed enquiry basis. Submission of an online enquiry does not constitute an instant automatic booking or charge. Our private travel directors directly verify physical resort inventory, villa maintenance schedules, flight slots, and government permit requirements before delivering a finalized, binding reservation voucher.
+                  Planet Root Travels operates on an authentic, human-managed enquiry basis via WhatsApp and direct consultation. Submission of an enquiry does not charge your card or constitute an instant automated transaction. Our private travel directors directly verify physical resort inventory, villa maintenance schedules, and seasonal rates before delivering a finalized reservation voucher.
                 </p>
               </div>
             </div>
@@ -46,36 +46,15 @@ export default function TermsPage() {
               Upon receiving your itinerary preferences, our travel director delivers a formalized quotation itemizing villa categories, inclusions, transport arrangements, and applicable government taxes.
             </p>
             <ul className="list-disc pl-5 space-y-1.5">
-              <li><strong>Reservation Deposit:</strong> A deposit (typically 30% to 50% depending on the luxury resort property) secures room allocations.</li>
-              <li><strong>Balance Settlement:</strong> The remaining balance is payable 21 to 30 days prior to the journey start date, or as specified in your custom voucher.</li>
-              <li><strong>Currency & Taxes:</strong> All rates are quoted in Indian National Rupees (INR) with mandatory Goods & Services Tax (GST) itemized transparently.</li>
+              <li><strong>Reservation Confirmation:</strong> Verified directly on WhatsApp with itemized quotes and verified property photos.</li>
+              <li><strong>Currency:</strong> All rates are quoted in Indian National Rupees (INR) with applicable GST indicated transparently.</li>
             </ul>
           </section>
 
           <section className="space-y-3">
-            <h2 className="text-xl font-serif-luxury text-[#181d1a]">2. Lakshadweep Archipelago Travel & Permit Advisory</h2>
-            <div className="p-4 bg-[#f6f1e8] border border-[#c5a86a]/40 rounded-xs mb-3 flex items-start gap-3">
-              <AlertCircle className="w-4 h-4 text-[#0e3826] shrink-0 mt-0.5" />
-              <p className="text-xs text-[#525a55] leading-relaxed">
-                Entry into the Union Territory of Lakshadweep requires mandatory administrative clearance under the Laccadive, Minicoy, and Amindivi Islands (Restriction on Entry and Residence) Rules.
-              </p>
-            </div>
+            <h2 className="text-xl font-serif-luxury text-[#181d1a]">2. Standard Cancellation & Date Alteration Schedule</h2>
             <p>
-              Planet Root assists with complete e-permit processing for all confirmed guests. Guests must provide valid government photo identification and police verification documents at least 15–20 business days prior to departure. Inter-island boat transfers and water activities are subject to maritime weather safety clearances issued by the island port authority.
-            </p>
-          </section>
-
-          <section className="space-y-3">
-            <h2 className="text-xl font-serif-luxury text-[#181d1a]">3. High-Altitude Mountain & Stargazing Escapes</h2>
-            <p>
-              For itineraries involving high-altitude destinations such as Spiti Valley (3,800m+) or Rohtang/Solang high passes in Manali, guests must adhere to gradual acclimatization advice. Planet Root provides high-altitude support protocols and reserves the right to alter day-to-day driving routes in the event of sudden mountain snowfall, landslides, or state road advisories.
-            </p>
-          </section>
-
-          <section className="space-y-3">
-            <h2 className="text-xl font-serif-luxury text-[#181d1a]">4. Standard Cancellation & Date Alteration Schedule</h2>
-            <p>
-              Unless otherwise specified by a particular boutique property’s seasonal non-refundable window, our standard cancellation terms are:
+              Unless otherwise specified by a particular boutique property’s seasonal non-refundable window, standard cancellation terms are:
             </p>
             <div className="overflow-x-auto my-4">
               <table className="w-full text-xs text-left border border-[#0e3826]/10">
@@ -87,16 +66,16 @@ export default function TermsPage() {
                 </thead>
                 <tbody className="divide-y divide-[#0e3826]/10">
                   <tr>
-                    <td className="p-3 font-medium">30+ Days Prior to Check-in</td>
-                    <td className="p-3">Full refund less administrative and permit processing fee (approx. 5%)</td>
+                    <td className="p-3 font-medium">14+ Days Prior to Check-in</td>
+                    <td className="p-3">Full refund or complimentary date alteration</td>
                   </tr>
                   <tr>
-                    <td className="p-3 font-medium">15 to 29 Days Prior to Check-in</td>
-                    <td className="p-3">50% refund, or 75% credit applied toward a rescheduled future journey</td>
+                    <td className="p-3 font-medium">7 to 13 Days Prior to Check-in</td>
+                    <td className="p-3">50% refund, or credit applied toward rescheduled dates</td>
                   </tr>
                   <tr>
-                    <td className="p-3 font-medium">Less than 14 Days Prior to Check-in</td>
-                    <td className="p-3">Subject to resort partner retention; best-effort date transfer provided</td>
+                    <td className="p-3 font-medium">Less than 7 Days Prior to Check-in</td>
+                    <td className="p-3">Subject to resort partner retention policy</td>
                   </tr>
                 </tbody>
               </table>
@@ -104,14 +83,14 @@ export default function TermsPage() {
           </section>
 
           <section className="space-y-3">
-            <h2 className="text-xl font-serif-luxury text-[#181d1a]">5. Concierge Contact for Policy Clarifications</h2>
+            <h2 className="text-xl font-serif-luxury text-[#181d1a]">3. Concierge Contact for Policy Clarifications</h2>
             <p>
-              For any clarification regarding specific hotel booking terms, permit criteria, or bespoke payment plans, please contact our director directly:
+              For any clarification regarding hotel booking terms, cancellation terms, or custom payment schedules, please contact our director directly:
             </p>
             <div className="p-5 bg-white border border-[#0e3826]/10 rounded-xs text-xs space-y-1">
-              <p className="font-semibold text-[#181d1a]">PLANET ROOT — Travel & Tourism</p>
-              <p>Phone: <a href="tel:9605990306" className="text-[#0e3826] font-medium underline">9605990306</a></p>
-              <p>Email: <a href="mailto:planetroot98@gmail.com" className="text-[#0e3826] font-medium underline">planetroot98@gmail.com</a></p>
+              <p className="font-semibold text-[#181d1a]">{SITE_CONFIG.legalName}</p>
+              <p>WhatsApp / Phone: <a href={`tel:${SITE_CONFIG.phone}`} className="text-[#0e3826] font-medium underline">{SITE_CONFIG.whatsappDisplay}</a></p>
+              <p>Email: <a href={`mailto:${SITE_CONFIG.email}`} className="text-[#0e3826] font-medium underline">{SITE_CONFIG.email}</a></p>
               <p className="text-[#7b8580] pt-1">Tagline: Beyond Borders.</p>
             </div>
           </section>

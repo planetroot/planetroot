@@ -1,30 +1,30 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
-import { ArrowRight, Phone, Mail, Compass, ShieldCheck } from "lucide-react";
+import { ArrowRight, Phone, Mail, MessageCircle, ShieldCheck } from "lucide-react";
+import { SITE_CONFIG, createWhatsAppUrl, DEFAULT_WHATSAPP_MESSAGE } from "@/config/site";
 
 export const metadata: Metadata = {
-  title: "About Planet Root | Rooted in Discovery. Inspired by the World.",
+  title: "About Us | Planet Root Travels — Beyond Borders",
   description:
-    "Planet Root brings together exceptional stays, inspiring destinations, and thoughtfully planned holiday experiences across India and beyond. Beyond Borders.",
+    "Planet Root Travels brings together exceptional luxury resorts, private pool villas, and curated domestic and international holiday experiences. Beyond Borders.",
 };
 
 export default function AboutPage() {
   return (
     <div className="pt-28 pb-24 bg-[#fcfbf7] min-h-screen">
       {/* Header Banner */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-14">
         <div className="text-center max-w-3xl mx-auto">
-          <span className="text-xs font-semibold tracking-[0.25em] uppercase text-[#c5a86a] block mb-2">
-            The Brand Ethos
-          </span>
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-serif-luxury text-[#181d1a] tracking-tight">
-            Rooted in Discovery. Inspired by the World.
-          </h1>
-          <p className="mt-4 text-xs font-semibold uppercase tracking-[0.3em] text-[#0e3826]">
-            PLANET ROOT — Beyond Borders.
+          <p className="text-xs font-semibold tracking-[0.25em] uppercase text-[#c5a059] mb-2.5">
+            ABOUT US
           </p>
-          <div className="divider-luxury w-28 mx-auto mt-6" />
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-serif-luxury text-[#181d1a] tracking-tight">
+            Rooted in Discovery. <span className="text-[#c5a059]">Beyond Borders.</span>
+          </h1>
+          <p className="mt-3 text-sm font-semibold uppercase tracking-[0.25em] text-[#0e3826]">
+            Planet Root Travels
+          </p>
         </div>
       </section>
 
@@ -35,8 +35,8 @@ export default function AboutPage() {
           <div className="lg:col-span-6 space-y-6">
             <div className="relative aspect-4/3 w-full overflow-hidden rounded-xs border border-[#0e3826]/10 shadow-md">
               <Image
-                src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1400&q=85"
-                alt="Himalayan mountain sanctuary curated by Planet Root"
+                src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=1400&q=85"
+                alt="Luxury Kerala backwater resort curated by Planet Root Travels"
                 fill
                 priority
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -46,8 +46,8 @@ export default function AboutPage() {
             <div className="grid grid-cols-2 gap-4">
               <div className="relative aspect-4/3 overflow-hidden rounded-xs border border-[#0e3826]/10">
                 <Image
-                  src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80"
-                  alt="Pristine island lagoon"
+                  src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80"
+                  alt="Wayanad rainforest canopy treehouse"
                   fill
                   sizes="25vw"
                   className="object-cover"
@@ -55,8 +55,8 @@ export default function AboutPage() {
               </div>
               <div className="relative aspect-4/3 overflow-hidden rounded-xs border border-[#0e3826]/10">
                 <Image
-                  src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80"
-                  alt="Stargazing night skies"
+                  src="https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?auto=format&fit=crop&w=800&q=80"
+                  alt="Munnar misty tea hill chalet"
                   fill
                   sizes="25vw"
                   className="object-cover"
@@ -68,89 +68,48 @@ export default function AboutPage() {
           {/* Editorial Content */}
           <div className="lg:col-span-6 flex flex-col justify-center space-y-6 text-[#525a55] font-light text-base leading-relaxed font-sans-luxury">
             <p className="text-xl sm:text-2xl font-serif-luxury text-[#181d1a] leading-relaxed">
-              Planet Root brings together exceptional stays, inspiring destinations, and thoughtfully planned holiday experiences.
+              Planet Root Travels brings together exceptional stays, inspiring destinations, and thoughtfully planned holiday experiences.
             </p>
 
             <p>
-              From premium resort escapes and private villas to Himalayan adventures, tropical island holidays, and unforgettable nights beneath the stars, we help travelers discover a different side of the world.
+              From premium resort escapes, private pool villas, and misty highland chalets in Munnar and Vagamon to serene backwater houseboats in Alleppey and ancient rainforest sanctuaries in Wayanad, we help travelers discover the true, soulful essence of God’s Own Country and beyond.
             </p>
 
             <p>
-              Our goal is to make every journey feel effortless, every stay feel special, and every experience become a lasting memory.
+              Our goal is to make every journey feel effortless, every stay feel special, and every experience become a lasting memory. We operate with a personal concierge approach — engaging directly on WhatsApp to listen to your preferences, verify resort standards, and tailor stays to your budget.
             </p>
 
             <div className="p-6 bg-[#f6f1e8] border border-[#0e3826]/10 rounded-xs my-6">
-              <h3 className="text-sm font-semibold uppercase tracking-wider text-[#0e3826] mb-2">
-                Our Guiding Curation Standard
+              <h3 className="text-sm font-semibold uppercase tracking-wider text-[#0e3826] mb-2 flex items-center gap-2">
+                <ShieldCheck className="w-4 h-4 text-[#0e3826]" />
+                <span>Our Guiding Curation Standard</span>
               </h3>
               <p className="text-xs sm:text-sm text-[#525a55] leading-relaxed">
-                We believe true luxury is personal, natural, and unhurried. Every sanctuary we recommend is evaluated for its authentic connection to its surroundings, the privacy it affords guests, and the genuine warmth of its hospitality.
+                We believe true luxury is personal, authentic, and unhurried. Every sanctuary in our collection is evaluated for its natural surroundings, privacy, clean verified amenities, and genuine hospitality.
               </p>
             </div>
 
             <div className="pt-4 border-t border-[#0e3826]/10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
               <div>
-                <p className="text-xs uppercase tracking-widest text-[#7b8580]">Direct Concierge Desk</p>
+                <p className="text-xs uppercase tracking-widest text-[#7b8580]">WhatsApp Concierge</p>
                 <a
-                  href="tel:9605990306"
-                  className="text-lg font-semibold text-[#0e3826] hover:text-[#c5a86a] transition-colors"
+                  href={createWhatsAppUrl(DEFAULT_WHATSAPP_MESSAGE)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-lg font-semibold text-[#0e3826] hover:text-[#c5a86a] transition-colors flex items-center gap-1.5"
                 >
-                  9605990306
+                  <MessageCircle className="w-4 h-4 text-[#25D366]" />
+                  <span>{SITE_CONFIG.whatsappDisplay}</span>
                 </a>
               </div>
 
-              <Link href="/contact" className="btn-luxury-primary text-xs tracking-widest">
-                <span>Start Your Journey</span>
-                <ArrowRight className="w-4 h-4 ml-1" />
+              <Link
+                href="/contact"
+                className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#0e3826] text-[#dfcaa2] hover:bg-[#164e36] text-xs font-semibold uppercase tracking-wider rounded-xs transition-colors shadow-xs"
+              >
+                <span>Plan Your Journey</span>
+                <ArrowRight className="w-3.5 h-3.5" />
               </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Brand Commitments */}
-      <section className="bg-[#f6f1e8] py-20 border-y border-[#0e3826]/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-2xl mx-auto mb-14">
-            <span className="text-xs font-semibold tracking-[0.25em] uppercase text-[#c5a86a] block mb-2">
-              Our Principles
-            </span>
-            <h2 className="text-3xl font-serif-luxury text-[#181d1a]">
-              The Four Cornerstones of Planet Root
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="p-6 bg-white border border-[#0e3826]/10 rounded-xs">
-              <span className="font-serif-luxury text-3xl font-light text-[#c5a86a] block mb-2">01</span>
-              <h3 className="text-base font-serif-luxury text-[#181d1a] mb-2">Authentic Curation</h3>
-              <p className="text-xs text-[#525a55] leading-relaxed">
-                Properties chosen for character, stunning natural geography, and verified service quality.
-              </p>
-            </div>
-
-            <div className="p-6 bg-white border border-[#0e3826]/10 rounded-xs">
-              <span className="font-serif-luxury text-3xl font-light text-[#c5a86a] block mb-2">02</span>
-              <h3 className="text-base font-serif-luxury text-[#181d1a] mb-2">End-to-End Ease</h3>
-              <p className="text-xs text-[#525a55] leading-relaxed">
-                Handling entry permits, private speedboats, 4WD vehicles, and luggage transfers so you simply arrive.
-              </p>
-            </div>
-
-            <div className="p-6 bg-white border border-[#0e3826]/10 rounded-xs">
-              <span className="font-serif-luxury text-3xl font-light text-[#c5a86a] block mb-2">03</span>
-              <h3 className="text-base font-serif-luxury text-[#181d1a] mb-2">Absolute Transparency</h3>
-              <p className="text-xs text-[#525a55] leading-relaxed">
-                Enquiry-based reservations with clear price breakdowns and verified inventory. Never fabricated quotes.
-              </p>
-            </div>
-
-            <div className="p-6 bg-white border border-[#0e3826]/10 rounded-xs">
-              <span className="font-serif-luxury text-3xl font-light text-[#c5a86a] block mb-2">04</span>
-              <h3 className="text-base font-serif-luxury text-[#181d1a] mb-2">Human-Led Service</h3>
-              <p className="text-xs text-[#525a55] leading-relaxed">
-                Direct communication with experienced travel directors who listen to your travel aspirations.
-              </p>
             </div>
           </div>
         </div>
