@@ -51,7 +51,7 @@ export default function Navbar() {
 
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 z-40 bg-[#072016]/95 backdrop-blur-md border-b border-white/10 text-white py-3.5 transition-all">
+      <header className="fixed top-0 left-0 right-0 z-40 bg-[#0a0f1e]/95 backdrop-blur-md border-b border-white/10 text-white py-3.5 transition-all">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
             {/* Brand Logo */}
@@ -81,13 +81,13 @@ export default function Navbar() {
                     onClick={(e) => scrollTo(e, link.targetId)}
                     className={`text-xs sm:text-[13px] tracking-wide transition-all duration-200 relative py-1 cursor-pointer ${
                       isActive
-                        ? "text-[#dfcaa2] font-semibold"
+                        ? "text-[#e2c97e] font-semibold"
                         : "text-stone-300 hover:text-white"
                     }`}
                   >
                     {link.label}
                     {isActive && (
-                      <span className="absolute bottom-0 left-0 right-0 h-[2px] bg-[#dfcaa2] rounded-full animate-fadeIn" />
+                      <span className="absolute bottom-0 left-0 right-0 h-[2px] bg-[#e2c97e] rounded-full animate-fadeIn" />
                     )}
                   </a>
                 );
@@ -100,9 +100,9 @@ export default function Navbar() {
                 href={whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#dfcaa2] hover:bg-[#c5a059] text-[#072016] text-xs font-semibold tracking-wide transition-all shadow-md cursor-pointer hover:scale-105"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#c9a84c] hover:bg-[#e2c97e] text-[#0a0f1e] text-xs font-semibold tracking-wide transition-all shadow-md cursor-pointer hover:scale-105"
               >
-                <WhatsAppIcon className="w-4 h-4 text-[#072016]" />
+                <WhatsAppIcon className="w-4 h-4 text-[#0a0f1e]" />
                 <span>Book on WhatsApp</span>
               </a>
             </div>
@@ -113,9 +113,9 @@ export default function Navbar() {
                 href={whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[11px] font-semibold px-3 py-1.5 rounded-full bg-[#dfcaa2] text-[#072016] flex items-center gap-1 shadow-sm"
+                className="text-[11px] font-semibold px-3 py-1.5 rounded-full bg-[#c9a84c] text-[#0a0f1e] flex items-center gap-1 shadow-sm"
               >
-                <WhatsAppIcon className="w-3.5 h-3.5 text-[#072016]" />
+                <WhatsAppIcon className="w-3.5 h-3.5 text-[#0a0f1e]" />
                 <span>WhatsApp</span>
               </a>
               <button
@@ -133,9 +133,9 @@ export default function Navbar() {
 
       {/* Mobile Slide-out Drawer */}
       {mobileMenuOpen && (
-        <div className="fixed inset-0 z-50 lg:hidden flex flex-col bg-[#072016] text-white animate-fadeIn">
+        <div className="fixed inset-0 z-50 lg:hidden flex flex-col bg-[#0a0f1e] text-white animate-fadeIn">
           {/* Header */}
-          <div className="flex items-center justify-between px-6 py-4 border-b border-white/10 bg-[#061a12]">
+          <div className="flex items-center justify-between px-6 py-4 border-b border-white/10 bg-[#111829]">
             <a
               href="#home"
               onClick={(e) => scrollTo(e, "home")}
@@ -168,7 +168,7 @@ export default function Navbar() {
                   href={link.href}
                   onClick={(e) => scrollTo(e, link.targetId)}
                   className={`block text-lg font-serif-luxury transition-colors ${
-                    isActive ? "text-[#dfcaa2] font-semibold" : "text-white/85 hover:text-[#dfcaa2]"
+                    isActive ? "text-[#e2c97e] font-semibold" : "text-white/85 hover:text-[#c9a84c]"
                   }`}
                 >
                   {link.label}
@@ -181,9 +181,9 @@ export default function Navbar() {
                 href={whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full py-3.5 rounded-full bg-[#dfcaa2] text-[#072016] font-semibold text-xs uppercase tracking-wider flex items-center justify-center gap-2 shadow-lg"
+                className="w-full py-3.5 rounded-full bg-[#c9a84c] hover:bg-[#e2c97e] text-[#0a0f1e] font-semibold text-xs uppercase tracking-wider flex items-center justify-center gap-2 shadow-lg transition-colors"
               >
-                <WhatsAppIcon className="w-4 h-4 text-[#072016]" />
+                <WhatsAppIcon className="w-4 h-4 text-[#0a0f1e]" />
                 <span>Chat on WhatsApp</span>
               </a>
 

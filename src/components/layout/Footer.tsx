@@ -28,9 +28,9 @@ export default function Footer() {
   const currentYear = 2026;
 
   return (
-    <footer className="bg-[#051811] text-[#fcfbf7] border-t border-[#c5a86a]/20 pt-18 sm:pt-20 pb-12 relative overflow-hidden">
-      {/* Subtle Ambient Glow */}
-      <div className="absolute top-0 right-1/3 w-[500px] h-[300px] bg-[radial-gradient(ellipse_at_top,rgba(22,78,54,0.22),transparent_70%)] pointer-events-none" />
+    <footer className="bg-[#0a0f1e] text-[#fdfcf8] border-t border-[#c9a84c]/20 pt-18 sm:pt-20 pb-12 relative overflow-hidden">
+      {/* Subtle Ambient Gold Glow */}
+      <div className="absolute top-0 right-1/3 w-[500px] h-[300px] bg-[radial-gradient(ellipse_at_top,rgba(201,168,76,0.12),transparent_70%)] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Main Grid */}
@@ -50,12 +50,12 @@ export default function Footer() {
               />
             </a>
 
-            <p className="text-[10px] sm:text-[11px] uppercase tracking-[0.28em] text-[#dfcaa2] font-medium">
-              BEYOND BORDERS • KERALA LUXURY TRAVEL
+            <p className="text-[10px] sm:text-[11px] uppercase tracking-[0.28em] text-[#e2c97e] font-medium">
+              BEYOND BORDERS • PREMIUM WORLD TRAVEL
             </p>
 
             <p className="text-xs sm:text-sm text-stone-300/80 font-light leading-relaxed max-w-sm">
-              Handpicked luxury resorts, private pool villas, and curated domestic &amp; international holiday escapes. Experience God&apos;s Own Country with personalized WhatsApp assistance for all your enquiries.
+              Handpicked luxury resorts, international holiday tours, romantic honeymoon escapes, domestic circuits, and bespoke travel plans. Tailored around you with direct WhatsApp assistance.
             </p>
 
             {/* Direct WhatsApp Action */}
@@ -64,9 +64,9 @@ export default function Footer() {
                 href={createWhatsAppUrl(DEFAULT_WHATSAPP_MESSAGE)}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#dfcaa2] hover:bg-[#c5a059] text-[#072016] text-xs font-semibold uppercase tracking-wider transition-all shadow-md hover:scale-105 duration-200"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#c9a84c] hover:bg-[#e2c97e] text-[#0a0f1e] text-xs font-semibold uppercase tracking-wider transition-all shadow-md hover:scale-105 duration-200"
               >
-                <WhatsAppIcon className="w-3.5 h-3.5 text-[#072016]" />
+                <WhatsAppIcon className="w-3.5 h-3.5 text-[#0a0f1e]" />
                 <span>For Enquiry</span>
               </a>
             </div>
@@ -74,67 +74,67 @@ export default function Footer() {
 
           {/* 2. Quick Navigation (Span 2, offset) */}
           <div className="lg:col-span-2 lg:col-start-7 space-y-3.5">
-            <h4 className="text-[10px] sm:text-[11px] font-semibold tracking-[0.24em] uppercase text-[#dfcaa2]">
-              EXPLORE
+            <h4 className="text-[10px] sm:text-[11px] font-semibold tracking-[0.24em] uppercase text-[#e2c97e]">
+              TRAVEL TYPES
             </h4>
             <ul className="space-y-2.5 text-xs sm:text-[13px] text-stone-300/80 font-light">
               <li>
-                <a href="#featured-resorts-section" className="hover:text-[#dfcaa2] transition-colors">
-                  Featured Resorts
+                <a href="#packages-section" className="hover:text-[#e2c97e] transition-colors">
+                  International Tours
                 </a>
               </li>
               <li>
-                <a href="#featured-resorts-section" className="hover:text-[#dfcaa2] transition-colors">
-                  Private Pool Villas
+                <a href="#packages-section" className="hover:text-[#e2c97e] transition-colors">
+                  Honeymoon Escapes
                 </a>
               </li>
               <li>
-                <a href="#packages-section" className="hover:text-[#dfcaa2] transition-colors">
-                  Holiday Packages
+                <a href="#packages-section" className="hover:text-[#e2c97e] transition-colors">
+                  Domestic Packages
                 </a>
               </li>
               <li>
-                <a href="#resort-gallery-section" className="hover:text-[#dfcaa2] transition-colors">
-                  Visual Gallery
+                <a href="#featured-resorts-section" className="hover:text-[#e2c97e] transition-colors">
+                  Luxury Resorts &amp; Villas
                 </a>
               </li>
               <li>
-                <a href="#about-section" className="hover:text-[#dfcaa2] transition-colors">
-                  About Planet Root
+                <a href="#packages-section" className="hover:text-[#e2c97e] transition-colors">
+                  Custom Travel Plans
                 </a>
               </li>
             </ul>
           </div>
 
-          {/* 3. Destinations (Span 2) */}
+          {/* 3. Top Destinations (Span 2) */}
           <div className="lg:col-span-2 space-y-3.5">
-            <h4 className="text-[10px] sm:text-[11px] font-semibold tracking-[0.24em] uppercase text-[#dfcaa2]">
+            <h4 className="text-[10px] sm:text-[11px] font-semibold tracking-[0.24em] uppercase text-[#e2c97e]">
               DESTINATIONS
             </h4>
             <ul className="space-y-2.5 text-xs sm:text-[13px] text-stone-300/80 font-light">
               <li>
-                <a href="#destinations-section" className="hover:text-[#dfcaa2] transition-colors">
-                  Wayanad
+                <a href="#packages-section" className="hover:text-[#e2c97e] transition-colors">
+                  Maldives &amp; Bali
                 </a>
               </li>
               <li>
-                <a href="#destinations-section" className="hover:text-[#dfcaa2] transition-colors">
-                  Munnar
+                <a href="#packages-section" className="hover:text-[#e2c97e] transition-colors">
+                  Dubai &amp; Singapore
                 </a>
               </li>
               <li>
-                <a href="#destinations-section" className="hover:text-[#dfcaa2] transition-colors">
-                  Alleppey
+                <a href="#packages-section" className="hover:text-[#e2c97e] transition-colors">
+                  Kashmir &amp; Manali
                 </a>
               </li>
               <li>
-                <a href="#destinations-section" className="hover:text-[#dfcaa2] transition-colors">
-                  Thekkady &amp; Vagamon
+                <a href="#destinations-section" className="hover:text-[#e2c97e] transition-colors">
+                  Wayanad &amp; Munnar
                 </a>
               </li>
               <li>
-                <a href="#packages-section" className="hover:text-[#dfcaa2] transition-colors">
-                  Domestic &amp; Beyond
+                <a href="#destinations-section" className="hover:text-[#e2c97e] transition-colors">
+                  Alleppey Backwaters
                 </a>
               </li>
             </ul>
@@ -142,7 +142,7 @@ export default function Footer() {
 
           {/* 4. Enquiry Directory (Span 2) */}
           <div className="lg:col-span-2 space-y-3.5">
-            <h4 className="text-[10px] sm:text-[11px] font-semibold tracking-[0.24em] uppercase text-[#dfcaa2]">
+            <h4 className="text-[10px] sm:text-[11px] font-semibold tracking-[0.24em] uppercase text-[#e2c97e]">
               FOR ENQUIRY
             </h4>
             <div className="space-y-2.5 text-xs sm:text-[13px] text-stone-300/80 font-light">
@@ -151,7 +151,7 @@ export default function Footer() {
                   href={createWhatsAppUrl(DEFAULT_WHATSAPP_MESSAGE)}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-[#dfcaa2] transition-colors inline-flex items-center gap-2 text-white font-medium group"
+                  className="hover:text-[#e2c97e] transition-colors inline-flex items-center gap-2 text-white font-medium group"
                 >
                   <WhatsAppIcon className="w-3.5 h-3.5 text-[#25D366] shrink-0 transition-transform group-hover:scale-110" />
                   <span>{SITE_CONFIG.whatsappDisplay}</span>
@@ -160,7 +160,7 @@ export default function Footer() {
               <p>
                 <a
                   href={`mailto:${SITE_CONFIG.email}`}
-                  className="hover:text-[#dfcaa2] transition-colors block break-all"
+                  className="hover:text-[#e2c97e] transition-colors block break-all"
                 >
                   {SITE_CONFIG.email}
                 </a>
@@ -170,9 +170,9 @@ export default function Footer() {
                   href={SITE_CONFIG.socials.instagram}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-[#dfcaa2] transition-colors inline-flex items-center gap-1.5"
+                  className="hover:text-[#e2c97e] transition-colors inline-flex items-center gap-1.5"
                 >
-                  <InstagramIcon className="w-3.5 h-3.5 text-[#dfcaa2]" />
+                  <InstagramIcon className="w-3.5 h-3.5 text-[#e2c97e]" />
                   <span>@planetroottravels</span>
                 </a>
               </p>
@@ -190,21 +190,21 @@ export default function Footer() {
           </p>
 
           <div className="flex items-center gap-5 sm:gap-6 flex-wrap justify-center font-light">
-            <Link href="/privacy" className="hover:text-[#dfcaa2] transition-colors">
+            <Link href="/privacy" className="hover:text-[#e2c97e] transition-colors">
               Privacy Policy
             </Link>
             <span className="text-white/20">•</span>
-            <Link href="/terms" className="hover:text-[#dfcaa2] transition-colors">
+            <Link href="/terms" className="hover:text-[#e2c97e] transition-colors">
               Terms &amp; Cancellation
             </Link>
             <span className="text-white/20">•</span>
-            <Link href="/contact" className="hover:text-[#dfcaa2] transition-colors">
+            <Link href="/contact" className="hover:text-[#e2c97e] transition-colors">
               Contact
             </Link>
             <span className="text-white/20">•</span>
             <Link
               href="/admin"
-              className="text-[#dfcaa2]/80 hover:text-[#dfcaa2] transition-colors font-medium"
+              className="text-[#e2c97e]/80 hover:text-[#e2c97e] transition-colors font-medium"
             >
               Admin Portal
             </Link>

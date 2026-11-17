@@ -48,7 +48,7 @@ export default function EnquiryModal() {
         <button
           onClick={closeEnquiryModal}
           aria-label="Close enquiry modal"
-          className="absolute top-4 right-4 z-20 w-9 h-9 rounded-full bg-white/95 shadow-md border border-stone-200 flex items-center justify-center text-stone-700 hover:bg-[#072016] hover:text-white transition-all cursor-pointer"
+          className="absolute top-4 right-4 z-20 w-9 h-9 rounded-full bg-white/95 shadow-md border border-stone-200 flex items-center justify-center text-stone-700 hover:bg-[#0a0f1e] hover:text-[#e2c97e] transition-all cursor-pointer"
         >
           <X className="w-5 h-5" />
         </button>
@@ -59,9 +59,9 @@ export default function EnquiryModal() {
           initialStayType={initialData.stayType}
           initialTripType={initialData.tripType}
           initialBudget={initialData.budget}
-          formTitle="Plan Your Perfect Getaway"
-          formSubtitle="Tell us about your ideal holiday, and our team will help you explore suitable resorts and travel experiences within your budget."
-          className="shadow-2xl border-[#c5a86a]/30"
+          formTitle="Plan Your Dream Journey"
+          formSubtitle="Tell us about your holiday, honeymoon, or custom trip, and our specialists will craft the perfect plan within your budget."
+          className="shadow-2xl border-[#c9a84c]/30"
         />
       </div>
     </div>

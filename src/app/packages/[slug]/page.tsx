@@ -54,12 +54,12 @@ export default async function PackageDetailPage({ params }: PageProps) {
   const directWhatsAppUrl = createWhatsAppUrl(quickEnquiryText);
 
   return (
-    <div className="pt-24 pb-24 bg-[#fcfbf7]">
+    <div className="pt-24 pb-24 bg-[#fdfcf8]">
       {/* Top Back Link */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-6">
         <Link
           href="/packages"
-          className="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-[#0e3826] hover:text-[#c5a86a] transition-colors"
+          className="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-[#0a0f1e] hover:text-[#c9a84c] transition-colors"
         >
           <ArrowLeft className="w-3.5 h-3.5" />
           <span>Back to All Packages</span>
@@ -103,9 +103,9 @@ export default async function PackageDetailPage({ params }: PageProps) {
               href={directWhatsAppUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-4 py-2 bg-[#0e3826] text-[#dfcaa2] hover:bg-[#164e36] text-xs font-semibold uppercase tracking-wider rounded-xs transition-colors shadow-xs"
+              className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#0a0f1e] text-[#e2c97e] hover:bg-[#1a2540] text-xs font-semibold uppercase tracking-wider rounded-full transition-colors shadow-sm"
             >
-              <WhatsAppIcon className="w-4 h-4 text-[#dfcaa2]" />
+              <WhatsAppIcon className="w-4 h-4 text-[#e2c97e]" />
               <span>Enquire About This Package</span>
             </a>
           </div>
@@ -115,7 +115,7 @@ export default async function PackageDetailPage({ params }: PageProps) {
       {/* Hero Visual Gallery */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-4">
-          <div className="md:col-span-8 relative aspect-16/10 md:aspect-auto md:h-[480px] overflow-hidden rounded-xs border border-[#0e3826]/10">
+          <div className="md:col-span-8 relative aspect-16/10 md:aspect-auto md:h-[480px] overflow-hidden rounded-2xl border border-stone-200">
             <Image
               src={pkg.heroImage}
               alt={pkg.title}
@@ -130,7 +130,7 @@ export default async function PackageDetailPage({ params }: PageProps) {
             {pkg.gallery.slice(1, 3).map((img, i) => (
               <div
                 key={i}
-                className="relative aspect-4/3 md:aspect-auto md:h-[232px] overflow-hidden rounded-xs border border-[#0e3826]/10"
+                className="relative aspect-4/3 md:aspect-auto md:h-[232px] overflow-hidden rounded-2xl border border-stone-200"
               >
                 <Image
                   src={img}
@@ -227,26 +227,26 @@ export default async function PackageDetailPage({ params }: PageProps) {
 
             {/* 4. Inclusions & Exclusions */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="p-6 bg-white border border-[#0e3826]/10 rounded-xs">
-                <h3 className="text-base font-serif-luxury text-[#0e3826] font-semibold mb-4 flex items-center gap-2">
-                  <Check className="w-4 h-4 text-[#0e3826]" />
+              <div className="p-6 bg-white border border-stone-200 rounded-2xl">
+                <h3 className="text-base font-serif-luxury text-[#0a0f1e] font-semibold mb-4 flex items-center gap-2">
+                  <Check className="w-4 h-4 text-[#c9a84c]" />
                   <span>Curated Inclusions</span>
                 </h3>
-                <ul className="space-y-2 text-xs text-[#525a55]">
+                <ul className="space-y-2 text-xs text-[#6b7190]">
                   {pkg.inclusions.map((inc, i) => (
                     <li key={i} className="flex items-start gap-2">
-                      <span className="w-1.5 h-1.5 rounded-full bg-[#0e3826] mt-1 shrink-0" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#c9a84c] mt-1 shrink-0" />
                       <span>{inc}</span>
                     </li>
                   ))}
                 </ul>
               </div>
 
-              <div className="p-6 bg-white border border-[#0e3826]/10 rounded-xs">
-                <h3 className="text-base font-serif-luxury text-[#7b8580] font-semibold mb-4">
+              <div className="p-6 bg-white border border-stone-200 rounded-2xl">
+                <h3 className="text-base font-serif-luxury text-[#9a9fb8] font-semibold mb-4">
                   Exclusions
                 </h3>
-                <ul className="space-y-2 text-xs text-[#7b8580]">
+                <ul className="space-y-2 text-xs text-[#9a9fb8]">
                   {pkg.exclusions.map((exc, i) => (
                     <li key={i} className="flex items-start gap-2">
                       <span className="w-1.5 h-1.5 rounded-full bg-stone-300 mt-1 shrink-0" />
@@ -268,12 +268,12 @@ export default async function PackageDetailPage({ params }: PageProps) {
                 formSubtitle="Our senior travel director will verify seasonal rates, vehicle logistics, and present your bespoke itinerary on WhatsApp."
               />
 
-              {/* Direct Concierge Contact Card */}
-              <div className="bg-[#f6f1e8] border border-[#c5a86a]/30 p-6 rounded-xs">
-                <p className="text-xs uppercase tracking-widest font-semibold text-[#c5a86a] mb-1.5">
+              {/* Direct Contact Card */}
+              <div className="bg-[#f7f2e8] border border-[#c9a84c]/30 p-6 rounded-2xl">
+                <p className="text-xs uppercase tracking-widest font-semibold text-[#c9a84c] mb-1.5">
                   Have Custom Dates or Questions?
                 </p>
-                <p className="text-xs text-[#525a55] leading-relaxed mb-4">
+                <p className="text-xs text-[#6b7190] leading-relaxed mb-4">
                   We modify any itinerary to match your family size, honeymoon preferences, or flight schedules.
                 </p>
                 <div className="space-y-2 text-xs">
@@ -281,21 +281,21 @@ export default async function PackageDetailPage({ params }: PageProps) {
                     href={directWhatsAppUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-[#0e3826] font-semibold hover:text-[#c5a86a]"
+                    className="flex items-center gap-2 text-[#0a0f1e] font-semibold hover:text-[#c9a84c]"
                   >
                     <WhatsAppIcon className="w-3.5 h-3.5 text-[#25D366]" />
                     <span>WhatsApp: {SITE_CONFIG.whatsappDisplay}</span>
                   </a>
                   <a
                     href={`tel:${SITE_CONFIG.phone}`}
-                    className="flex items-center gap-2 text-[#0e3826] font-medium hover:text-[#c5a86a]"
+                    className="flex items-center gap-2 text-[#0a0f1e] font-medium hover:text-[#c9a84c]"
                   >
                     <Phone className="w-3.5 h-3.5" />
                     <span>Call: {SITE_CONFIG.phoneDisplay}</span>
                   </a>
                   <a
                     href={`mailto:${SITE_CONFIG.email}`}
-                    className="flex items-center gap-2 text-[#0e3826] font-medium hover:text-[#c5a86a] break-all"
+                    className="flex items-center gap-2 text-[#0a0f1e] font-medium hover:text-[#c9a84c] break-all"
                   >
                     <Mail className="w-3.5 h-3.5" />
                     <span>{SITE_CONFIG.email}</span>

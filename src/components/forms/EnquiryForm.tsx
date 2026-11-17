@@ -23,48 +23,61 @@ export interface EnquiryFormProps {
 }
 
 const DESTINATION_OPTIONS = [
-  "Wayanad",
-  "Munnar",
-  "Vagamon",
-  "Alleppey",
-  "Thekkady",
-  "Kovalam",
+  "Maldives",
+  "Bali, Indonesia",
+  "Dubai, UAE",
+  "Singapore",
+  "Thailand (Phuket / Krabi)",
+  "Malaysia (KL / Langkawi)",
+  "Kashmir",
+  "Manali & Himachal",
+  "Rajasthan & Golden Triangle",
+  "Ladakh & Spiti",
+  "Lakshadweep",
+  "Wayanad, Kerala",
+  "Munnar, Kerala",
+  "Alleppey Backwaters",
+  "Thekkady & Vagamon",
+  "Kovalam Beach",
   "Anywhere in Kerala",
   "Other Domestic Destination",
-  "International Destination",
-  "Open to Suggestions",
+  "Other International Destination",
+  "Custom / Open to Suggestions",
 ];
 
 const TRIP_TYPE_OPTIONS = [
-  "Couple Stay",
-  "Honeymoon",
+  "Honeymoon Escape",
+  "International Tour",
+  "Domestic Holiday Package",
+  "Private Luxury Pool Villa Stay",
+  "Custom Travel Plan",
   "Family Vacation",
-  "Friends Trip",
-  "Solo Trip",
-  "Group Trip",
-  "Corporate Trip",
-  "Other",
+  "Friends Group Trip",
+  "Adventure & Nature Trek",
+  "Solo Getaway",
+  "Corporate / Incentive Retreat",
 ];
 
 const BUDGET_OPTIONS = [
-  "₹5,000–₹10,000",
-  "₹10,000–₹25,000",
+  "Under ₹25,000",
   "₹25,000–₹50,000",
   "₹50,000–₹1,00,000",
-  "Above ₹1,00,000",
-  "Flexible Budget",
+  "₹1,00,000–₹2,00,000",
+  "Above ₹2,00,000",
+  "Flexible / Custom Budget",
 ];
 
 const STAY_TYPE_OPTIONS = [
+  "Overwater Bungalow / Villa",
   "Private Pool Villa",
-  "Luxury Resort",
-  "Premium Hotel",
-  "Nature Resort",
-  "Treehouse",
-  "Plantation Stay",
-  "Beach Resort",
-  "Backwater Stay",
-  "Any Suitable Property",
+  "5-Star Luxury Resort",
+  "Beachfront Resort",
+  "Colonial Planter Bungalow",
+  "Rainforest Treehouse",
+  "Luxury Houseboat",
+  "Boutique Heritage Hotel",
+  "Alpine Chalet / Tent Camp",
+  "Any Suitable Premium Property",
 ];
 
 const COUNTRY_CODES = [
@@ -288,11 +301,11 @@ export default function EnquiryForm({
 
       {/* Submission Success State Notice */}
       {isSubmitted && (
-        <div className="mb-8 p-5 bg-[#072016]/5 border border-[#072016]/15 rounded-2xl animate-fadeIn">
+        <div className="mb-8 p-5 bg-[#0a0f1e]/5 border border-[#0a0f1e]/15 rounded-2xl animate-fadeIn">
           <div className="flex items-start gap-3">
-            <CheckCircle2 className="w-5 h-5 text-[#072016] shrink-0 mt-0.5" />
+            <CheckCircle2 className="w-5 h-5 text-[#0a0f1e] shrink-0 mt-0.5" />
             <div className="space-y-2">
-              <h4 className="text-sm font-semibold text-[#072016]">
+              <h4 className="text-sm font-semibold text-[#0a0f1e]">
                 WhatsApp Click-to-Chat Launched
               </h4>
               <p className="text-xs text-stone-600 leading-relaxed">
@@ -304,7 +317,7 @@ export default function EnquiryForm({
                   href={generatedWhatsAppUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 px-4 py-2 bg-[#072016] text-[#dfcaa2] text-xs font-semibold rounded-full hover:bg-[#0e3826] transition-colors"
+                  className="inline-flex items-center gap-1.5 px-4 py-2 bg-[#0a0f1e] text-[#e2c97e] text-xs font-semibold rounded-full hover:bg-[#1a2540] transition-colors"
                 >
                   <span>Re-open WhatsApp Chat</span>
                   <ExternalLink className="w-3.5 h-3.5" />
@@ -432,7 +445,7 @@ export default function EnquiryForm({
         {/* B. TRAVEL PREFERENCES */}
         <div>
           <div className="pb-2 mb-4 border-b border-stone-100">
-            <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-[#c5a059]">
+            <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-[#c9a84c]">
               02 • TRAVEL & STAY PREFERENCES
             </p>
           </div>
@@ -449,7 +462,7 @@ export default function EnquiryForm({
                   setDestination(e.target.value);
                   if (errors.destination) setErrors({ ...errors, destination: "" });
                 }}
-                className={`w-full px-4 py-3 text-sm bg-stone-50/70 border rounded-xl focus:bg-white focus:outline-hidden focus:border-[#072016] text-stone-800 cursor-pointer ${
+                className={`w-full px-4 py-3 text-sm bg-stone-50/70 border rounded-xl focus:bg-white focus:outline-hidden focus:border-[#0a0f1e] text-stone-800 cursor-pointer ${
                   errors.destination ? "border-red-400" : "border-stone-200"
                 }`}
               >
@@ -478,7 +491,7 @@ export default function EnquiryForm({
                 value={resortOrProperty}
                 onChange={(e) => setResortOrProperty(e.target.value)}
                 placeholder="e.g. Zeno Village / Any suitable"
-                className="w-full px-4 py-3 text-sm bg-stone-50/70 border border-stone-200 rounded-xl focus:bg-white focus:outline-hidden focus:border-[#072016]"
+                className="w-full px-4 py-3 text-sm bg-stone-50/70 border border-stone-200 rounded-xl focus:bg-white focus:outline-hidden focus:border-[#0a0f1e]"
               />
             </div>
 
@@ -493,7 +506,7 @@ export default function EnquiryForm({
                   setTripType(e.target.value);
                   if (errors.tripType) setErrors({ ...errors, tripType: "" });
                 }}
-                className={`w-full px-4 py-3 text-sm bg-stone-50/70 border rounded-xl focus:bg-white focus:outline-hidden focus:border-[#072016] text-stone-800 cursor-pointer ${
+                className={`w-full px-4 py-3 text-sm bg-stone-50/70 border rounded-xl focus:bg-white focus:outline-hidden focus:border-[#0a0f1e] text-stone-800 cursor-pointer ${
                   errors.tripType ? "border-red-400" : "border-stone-200"
                 }`}
               >
@@ -519,7 +532,7 @@ export default function EnquiryForm({
               <select
                 value={stayType}
                 onChange={(e) => setStayType(e.target.value)}
-                className="w-full px-4 py-3 text-sm bg-stone-50/70 border border-stone-200 rounded-xl focus:bg-white focus:outline-hidden focus:border-[#072016] text-stone-800 cursor-pointer"
+                className="w-full px-4 py-3 text-sm bg-stone-50/70 border border-stone-200 rounded-xl focus:bg-white focus:outline-hidden focus:border-[#0a0f1e] text-stone-800 cursor-pointer"
               >
                 {STAY_TYPE_OPTIONS.map((st) => (
                   <option key={st} value={st}>
@@ -545,7 +558,7 @@ export default function EnquiryForm({
                     setCheckOutDate("");
                   }
                 }}
-                className={`w-full px-4 py-3 text-sm bg-stone-50/70 border rounded-xl focus:bg-white focus:outline-hidden focus:border-[#072016] text-stone-800 cursor-pointer ${
+                className={`w-full px-4 py-3 text-sm bg-stone-50/70 border rounded-xl focus:bg-white focus:outline-hidden focus:border-[#0a0f1e] text-stone-800 cursor-pointer ${
                   errors.checkInDate ? "border-red-400" : "border-stone-200"
                 }`}
               />
@@ -570,7 +583,7 @@ export default function EnquiryForm({
                   setCheckOutDate(e.target.value);
                   if (errors.checkOutDate) setErrors({ ...errors, checkOutDate: "" });
                 }}
-                className={`w-full px-4 py-3 text-sm bg-stone-50/70 border rounded-xl focus:bg-white focus:outline-hidden focus:border-[#072016] text-stone-800 cursor-pointer ${
+                className={`w-full px-4 py-3 text-sm bg-stone-50/70 border rounded-xl focus:bg-white focus:outline-hidden focus:border-[#0a0f1e] text-stone-800 cursor-pointer ${
                   errors.checkOutDate ? "border-red-400" : "border-stone-200"
                 }`}
               />
@@ -581,7 +594,7 @@ export default function EnquiryForm({
                 </p>
               )}
               {checkInDate && checkOutDate && checkOutDate > checkInDate && (
-                <p className="mt-1 text-[11px] text-[#072016] font-medium">
+                <p className="mt-1 text-[11px] text-[#0a0f1e] font-medium">
                   Stay duration: {calculateDurationNights()} night(s)
                 </p>
               )}
@@ -712,7 +725,7 @@ export default function EnquiryForm({
                   onClick={() => setBudgetBasis("Entire Stay")}
                   className={`px-3 py-1 text-xs font-medium transition-all rounded-full cursor-pointer ${
                     budgetBasis === "Entire Stay"
-                      ? "bg-[#072016] text-[#dfcaa2] shadow-xs"
+                      ? "bg-[#0a0f1e] text-[#e2c97e] shadow-xs"
                       : "text-stone-600 hover:text-black"
                   }`}
                 >
@@ -723,7 +736,7 @@ export default function EnquiryForm({
                   onClick={() => setBudgetBasis("Per Night")}
                   className={`px-3 py-1 text-xs font-medium transition-all rounded-full cursor-pointer ${
                     budgetBasis === "Per Night"
-                      ? "bg-[#072016] text-[#dfcaa2] shadow-xs"
+                      ? "bg-[#0a0f1e] text-[#e2c97e] shadow-xs"
                       : "text-stone-600 hover:text-black"
                   }`}
                 >
@@ -741,7 +754,7 @@ export default function EnquiryForm({
                   onClick={() => setBudget(opt)}
                   className={`px-3.5 py-2.5 text-xs font-medium rounded-xl border transition-all text-center cursor-pointer ${
                     budget === opt
-                      ? "bg-[#072016] text-[#dfcaa2] border-[#072016] shadow-sm font-semibold"
+                      ? "bg-[#0a0f1e] text-[#e2c97e] border-[#0a0f1e] shadow-sm font-semibold"
                       : "bg-stone-50/70 text-stone-700 border-stone-200 hover:border-stone-400"
                   }`}
                 >
@@ -775,7 +788,7 @@ export default function EnquiryForm({
               value={additionalMessage}
               onChange={(e) => setAdditionalMessage(e.target.value)}
               placeholder="Any other details or questions you'd like our travel team to know?"
-              className="w-full px-4 py-3 text-sm bg-stone-50/70 border border-stone-200 rounded-xl focus:bg-white focus:outline-hidden focus:border-[#072016] placeholder:text-stone-400"
+              className="w-full px-4 py-3 text-sm bg-stone-50/70 border border-stone-200 rounded-xl focus:bg-white focus:outline-hidden focus:border-[#0a0f1e] placeholder:text-stone-400"
             />
           </div>
         </div>
@@ -784,7 +797,7 @@ export default function EnquiryForm({
         <div className="pt-2">
           <button
             type="submit"
-            className="w-full py-4 px-6 bg-[#072016] hover:bg-[#0c2e20] text-[#dfcaa2] hover:text-white font-medium text-sm sm:text-base tracking-wider rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 flex items-center justify-center gap-3 group cursor-pointer"
+            className="w-full py-4 px-6 bg-[#0a0f1e] hover:bg-[#1a2540] text-[#e2c97e] hover:text-white font-medium text-sm sm:text-base tracking-wider rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 flex items-center justify-center gap-3 group cursor-pointer"
           >
             <WhatsAppIcon className="w-5 h-5 text-[#25D366]" />
             <span>Send Enquiry on WhatsApp</span>

@@ -32,28 +32,28 @@ export default function DestinationsSection() {
   };
 
   return (
-    <section id="destinations-section" className="py-16 sm:py-20 bg-[#fcfbf7] relative">
+    <section id="destinations-section" className="py-16 sm:py-20 bg-[#fdfcf8] relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-8 gap-4">
           <div>
-            <p className="text-[10px] sm:text-[11px] font-semibold tracking-[0.25em] uppercase text-[#c5a059] mb-1">
-              GOD&apos;S OWN COUNTRY & BEYOND
+            <p className="text-[10px] sm:text-[11px] font-semibold tracking-[0.25em] uppercase text-[#c9a84c] mb-1">
+              DISCOVER INSPIRING PLACES
             </p>
-            <h2 className="text-3xl sm:text-4xl font-serif-luxury font-normal text-[#181d1a] tracking-tight">
-              Popular <span className="text-[#c5a059]">Destinations</span>
+            <h2 className="text-3xl sm:text-4xl font-serif-luxury font-normal text-[#1a1e2e] tracking-tight">
+              Popular <span className="text-[#c9a84c]">Destinations</span>
             </h2>
-            <p className="mt-1 text-xs sm:text-sm text-stone-500 font-light font-sans-luxury">
-              Experience the most beautiful places with Planet Root
+            <p className="mt-1 text-xs sm:text-sm text-[#6b7190] font-light font-sans-luxury">
+              Experience the most beautiful places across India and the world with Planet Root
             </p>
           </div>
 
           <div>
             <a
               href="#destinations-section"
-              className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full border border-stone-300 text-stone-700 hover:border-[#0e3826] hover:text-[#0e3826] text-xs font-medium tracking-wide transition-colors cursor-pointer"
+              className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full border border-stone-300 text-stone-700 hover:border-[#0a0f1e] hover:text-[#0a0f1e] text-xs font-medium tracking-wide transition-colors cursor-pointer"
             >
-              <span>View All Destinations</span>
+              <span>Explore Destinations</span>
               <ArrowRight className="w-3.5 h-3.5" />
             </a>
           </div>

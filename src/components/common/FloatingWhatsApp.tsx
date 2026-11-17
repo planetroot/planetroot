@@ -26,7 +26,7 @@ export default function FloatingWhatsApp() {
 
         {/* Minimal Hover Tooltip (Desktop Only, Unobtrusive) */}
         <span
-          className="pointer-events-none absolute right-full mr-3 top-1/2 -translate-y-1/2 whitespace-nowrap rounded-full bg-[#051811]/92 backdrop-blur-md text-[#fcfbf7] px-3.5 py-1.5 text-[11px] uppercase tracking-wider font-medium shadow-xl border border-[#c5a86a]/25 opacity-0 translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200 hidden sm:inline-flex items-center gap-1.5"
+          className="pointer-events-none absolute right-full mr-3 top-1/2 -translate-y-1/2 whitespace-nowrap rounded-full bg-[#0a0f1e]/95 backdrop-blur-md text-[#fdfcf8] px-3.5 py-1.5 text-[11px] uppercase tracking-wider font-medium shadow-xl border border-[#c9a84c]/25 opacity-0 translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200 hidden sm:inline-flex items-center gap-1.5"
           aria-hidden="true"
         >
           <span className="w-1.5 h-1.5 rounded-full bg-[#25D366] animate-pulse" />

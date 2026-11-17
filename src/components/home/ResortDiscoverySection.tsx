@@ -33,19 +33,19 @@ export default function ResortDiscoverySection() {
   const displayResorts = showAll ? resorts : resorts.slice(0, 3);
 
   return (
-    <section id="featured-resorts-section" className="py-16 sm:py-20 bg-[#fcfbf7]">
+    <section id="featured-resorts-section" className="py-16 sm:py-20 bg-[#fdfcf8]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-8 gap-4">
           <div>
-            <p className="text-[10px] sm:text-[11px] font-semibold tracking-[0.25em] uppercase text-[#c5a059] mb-1">
-              CURATED SANCTUARIES
+            <p className="text-[10px] sm:text-[11px] font-semibold tracking-[0.25em] uppercase text-[#c9a84c] mb-1">
+              HANDPICKED SANCTUARIES
             </p>
-            <h2 className="text-3xl sm:text-4xl font-serif-luxury font-normal text-[#181d1a] tracking-tight">
-              Featured <span className="text-[#c5a059]">Resorts</span>
+            <h2 className="text-3xl sm:text-4xl font-serif-luxury font-normal text-[#1a1e2e] tracking-tight">
+              Featured <span className="text-[#c9a84c]">Resorts &amp; Villas</span>
             </h2>
-            <p className="mt-1 text-xs sm:text-sm text-stone-500 font-light font-sans-luxury">
-              Handpicked stays for your perfect holiday
+            <p className="mt-1 text-xs sm:text-sm text-[#6b7190] font-light font-sans-luxury">
+              Personally inspected private pool villas, tea chalets, and luxury hideaways
             </p>
           </div>
 
@@ -53,7 +53,7 @@ export default function ResortDiscoverySection() {
             <button
               type="button"
               onClick={() => setShowAll(!showAll)}
-              className="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-full border border-stone-300 text-stone-700 hover:border-[#0e3826] hover:bg-[#0e3826] hover:text-white text-xs font-medium tracking-wide transition-colors cursor-pointer"
+              className="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-full border border-stone-300 text-stone-700 hover:border-[#0a0f1e] hover:bg-[#0a0f1e] hover:text-[#e2c97e] text-xs font-medium tracking-wide transition-colors cursor-pointer"
             >
               <span>{showAll ? "Show Top Stays" : "View All Resorts"}</span>
               <ArrowRight className="w-3.5 h-3.5" />
@@ -108,7 +108,7 @@ export default function ResortDiscoverySection() {
                   <button
                     type="button"
                     onClick={() => setSelectedResort(resort)}
-                    className="inline-flex items-center px-4 py-1.5 rounded-full border border-stone-300 text-stone-700 hover:border-[#0e3826] hover:bg-[#0e3826] hover:text-white text-xs font-semibold tracking-wider transition-all cursor-pointer"
+                    className="inline-flex items-center px-4 py-1.5 rounded-full border border-stone-300 text-stone-700 hover:border-[#0a0f1e] hover:bg-[#0a0f1e] hover:text-[#e2c97e] text-xs font-semibold tracking-wider transition-all cursor-pointer"
                   >
                     View Details
                   </button>
@@ -154,14 +154,14 @@ export default function ResortDiscoverySection() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
               <div className="absolute bottom-5 left-5 right-5 text-white">
-                <span className="text-[11px] font-semibold uppercase tracking-wider px-2.5 py-1 bg-[#0e3826] rounded-sm text-[#dfcaa2]">
+                <span className="text-[11px] font-semibold uppercase tracking-wider px-2.5 py-1 bg-[#0a0f1e] rounded-sm text-[#e2c97e]">
                   {selectedResort.category}
                 </span>
                 <h3 className="text-2xl sm:text-3xl font-serif-luxury font-normal text-white mt-2">
                   {selectedResort.name}
                 </h3>
                 <p className="text-xs text-stone-200 flex items-center gap-1 mt-1">
-                  <MapPin className="w-3.5 h-3.5 text-[#dfcaa2]" />
+                  <MapPin className="w-3.5 h-3.5 text-[#c9a84c]" />
                   <span>{selectedResort.destination}</span>
                 </p>
               </div>
@@ -173,7 +173,7 @@ export default function ResortDiscoverySection() {
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-4 border-b border-stone-200">
                 <div>
                   <p className="text-[11px] uppercase tracking-wider text-stone-400 font-semibold">Starting Rate</p>
-                  <p className="text-2xl font-bold text-[#0e3826]">{selectedResort.pricePerNight}</p>
+                  <p className="text-2xl font-bold text-[#0a0f1e]">{selectedResort.pricePerNight}</p>
                 </div>
 
                 <div className="flex flex-wrap items-center gap-3">
@@ -183,9 +183,9 @@ export default function ResortDiscoverySection() {
                       target="_blank"
                       rel="noopener noreferrer"
                       download
-                      className="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-white hover:bg-stone-50 text-[#0e3826] border border-[#0e3826]/30 text-xs font-semibold tracking-wider transition-all shadow-xs"
+                      className="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-white hover:bg-stone-50 text-[#0a0f1e] border border-[#0a0f1e]/30 text-xs font-semibold tracking-wider transition-all shadow-xs"
                     >
-                      <FileText className="w-4 h-4 text-[#c5a059]" />
+                      <FileText className="w-4 h-4 text-[#c9a84c]" />
                       <span>Brochure (PDF)</span>
                     </a>
                   )}
@@ -201,9 +201,9 @@ export default function ResortDiscoverySection() {
                         stayType: resortToEnquire.category,
                       });
                     }}
-                    className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#dfcaa2] hover:bg-[#c5a059] text-[#072016] text-xs font-semibold tracking-wider transition-all shadow-md cursor-pointer"
+                    className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#c9a84c] hover:bg-[#e2c97e] text-[#0a0f1e] text-xs font-semibold tracking-wider transition-all shadow-md cursor-pointer"
                   >
-                    <WhatsAppIcon className="w-4 h-4 text-[#072016]" />
+                    <WhatsAppIcon className="w-4 h-4 text-[#0a0f1e]" />
                     <span>Enquire on WhatsApp</span>
                   </button>
                 </div>

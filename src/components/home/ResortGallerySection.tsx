@@ -34,18 +34,18 @@ export default function ResortGallerySection() {
     selectedItemIndex !== null ? GALLERY_ITEMS[selectedItemIndex] : null;
 
   return (
-    <section id="resort-gallery-section" className="py-20 sm:py-28 bg-[#fcfbf7]">
+    <section id="resort-gallery-section" className="py-20 sm:py-28 bg-[#fdfcf8]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-12">
-          <p className="text-[11px] font-semibold tracking-[0.25em] uppercase text-[#c5a059] mb-1.5">
+          <p className="text-[11px] font-semibold tracking-[0.25em] uppercase text-[#c9a84c] mb-1.5">
             VISUAL GALLERY
           </p>
-          <h2 className="text-3xl sm:text-4xl font-serif-luxury font-normal text-[#181d1a] tracking-tight">
-            Resort & Villa <span className="text-[#c5a059]">Gallery</span>
+          <h2 className="text-3xl sm:text-4xl font-serif-luxury font-normal text-[#1a1e2e] tracking-tight">
+            Resort &amp; Villa <span className="text-[#c9a84c]">Gallery</span>
           </h2>
-          <p className="mt-1 text-xs sm:text-sm text-stone-500 font-light font-sans-luxury">
-            Moments from handpicked pool villas, cloud-forest sanctuaries, and mountain retreats
+          <p className="mt-1 text-xs sm:text-sm text-[#6b7190] font-light font-sans-luxury">
+            Moments from handpicked pool villas, cloud-forest sanctuaries, overwater bungalows, and mountain retreats
           </p>
         </div>
 
