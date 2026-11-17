@@ -59,7 +59,7 @@ export default async function PackageDetailPage({ params }: PageProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-6">
         <Link
           href="/packages"
-          className="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-[#0a0f1e] hover:text-[#c9a84c] transition-colors"
+          className="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-[#0a291e] hover:text-[#c5a059] transition-colors"
         >
           <ArrowLeft className="w-3.5 h-3.5" />
           <span>Back to All Packages</span>
@@ -103,9 +103,9 @@ export default async function PackageDetailPage({ params }: PageProps) {
               href={directWhatsAppUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#0a0f1e] text-[#e2c97e] hover:bg-[#1a2540] text-xs font-semibold uppercase tracking-wider rounded-full transition-colors shadow-sm"
+              className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#0a291e] text-[#dfcaa2] hover:bg-[#144a39] text-xs font-semibold uppercase tracking-wider rounded-full transition-colors shadow-sm"
             >
-              <WhatsAppIcon className="w-4 h-4 text-[#e2c97e]" />
+              <WhatsAppIcon className="w-4 h-4 text-[#dfcaa2]" />
               <span>Enquire About This Package</span>
             </a>
           </div>
@@ -228,14 +228,14 @@ export default async function PackageDetailPage({ params }: PageProps) {
             {/* 4. Inclusions & Exclusions */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="p-6 bg-white border border-stone-200 rounded-2xl">
-                <h3 className="text-base font-serif-luxury text-[#0a0f1e] font-semibold mb-4 flex items-center gap-2">
-                  <Check className="w-4 h-4 text-[#c9a84c]" />
+                <h3 className="text-base font-serif-luxury text-[#0a291e] font-semibold mb-4 flex items-center gap-2">
+                  <Check className="w-4 h-4 text-[#c5a059]" />
                   <span>Curated Inclusions</span>
                 </h3>
-                <ul className="space-y-2 text-xs text-[#6b7190]">
+                <ul className="space-y-2 text-xs text-[#56655e]">
                   {pkg.inclusions.map((inc, i) => (
                     <li key={i} className="flex items-start gap-2">
-                      <span className="w-1.5 h-1.5 rounded-full bg-[#c9a84c] mt-1 shrink-0" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#c5a059] mt-1 shrink-0" />
                       <span>{inc}</span>
                     </li>
                   ))}
@@ -281,21 +281,21 @@ export default async function PackageDetailPage({ params }: PageProps) {
                     href={directWhatsAppUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-[#0a0f1e] font-semibold hover:text-[#c9a84c]"
+                    className="flex items-center gap-2 text-[#0a291e] font-semibold hover:text-[#c5a059]"
                   >
                     <WhatsAppIcon className="w-3.5 h-3.5 text-[#25D366]" />
                     <span>WhatsApp: {SITE_CONFIG.whatsappDisplay}</span>
                   </a>
                   <a
                     href={`tel:${SITE_CONFIG.phone}`}
-                    className="flex items-center gap-2 text-[#0a0f1e] font-medium hover:text-[#c9a84c]"
+                    className="flex items-center gap-2 text-[#0a291e] font-medium hover:text-[#c5a059]"
                   >
                     <Phone className="w-3.5 h-3.5" />
                     <span>Call: {SITE_CONFIG.phoneDisplay}</span>
                   </a>
                   <a
                     href={`mailto:${SITE_CONFIG.email}`}
-                    className="flex items-center gap-2 text-[#0a0f1e] font-medium hover:text-[#c9a84c] break-all"
+                    className="flex items-center gap-2 text-[#0a291e] font-medium hover:text-[#c5a059] break-all"
                   >
                     <Mail className="w-3.5 h-3.5" />
                     <span>{SITE_CONFIG.email}</span>

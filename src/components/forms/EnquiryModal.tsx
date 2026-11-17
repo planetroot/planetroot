@@ -48,7 +48,7 @@ export default function EnquiryModal() {
         <button
           onClick={closeEnquiryModal}
           aria-label="Close enquiry modal"
-          className="absolute top-4 right-4 z-20 w-9 h-9 rounded-full bg-white/95 shadow-md border border-stone-200 flex items-center justify-center text-stone-700 hover:bg-[#0a0f1e] hover:text-[#e2c97e] transition-all cursor-pointer"
+          className="absolute top-4 right-4 z-20 w-9 h-9 rounded-full bg-white/95 shadow-md border border-stone-200 flex items-center justify-center text-stone-700 hover:bg-[#0a291e] hover:text-[#dfcaa2] transition-all cursor-pointer"
         >
           <X className="w-5 h-5" />
         </button>

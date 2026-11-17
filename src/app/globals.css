@@ -2,29 +2,31 @@
 
 @layer base {
   :root {
-    /* Core Brand Palette — Midnight Navy + Champagne Gold */
-    --color-navy: #0a0f1e;
-    --color-navy-mid: #111829;
-    --color-navy-light: #1a2540;
-    --color-navy-surface: #151e32;
+    /* Premium Dark Forest Palette */
+    --color-forest-deep: #061d15;
+    --color-forest: #0a291e;
+    --color-forest-surface: #0e382b;
+    --color-forest-light: #154a39;
     
-    --color-gold: #c9a84c;
-    --color-gold-light: #e2c97e;
-    --color-gold-dark: #9e7c2a;
-    --color-gold-pale: #f5e9c8;
+    /* Warm Champagne Brass & Gold */
+    --color-gold: #c5a059;
+    --color-gold-light: #dfcaa2;
+    --color-gold-dark: #9e7c36;
+    --color-gold-pale: #f5eedf;
     
-    --color-ivory: #fdfcf8;
-    --color-cream: #f7f2e8;
-    --color-cream-dark: #ede5d4;
-    --color-sand: #dfd3ba;
+    /* Warm Editorial Neutrals */
+    --color-ivory: #fcfbf7;
+    --color-cream: #f6f4ee;
+    --color-cream-dark: #ebe7dc;
     
-    --color-charcoal: #1a1e2e;
-    --color-charcoal-mid: #3a4060;
-    --color-charcoal-muted: #6b7190;
-    --color-charcoal-light: #9a9fb8;
+    /* Forest Charcoal Typography */
+    --color-charcoal: #18221d;
+    --color-charcoal-mid: #33423a;
+    --color-charcoal-muted: #56655e;
+    --color-charcoal-light: #83928a;
     
-    --border-subtle: rgba(10, 15, 30, 0.12);
-    --border-gold: rgba(201, 168, 76, 0.35);
+    --border-subtle: rgba(10, 41, 30, 0.12);
+    --border-gold: rgba(197, 160, 89, 0.35);
   }
 
   html {
@@ -46,19 +48,19 @@
   }
 
   ::selection {
-    background-color: #0a0f1e;
-    color: #fdfcf8;
+    background-color: #0a291e;
+    color: #fcfbf7;
   }
 }
 
-/* Editorial typography */
+/* Editorial typography styles */
 .font-serif-luxury {
   font-family: var(--font-playfair), var(--font-cormorant), "Playfair Display", "Didot", Georgia, serif;
   letter-spacing: -0.015em;
 }
 
 .font-sans-luxury {
-  font-family: var(--font-outfit), -apple-system, sans-serif;
+  font-family: var(--font-outfit), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   letter-spacing: -0.008em;
 }
 
@@ -68,55 +70,27 @@
   letter-spacing: 0.01em;
 }
 
-.font-cursive {
-  font-family: var(--font-playfair), var(--font-cormorant), Georgia, serif;
-  font-style: italic;
-  font-weight: 400;
-  letter-spacing: 0.02em;
-}
-
-/* Premium Navy Buttons */
+/* Premium Dark Forest Buttons */
 .btn-luxury-primary {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  background-color: #0a0f1e;
-  color: #fdfcf8;
+  background-color: #0a291e;
+  color: #fcfbf7;
   padding: 0.875rem 2rem;
   font-size: 0.875rem;
   font-weight: 500;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-  border: 1px solid #0a0f1e;
+  border: 1px solid #0a291e;
 }
 
 .btn-luxury-primary:hover {
-  background-color: #1a2540;
-  border-color: #1a2540;
+  background-color: #144a39;
+  border-color: #144a39;
   color: #ffffff;
-}
-
-.btn-luxury-secondary {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  background-color: transparent;
-  color: #0a0f1e;
-  padding: 0.875rem 2rem;
-  font-size: 0.875rem;
-  font-weight: 500;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-  border: 1px solid rgba(10, 15, 30, 0.4);
-}
-
-.btn-luxury-secondary:hover {
-  background-color: rgba(10, 15, 30, 0.05);
-  border-color: #0a0f1e;
 }
 
 .btn-luxury-gold {
@@ -124,91 +98,29 @@
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  background-color: #c9a84c;
-  color: #0a0f1e;
+  background-color: #c5a059;
+  color: #061d15;
   padding: 0.875rem 2rem;
   font-size: 0.875rem;
   font-weight: 600;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-  border: 1px solid #c9a84c;
+  border: 1px solid #c5a059;
 }
 
 .btn-luxury-gold:hover {
-  background-color: #e2c97e;
-  border-color: #e2c97e;
-}
-
-.btn-luxury-white {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  background-color: #ffffff;
-  color: #0a0f1e;
-  padding: 0.875rem 2rem;
-  font-size: 0.875rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-  border: 1px solid #ffffff;
-}
-
-.btn-luxury-white:hover {
-  background-color: #f7f2e8;
-  border-color: #f7f2e8;
+  background-color: #dfcaa2;
+  border-color: #dfcaa2;
 }
 
 /* Luxury dividers */
 .divider-luxury {
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(10, 15, 30, 0.15) 30%, rgba(201, 168, 76, 0.5) 50%, rgba(10, 15, 30, 0.15) 70%, transparent);
+  background: linear-gradient(90deg, transparent, rgba(10, 41, 30, 0.15) 30%, rgba(197, 160, 89, 0.4) 50%, rgba(10, 41, 30, 0.15) 70%, transparent);
 }
 
 .divider-luxury-light {
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.15) 30%, rgba(201, 168, 76, 0.5) 50%, rgba(255, 255, 255, 0.15) 70%, transparent);
-}
-
-/* Cinematic zoom animation */
-@keyframes cinematicSlowZoom {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.05); }
-  100% { transform: scale(1); }
-}
-
-.animate-cinematic-zoom {
-  animation: cinematicSlowZoom 30s ease-in-out infinite alternate;
-}
-
-/* Premium shimmer for gold accents */
-@keyframes shimmer {
-  0% { background-position: -200% center; }
-  100% { background-position: 200% center; }
-}
-
-.text-gold-shimmer {
-  background: linear-gradient(90deg, #c9a84c 0%, #f5e9c8 40%, #c9a84c 60%, #9e7c2a 100%);
-  background-size: 200% auto;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  animation: shimmer 3s linear infinite;
-}
-
-/* Premium card glass effect */
-.glass-card {
-  background: rgba(255, 255, 255, 0.72);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(201, 168, 76, 0.18);
-}
-
-.glass-card-dark {
-  background: rgba(10, 15, 30, 0.72);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(201, 168, 76, 0.18);
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.12) 30%, rgba(197, 160, 89, 0.45) 50%, rgba(255, 255, 255, 0.12) 70%, transparent);
 }

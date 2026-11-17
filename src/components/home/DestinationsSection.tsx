@@ -51,7 +51,7 @@ export default function DestinationsSection() {
           <div>
             <a
               href="#destinations-section"
-              className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full border border-stone-300 text-stone-700 hover:border-[#0a0f1e] hover:text-[#0a0f1e] text-xs font-medium tracking-wide transition-colors cursor-pointer"
+              className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full border border-stone-300 text-stone-700 hover:border-[#0a291e] hover:text-[#0a291e] text-xs font-medium tracking-wide transition-colors cursor-pointer"
             >
               <span>Explore Destinations</span>
               <ArrowRight className="w-3.5 h-3.5" />

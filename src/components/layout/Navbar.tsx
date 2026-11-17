@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import { WhatsAppIcon } from "@/components/common/WhatsAppIcon";
-import { SITE_CONFIG, createWhatsAppUrl, DEFAULT_WHATSAPP_MESSAGE } from "@/config/site";
+import { createWhatsAppUrl, DEFAULT_WHATSAPP_MESSAGE } from "@/config/site";
 import { useEnquiryModal } from "@/context/EnquiryModalContext";
 
 const NAV_LINKS = [
@@ -51,7 +51,7 @@ export default function Navbar() {
 
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 z-40 bg-[#0a0f1e]/95 backdrop-blur-md border-b border-white/10 text-white py-3.5 transition-all">
+      <header className="fixed top-0 left-0 right-0 z-40 bg-[#061d15]/95 backdrop-blur-md border-b border-white/10 text-white py-3.5 transition-all">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
             {/* Brand Logo */}
@@ -70,7 +70,7 @@ export default function Navbar() {
               />
             </a>
 
-            {/* Desktop Navigation Links (Single Page Smooth Scroll) */}
+            {/* Desktop Navigation Links */}
             <nav className="hidden lg:flex items-center gap-8">
               {NAV_LINKS.map((link) => {
                 const isActive = activeSection === link.targetId;
@@ -81,13 +81,13 @@ export default function Navbar() {
                     onClick={(e) => scrollTo(e, link.targetId)}
                     className={`text-xs sm:text-[13px] tracking-wide transition-all duration-200 relative py-1 cursor-pointer ${
                       isActive
-                        ? "text-[#e2c97e] font-semibold"
+                        ? "text-[#dfcaa2] font-semibold"
                         : "text-stone-300 hover:text-white"
                     }`}
                   >
                     {link.label}
                     {isActive && (
-                      <span className="absolute bottom-0 left-0 right-0 h-[2px] bg-[#e2c97e] rounded-full animate-fadeIn" />
+                      <span className="absolute bottom-0 left-0 right-0 h-[2px] bg-[#dfcaa2] rounded-full animate-fadeIn" />
                     )}
                   </a>
                 );
@@ -100,9 +100,9 @@ export default function Navbar() {
                 href={whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#c9a84c] hover:bg-[#e2c97e] text-[#0a0f1e] text-xs font-semibold tracking-wide transition-all shadow-md cursor-pointer hover:scale-105"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#c5a059] hover:bg-[#dfcaa2] text-[#061d15] text-xs font-semibold tracking-wide transition-all shadow-md cursor-pointer hover:scale-105"
               >
-                <WhatsAppIcon className="w-4 h-4 text-[#0a0f1e]" />
+                <WhatsAppIcon className="w-4 h-4 text-[#061d15]" />
                 <span>Book on WhatsApp</span>
               </a>
             </div>
@@ -113,9 +113,9 @@ export default function Navbar() {
                 href={whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[11px] font-semibold px-3 py-1.5 rounded-full bg-[#c9a84c] text-[#0a0f1e] flex items-center gap-1 shadow-sm"
+                className="text-[11px] font-semibold px-3 py-1.5 rounded-full bg-[#c5a059] text-[#061d15] flex items-center gap-1 shadow-sm"
               >
-                <WhatsAppIcon className="w-3.5 h-3.5 text-[#0a0f1e]" />
+                <WhatsAppIcon className="w-3.5 h-3.5 text-[#061d15]" />
                 <span>WhatsApp</span>
               </a>
               <button
@@ -133,9 +133,9 @@ export default function Navbar() {
 
       {/* Mobile Slide-out Drawer */}
       {mobileMenuOpen && (
-        <div className="fixed inset-0 z-50 lg:hidden flex flex-col bg-[#0a0f1e] text-white animate-fadeIn">
+        <div className="fixed inset-0 z-50 lg:hidden flex flex-col bg-[#061d15] text-white animate-fadeIn">
           {/* Header */}
-          <div className="flex items-center justify-between px-6 py-4 border-b border-white/10 bg-[#111829]">
+          <div className="flex items-center justify-between px-6 py-4 border-b border-white/10 bg-[#0a291e]">
             <a
               href="#home"
               onClick={(e) => scrollTo(e, "home")}
@@ -168,7 +168,7 @@ export default function Navbar() {
                   href={link.href}
                   onClick={(e) => scrollTo(e, link.targetId)}
                   className={`block text-lg font-serif-luxury transition-colors ${
-                    isActive ? "text-[#e2c97e] font-semibold" : "text-white/85 hover:text-[#c9a84c]"
+                    isActive ? "text-[#dfcaa2] font-semibold" : "text-white/85 hover:text-[#c5a059]"
                   }`}
                 >
                   {link.label}
@@ -181,9 +181,9 @@ export default function Navbar() {
                 href={whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full py-3.5 rounded-full bg-[#c9a84c] hover:bg-[#e2c97e] text-[#0a0f1e] font-semibold text-xs uppercase tracking-wider flex items-center justify-center gap-2 shadow-lg transition-colors"
+                className="w-full py-3.5 rounded-full bg-[#c5a059] hover:bg-[#dfcaa2] text-[#061d15] font-semibold text-xs uppercase tracking-wider flex items-center justify-center gap-2 shadow-lg transition-colors"
               >
-                <WhatsAppIcon className="w-4 h-4 text-[#0a0f1e]" />
+                <WhatsAppIcon className="w-4 h-4 text-[#061d15]" />
                 <span>Chat on WhatsApp</span>
               </a>
 
@@ -195,7 +195,7 @@ export default function Navbar() {
                 }}
                 className="w-full py-3.5 rounded-full bg-white/10 text-white font-medium text-xs uppercase tracking-wider flex items-center justify-center gap-2 border border-white/20"
               >
-                <span>Open Custom Enquiry Form</span>
+                <span>For Enquiry</span>
               </button>
             </div>
           </nav>

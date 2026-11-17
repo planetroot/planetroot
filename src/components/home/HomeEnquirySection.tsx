@@ -22,20 +22,20 @@ function InstagramIcon({ className = "w-4 h-4" }: { className?: string }) {
 
 export default function HomeEnquirySection() {
   return (
-    <section id="enquiry-section" className="py-20 sm:py-28 bg-[#fdfcf8] relative">
+    <section id="enquiry-section" className="py-20 sm:py-28 bg-[#fcfbf7] relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
           {/* Left Column: Direct Contacts (5 cols) */}
           <div className="lg:col-span-5 space-y-7">
             <div>
-              <p className="text-[11px] font-semibold tracking-[0.25em] uppercase text-[#c9a84c] mb-1.5">
+              <p className="text-[11px] font-semibold tracking-[0.25em] uppercase text-[#c5a059] mb-1.5">
                 CONTACT &amp; ENQUIRIES
               </p>
-              <h2 className="text-3xl sm:text-4xl font-serif-luxury font-normal text-[#1a1e2e] tracking-tight leading-tight">
+              <h2 className="text-3xl sm:text-4xl font-serif-luxury font-normal text-[#18221d] tracking-tight leading-tight">
                 Plan Your Journey With Our Travel Specialists
               </h2>
-              <p className="mt-3 text-sm sm:text-base text-[#6b7190] font-light leading-relaxed font-sans-luxury">
-                Whether you desire an overwater bungalow in Maldives, an international city tour, a romantic Kerala pool villa, or a custom family plan, we craft every detail around your dreams and budget.
+              <p className="mt-3 text-sm sm:text-base text-[#56655e] font-light leading-relaxed font-sans-luxury">
+                Whether you desire an overwater villa in Maldives, a tailored international tour, a quiet Kerala private pool sanctuary, or a custom itinerary, we craft every detail around your schedule and budget.
               </p>
             </div>
 
@@ -43,8 +43,8 @@ export default function HomeEnquirySection() {
             <div className="bg-white border border-stone-200/90 rounded-3xl p-6 sm:p-7 shadow-sm space-y-5">
               {/* WhatsApp Item */}
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 rounded-full bg-[#0a0f1e] text-[#e2c97e] flex items-center justify-center shrink-0">
-                  <WhatsAppIcon className="w-4 h-4 text-[#e2c97e]" />
+                <div className="w-10 h-10 rounded-full bg-[#0a291e] text-[#dfcaa2] flex items-center justify-center shrink-0">
+                  <WhatsAppIcon className="w-4 h-4 text-[#dfcaa2]" />
                 </div>
                 <div>
                   <p className="text-[10px] uppercase tracking-wider text-stone-400 font-semibold">
@@ -54,7 +54,7 @@ export default function HomeEnquirySection() {
                     href={createWhatsAppUrl(DEFAULT_WHATSAPP_MESSAGE)}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-base font-semibold text-stone-900 hover:text-[#0a0f1e] transition-colors block mt-0.5"
+                    className="text-base font-semibold text-stone-900 hover:text-[#0a291e] transition-colors block mt-0.5"
                   >
                     {SITE_CONFIG.whatsappDisplay}
                   </a>
@@ -68,8 +68,8 @@ export default function HomeEnquirySection() {
 
               {/* Phone Item */}
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 rounded-full bg-[#0a0f1e] text-[#e2c97e] flex items-center justify-center shrink-0">
-                  <Phone className="w-4 h-4 text-[#e2c97e]" />
+                <div className="w-10 h-10 rounded-full bg-[#0a291e] text-[#dfcaa2] flex items-center justify-center shrink-0">
+                  <Phone className="w-4 h-4 text-[#dfcaa2]" />
                 </div>
                 <div>
                   <p className="text-[10px] uppercase tracking-wider text-stone-400 font-semibold">
@@ -77,12 +77,12 @@ export default function HomeEnquirySection() {
                   </p>
                   <a
                     href={`tel:${SITE_CONFIG.phone}`}
-                    className="text-base font-semibold text-stone-900 hover:text-[#0a0f1e] transition-colors block mt-0.5"
+                    className="text-base font-semibold text-stone-900 hover:text-[#0a291e] transition-colors block mt-0.5"
                   >
                     {SITE_CONFIG.phoneDisplay}
                   </a>
                   <p className="text-xs text-stone-500 mt-0.5">
-                    Speak directly with our senior travel directors
+                    Speak directly with our senior travel specialists
                   </p>
                 </div>
               </div>
@@ -91,8 +91,8 @@ export default function HomeEnquirySection() {
 
               {/* Email Item */}
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 rounded-full bg-[#0a0f1e] text-[#e2c97e] flex items-center justify-center shrink-0">
-                  <Mail className="w-4 h-4 text-[#e2c97e]" />
+                <div className="w-10 h-10 rounded-full bg-[#0a291e] text-[#dfcaa2] flex items-center justify-center shrink-0">
+                  <Mail className="w-4 h-4 text-[#dfcaa2]" />
                 </div>
                 <div>
                   <p className="text-[10px] uppercase tracking-wider text-stone-400 font-semibold">
@@ -100,7 +100,7 @@ export default function HomeEnquirySection() {
                   </p>
                   <a
                     href={`mailto:${SITE_CONFIG.email}`}
-                    className="text-base font-semibold text-stone-900 hover:text-[#0a0f1e] transition-colors break-all block mt-0.5"
+                    className="text-base font-semibold text-stone-900 hover:text-[#0a291e] transition-colors break-all block mt-0.5"
                   >
                     {SITE_CONFIG.email}
                   </a>
@@ -114,8 +114,8 @@ export default function HomeEnquirySection() {
 
               {/* Instagram Item */}
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 rounded-full bg-[#0a0f1e] text-[#e2c97e] flex items-center justify-center shrink-0">
-                  <InstagramIcon className="w-4 h-4 text-[#e2c97e]" />
+                <div className="w-10 h-10 rounded-full bg-[#0a291e] text-[#dfcaa2] flex items-center justify-center shrink-0">
+                  <InstagramIcon className="w-4 h-4 text-[#dfcaa2]" />
                 </div>
                 <div>
                   <p className="text-[10px] uppercase tracking-wider text-stone-400 font-semibold">
@@ -125,7 +125,7 @@ export default function HomeEnquirySection() {
                     href={SITE_CONFIG.socials.instagram}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-sm font-semibold text-stone-900 hover:text-[#0a0f1e] transition-colors block mt-0.5"
+                    className="text-sm font-semibold text-stone-900 hover:text-[#0a291e] transition-colors block mt-0.5"
                   >
                     @planetroottravels
                   </a>
@@ -138,16 +138,16 @@ export default function HomeEnquirySection() {
 
             {/* Operating Hours & Guarantee */}
             <div className="pt-2 space-y-2.5">
-              <div className="flex items-center gap-2.5 text-xs text-[#6b7190]">
-                <Clock className="w-4 h-4 text-[#0a0f1e] shrink-0" />
+              <div className="flex items-center gap-2.5 text-xs text-[#56655e]">
+                <Clock className="w-4 h-4 text-[#0a291e] shrink-0" />
                 <span>
                   <strong>Operating Hours:</strong> {SITE_CONFIG.workingHours} (24/7 on-trip assistance)
                 </span>
               </div>
-              <div className="flex items-start gap-2.5 text-xs text-[#6b7190] leading-relaxed">
-                <ShieldCheck className="w-4 h-4 text-[#0a0f1e] shrink-0 mt-0.5" />
+              <div className="flex items-start gap-2.5 text-xs text-[#56655e] leading-relaxed">
+                <ShieldCheck className="w-4 h-4 text-[#0a291e] shrink-0 mt-0.5" />
                 <span>
-                  <strong>No Hidden Surprises:</strong> Every reservation is personally coordinated. We verify live availability, room views, and rates before you make any payment.
+                  <strong>Verified Availability:</strong> We confirm live availability, room views, and partner rates before you make any commitment.
                 </span>
               </div>
             </div>

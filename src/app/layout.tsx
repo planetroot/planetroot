@@ -29,11 +29,11 @@ const cormorant = Cormorant_Garamond({
 export const metadata: Metadata = {
   metadataBase: new URL("https://planetroot.in"),
   title: {
-    default: "Planet Root Travels | Premium World Travel, Honeymoon Packages, Resorts & Custom Plans",
+    default: "Planet Root Travels | Luxury Resorts, Honeymoon Escapes & Tour Packages",
     template: "%s | Planet Root Travels — Beyond Borders",
   },
   description:
-    "Curated international tours, honeymoon packages, domestic holiday circuits, private luxury villas, and custom travel planning across the globe. Beyond Borders.",
+    "Handpicked luxury resorts, private pool villas, honeymoon packages, and curated holiday tours across Kerala, India, and abroad with direct WhatsApp booking.",
   keywords: [
     "Planet Root Travels",
     "Beyond Borders",
@@ -83,7 +83,7 @@ export default function RootLayout({
       data-scroll-behavior="smooth"
       className={`${playfair.variable} ${outfit.variable} ${cormorant.variable} font-sans-luxury scroll-smooth`}
     >
-      <body className="min-h-screen flex flex-col bg-[#fdfcf8] text-[#1a1e2e] selection:bg-[#0a0f1e] selection:text-[#fdfcf8]">
+      <body className="min-h-screen flex flex-col bg-[#fcfbf7] text-[#18221d] selection:bg-[#0a291e] selection:text-[#fcfbf7]">
         <EnquiryModalProvider>
           <Navbar />
           <main className="flex-1">{children}</main>

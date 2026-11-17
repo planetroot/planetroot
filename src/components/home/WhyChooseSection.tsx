@@ -1,101 +1,70 @@
 "use client";
 
-import {
-  Globe,
-  ShieldCheck,
-  Headphones,
-  Star,
-  Heart,
-  Zap,
-} from "lucide-react";
-
-const BENEFITS = [
+const PILLARS = [
   {
-    icon: Globe,
-    title: "50+ Destinations",
-    subtitle: "India & International",
-    description: "From Kerala to Maldives, Rajasthan to Europe — we cover it all.",
+    index: "01",
+    title: "Handpicked & Vetted",
+    subtitle: "Authentic Hospitality",
+    description:
+      "Every boutique resort, heritage estate, and private pool villa is evaluated for authentic privacy, cleanliness, and scenic setting before we recommend it.",
   },
   {
-    icon: ShieldCheck,
-    title: "Verified Properties",
-    subtitle: "Quality Assured",
-    description: "Every hotel, villa and resort personally vetted by our team.",
+    index: "02",
+    title: "Direct Partner Rates",
+    subtitle: "Zero Hidden Markups",
+    description:
+      "We coordinate directly with property leadership and trusted ground operators, delivering clear, itemized quotes with complete transparency.",
   },
   {
-    icon: Star,
-    title: "Best Price",
-    subtitle: "Guaranteed Rates",
-    description: "Direct negotiations with properties ensure the best value.",
-  },
-  {
-    icon: Heart,
-    title: "Honeymoon Experts",
-    subtitle: "Romance Specialists",
-    description: "Dedicated honeymoon planners for the most memorable trip.",
-  },
-  {
-    icon: Zap,
-    title: "Custom Itineraries",
-    subtitle: "Built Around You",
-    description: "No cookie-cutter trips. Every journey crafted for your needs.",
-  },
-  {
-    icon: Headphones,
-    title: "24/7 Support",
-    subtitle: "WhatsApp Concierge",
-    description: "Our experts are always reachable before and during your trip.",
+    index: "03",
+    title: "Dedicated Human Planning",
+    subtitle: "Direct WhatsApp Assistance",
+    description:
+      "You speak directly with an experienced specialist who listens to your dates, preferences, and pace — with continuous support throughout your trip.",
   },
 ];
 
 export default function WhyChooseSection() {
   return (
-    <section id="why-choose-section" className="py-16 sm:py-20 bg-[#0a0f1e] text-white overflow-hidden relative">
-      {/* Ambient gold glow */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[200px] bg-[radial-gradient(ellipse_at_top,rgba(201,168,76,0.08),transparent_70%)] pointer-events-none" />
+    <section id="why-choose-section" className="py-20 sm:py-24 bg-[#061d15] text-white relative overflow-hidden">
+      {/* Subtle ambient forest gold glow */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[250px] bg-[radial-gradient(ellipse_at_top,rgba(197,160,89,0.1),transparent_70%)] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
-        <div className="text-center mb-12 sm:mb-16">
-          <p className="text-[11px] font-semibold tracking-[0.28em] uppercase text-[#c9a84c] mb-2">
-            THE PLANET ROOT DIFFERENCE
+        <div className="text-center max-w-2xl mx-auto mb-14 sm:mb-16">
+          <p className="text-[11px] font-semibold tracking-[0.28em] uppercase text-[#c5a059] mb-2.5">
+            OUR PHILOSOPHY
           </p>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif-luxury font-normal tracking-tight text-white">
-            Why Travel with <span className="text-[#c9a84c]">Planet Root</span>
+            Travel Curated With <span className="text-[#dfcaa2]">Quiet Care</span>
           </h2>
         </div>
 
-        {/* Benefits Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {BENEFITS.map((item, idx) => {
-            const Icon = item.icon;
-            return (
-              <div
-                key={idx}
-                className="group relative bg-white/4 hover:bg-white/8 border border-white/8 hover:border-[#c9a84c]/30 rounded-2xl p-6 sm:p-7 transition-all duration-300"
-              >
-                {/* Gold accent line */}
-                <div className="absolute top-0 left-6 right-6 h-px bg-gradient-to-r from-transparent via-[#c9a84c]/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-                
-                <div className="flex items-start gap-4">
-                  <div className="w-11 h-11 rounded-xl bg-[#c9a84c]/15 border border-[#c9a84c]/25 flex items-center justify-center shrink-0 group-hover:bg-[#c9a84c]/25 transition-colors">
-                    <Icon className="w-5 h-5 text-[#c9a84c]" />
-                  </div>
-                  <div>
-                    <h3 className="text-sm sm:text-base font-semibold text-white leading-tight">
-                      {item.title}
-                    </h3>
-                    <p className="text-[11px] text-[#c9a84c] font-medium tracking-wide mt-0.5 mb-2">
-                      {item.subtitle}
-                    </p>
-                    <p className="text-xs text-stone-400/80 font-light leading-relaxed">
-                      {item.description}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            );
-          })}
+        {/* 3-Pillar Minimalist Editorial Layout (No stock icons) */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10">
+          {PILLARS.map((pillar) => (
+            <div
+              key={pillar.index}
+              className="relative bg-[#0a291e]/60 border border-white/10 rounded-3xl p-7 sm:p-8 backdrop-blur-sm transition-all duration-300 hover:border-[#c5a059]/40 hover:bg-[#0a291e]"
+            >
+              <span className="font-serif-luxury text-2xl sm:text-3xl font-light text-[#c5a059]/80 block mb-4">
+                {pillar.index}
+              </span>
+
+              <h3 className="text-lg sm:text-xl font-serif-luxury font-semibold text-white mb-1">
+                {pillar.title}
+              </h3>
+
+              <p className="text-[11px] font-semibold uppercase tracking-wider text-[#dfcaa2] mb-3">
+                {pillar.subtitle}
+              </p>
+
+              <p className="text-xs sm:text-sm text-stone-300/80 font-light leading-relaxed">
+                {pillar.description}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
     </section>
