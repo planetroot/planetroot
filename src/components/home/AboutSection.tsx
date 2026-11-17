@@ -60,9 +60,9 @@ export default function AboutSection() {
                 <button
                   type="button"
                   onClick={() => openEnquiryModal({ destination: "Anywhere in the World" })}
-                  className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#0a291e] text-[#dfcaa2] hover:bg-[#144a39] text-xs font-semibold uppercase tracking-wider transition-all shadow-md cursor-pointer"
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-black hover:bg-stone-800 text-white text-xs font-medium uppercase tracking-wider transition-all shadow-md cursor-pointer"
                 >
-                  <WhatsAppIcon className="w-3.5 h-3.5 text-[#dfcaa2]" />
+                  <WhatsAppIcon className="w-3.5 h-3.5 text-[#25D366]" />
                   <span>Enquire With Us</span>
                 </button>
               </div>

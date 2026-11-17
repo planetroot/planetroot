@@ -27,10 +27,7 @@ export default function Footer() {
   const currentYear = 2026;
 
   return (
-    <footer className="bg-[#061d15] text-[#fcfbf7] border-t border-white/10 pt-18 sm:pt-20 pb-12 relative overflow-hidden">
-      {/* Subtle Ambient Forest Glow */}
-      <div className="absolute top-0 right-1/3 w-[600px] h-[300px] bg-[radial-gradient(ellipse_at_top,rgba(10,41,30,0.8),transparent_70%)] pointer-events-none" />
-
+    <footer className="bg-[#0b0d0e] text-[#fcfbf7] border-t border-white/10 pt-16 sm:pt-20 pb-12 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Main Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-12 pb-14 border-b border-white/10">
@@ -38,34 +35,34 @@ export default function Footer() {
           <div className="lg:col-span-5 space-y-4">
             <a
               href="#home"
-              className="inline-block transition-opacity hover:opacity-90 cursor-pointer"
+              className="inline-block transition-opacity hover:opacity-85 cursor-pointer"
             >
               <Image
                 src="/images/planet-root-logo-gold-trimmed.png"
                 alt="PLANET ROOT — Beyond Borders"
-                width={260}
-                height={60}
-                className="h-10 sm:h-11 w-auto object-contain drop-shadow-sm"
+                width={240}
+                height={55}
+                className="h-9 sm:h-10 w-auto object-contain drop-shadow-sm"
               />
             </a>
 
-            <p className="text-[10px] sm:text-[11px] uppercase tracking-[0.28em] text-[#dfcaa2] font-medium">
+            <p className="text-[10px] sm:text-[11px] uppercase tracking-[0.28em] text-stone-300 font-medium">
               BEYOND BORDERS • CURATED WORLD TRAVEL
             </p>
 
-            <p className="text-xs sm:text-sm text-stone-300/80 font-light leading-relaxed max-w-sm">
+            <p className="text-xs sm:text-sm text-stone-400 font-light leading-relaxed max-w-sm">
               Handpicked boutique resorts, international holidays, honeymoon escapes, and custom itineraries crafted around your preferences with direct WhatsApp assistance.
             </p>
 
-            {/* Direct WhatsApp Action */}
+            {/* Direct WhatsApp Action: Clean Transparent Button */}
             <div className="pt-2">
               <a
                 href={createWhatsAppUrl(DEFAULT_WHATSAPP_MESSAGE)}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#c5a059] hover:bg-[#dfcaa2] text-[#061d15] text-xs font-semibold uppercase tracking-wider transition-all shadow-md hover:scale-105 duration-200"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-white/20 hover:border-white text-white hover:bg-white hover:text-black text-xs font-medium uppercase tracking-wider transition-all duration-300"
               >
-                <WhatsAppIcon className="w-3.5 h-3.5 text-[#061d15]" />
+                <WhatsAppIcon className="w-3.5 h-3.5 text-[#25D366]" />
                 <span>For Enquiry</span>
               </a>
             </div>
@@ -73,32 +70,32 @@ export default function Footer() {
 
           {/* 2. Quick Navigation (Span 2, offset) */}
           <div className="lg:col-span-2 lg:col-start-7 space-y-3.5">
-            <h4 className="text-[10px] sm:text-[11px] font-semibold tracking-[0.24em] uppercase text-[#dfcaa2]">
+            <h4 className="text-[10px] sm:text-[11px] font-medium tracking-[0.24em] uppercase text-stone-300">
               TRAVEL TYPES
             </h4>
-            <ul className="space-y-2.5 text-xs sm:text-[13px] text-stone-300/80 font-light">
+            <ul className="space-y-2.5 text-xs sm:text-[13px] text-stone-400 font-light">
               <li>
-                <a href="#packages-section" className="hover:text-[#dfcaa2] transition-colors">
+                <a href="#packages-section" className="hover:text-white transition-colors">
                   International Tours
                 </a>
               </li>
               <li>
-                <a href="#packages-section" className="hover:text-[#dfcaa2] transition-colors">
+                <a href="#packages-section" className="hover:text-white transition-colors">
                   Honeymoon Escapes
                 </a>
               </li>
               <li>
-                <a href="#packages-section" className="hover:text-[#dfcaa2] transition-colors">
+                <a href="#packages-section" className="hover:text-white transition-colors">
                   Domestic Packages
                 </a>
               </li>
               <li>
-                <a href="#featured-resorts-section" className="hover:text-[#dfcaa2] transition-colors">
+                <a href="#featured-resorts-section" className="hover:text-white transition-colors">
                   Resorts &amp; Villas
                 </a>
               </li>
               <li>
-                <a href="#packages-section" className="hover:text-[#dfcaa2] transition-colors">
+                <a href="#packages-section" className="hover:text-white transition-colors">
                   Custom Travel Plans
                 </a>
               </li>
@@ -107,32 +104,32 @@ export default function Footer() {
 
           {/* 3. Top Destinations (Span 2) */}
           <div className="lg:col-span-2 space-y-3.5">
-            <h4 className="text-[10px] sm:text-[11px] font-semibold tracking-[0.24em] uppercase text-[#dfcaa2]">
+            <h4 className="text-[10px] sm:text-[11px] font-medium tracking-[0.24em] uppercase text-stone-300">
               DESTINATIONS
             </h4>
-            <ul className="space-y-2.5 text-xs sm:text-[13px] text-stone-300/80 font-light">
+            <ul className="space-y-2.5 text-xs sm:text-[13px] text-stone-400 font-light">
               <li>
-                <a href="#packages-section" className="hover:text-[#dfcaa2] transition-colors">
+                <a href="#packages-section" className="hover:text-white transition-colors">
                   Maldives &amp; Bali
                 </a>
               </li>
               <li>
-                <a href="#packages-section" className="hover:text-[#dfcaa2] transition-colors">
+                <a href="#packages-section" className="hover:text-white transition-colors">
                   Dubai &amp; Singapore
                 </a>
               </li>
               <li>
-                <a href="#packages-section" className="hover:text-[#dfcaa2] transition-colors">
+                <a href="#packages-section" className="hover:text-white transition-colors">
                   Kashmir &amp; Manali
                 </a>
               </li>
               <li>
-                <a href="#destinations-section" className="hover:text-[#dfcaa2] transition-colors">
+                <a href="#destinations-section" className="hover:text-white transition-colors">
                   Wayanad &amp; Munnar
                 </a>
               </li>
               <li>
-                <a href="#destinations-section" className="hover:text-[#dfcaa2] transition-colors">
+                <a href="#destinations-section" className="hover:text-white transition-colors">
                   Alleppey Backwaters
                 </a>
               </li>
@@ -141,25 +138,25 @@ export default function Footer() {
 
           {/* 4. Enquiry Directory (Span 2) */}
           <div className="lg:col-span-2 space-y-3.5">
-            <h4 className="text-[10px] sm:text-[11px] font-semibold tracking-[0.24em] uppercase text-[#dfcaa2]">
+            <h4 className="text-[10px] sm:text-[11px] font-medium tracking-[0.24em] uppercase text-stone-300">
               FOR ENQUIRY
             </h4>
-            <div className="space-y-2.5 text-xs sm:text-[13px] text-stone-300/80 font-light">
+            <div className="space-y-2.5 text-xs sm:text-[13px] text-stone-400 font-light">
               <p>
                 <a
                   href={createWhatsAppUrl(DEFAULT_WHATSAPP_MESSAGE)}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-[#dfcaa2] transition-colors inline-flex items-center gap-2 text-white font-medium group"
+                  className="hover:text-white transition-colors inline-flex items-center gap-2 text-white font-medium"
                 >
-                  <WhatsAppIcon className="w-3.5 h-3.5 text-[#25D366] shrink-0 transition-transform group-hover:scale-110" />
+                  <WhatsAppIcon className="w-3.5 h-3.5 text-[#25D366] shrink-0" />
                   <span>{SITE_CONFIG.whatsappDisplay}</span>
                 </a>
               </p>
               <p>
                 <a
                   href={`mailto:${SITE_CONFIG.email}`}
-                  className="hover:text-[#dfcaa2] transition-colors block break-all"
+                  className="hover:text-white transition-colors block break-all"
                 >
                   {SITE_CONFIG.email}
                 </a>
@@ -169,13 +166,13 @@ export default function Footer() {
                   href={SITE_CONFIG.socials.instagram}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-[#dfcaa2] transition-colors inline-flex items-center gap-1.5"
+                  className="hover:text-white transition-colors inline-flex items-center gap-1.5"
                 >
-                  <InstagramIcon className="w-3.5 h-3.5 text-[#dfcaa2]" />
+                  <InstagramIcon className="w-3.5 h-3.5 text-stone-300" />
                   <span>@planetroottravels</span>
                 </a>
               </p>
-              <p className="text-stone-400 text-xs">
+              <p className="text-stone-500 text-xs">
                 {SITE_CONFIG.location}
               </p>
             </div>
@@ -183,27 +180,27 @@ export default function Footer() {
         </div>
 
         {/* Bottom Legal Strip */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-stone-400/80 gap-4">
+        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-stone-500 gap-4">
           <p className="font-light">
             © {currentYear} {SITE_CONFIG.legalName}. All rights reserved. Beyond Borders.
           </p>
 
           <div className="flex items-center gap-5 sm:gap-6 flex-wrap justify-center font-light">
-            <Link href="/privacy" className="hover:text-[#dfcaa2] transition-colors">
+            <Link href="/privacy" className="hover:text-white transition-colors">
               Privacy Policy
             </Link>
             <span className="text-white/20">•</span>
-            <Link href="/terms" className="hover:text-[#dfcaa2] transition-colors">
+            <Link href="/terms" className="hover:text-white transition-colors">
               Terms &amp; Cancellation
             </Link>
             <span className="text-white/20">•</span>
-            <Link href="/contact" className="hover:text-[#dfcaa2] transition-colors">
+            <Link href="/contact" className="hover:text-white transition-colors">
               Contact
             </Link>
             <span className="text-white/20">•</span>
             <Link
               href="/admin"
-              className="text-[#dfcaa2]/80 hover:text-[#dfcaa2] transition-colors font-medium"
+              className="text-stone-400 hover:text-white transition-colors font-medium"
             >
               Admin Portal
             </Link>

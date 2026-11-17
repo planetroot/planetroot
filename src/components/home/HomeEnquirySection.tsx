@@ -43,8 +43,8 @@ export default function HomeEnquirySection() {
             <div className="bg-white border border-stone-200/90 rounded-3xl p-6 sm:p-7 shadow-sm space-y-5">
               {/* WhatsApp Item */}
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 rounded-full bg-[#0a291e] text-[#dfcaa2] flex items-center justify-center shrink-0">
-                  <WhatsAppIcon className="w-4 h-4 text-[#dfcaa2]" />
+                <div className="w-10 h-10 rounded-full bg-black text-white flex items-center justify-center shrink-0">
+                  <WhatsAppIcon className="w-4 h-4 text-white" />
                 </div>
                 <div>
                   <p className="text-[10px] uppercase tracking-wider text-stone-400 font-semibold">
@@ -54,7 +54,7 @@ export default function HomeEnquirySection() {
                     href={createWhatsAppUrl(DEFAULT_WHATSAPP_MESSAGE)}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-base font-semibold text-stone-900 hover:text-[#0a291e] transition-colors block mt-0.5"
+                    className="text-base font-semibold text-stone-900 hover:text-black transition-colors block mt-0.5"
                   >
                     {SITE_CONFIG.whatsappDisplay}
                   </a>
@@ -68,8 +68,8 @@ export default function HomeEnquirySection() {
 
               {/* Phone Item */}
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 rounded-full bg-[#0a291e] text-[#dfcaa2] flex items-center justify-center shrink-0">
-                  <Phone className="w-4 h-4 text-[#dfcaa2]" />
+                <div className="w-10 h-10 rounded-full bg-black text-white flex items-center justify-center shrink-0">
+                  <Phone className="w-4 h-4 text-white" />
                 </div>
                 <div>
                   <p className="text-[10px] uppercase tracking-wider text-stone-400 font-semibold">
@@ -77,7 +77,7 @@ export default function HomeEnquirySection() {
                   </p>
                   <a
                     href={`tel:${SITE_CONFIG.phone}`}
-                    className="text-base font-semibold text-stone-900 hover:text-[#0a291e] transition-colors block mt-0.5"
+                    className="text-base font-semibold text-stone-900 hover:text-black transition-colors block mt-0.5"
                   >
                     {SITE_CONFIG.phoneDisplay}
                   </a>
@@ -91,8 +91,8 @@ export default function HomeEnquirySection() {
 
               {/* Email Item */}
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 rounded-full bg-[#0a291e] text-[#dfcaa2] flex items-center justify-center shrink-0">
-                  <Mail className="w-4 h-4 text-[#dfcaa2]" />
+                <div className="w-10 h-10 rounded-full bg-black text-white flex items-center justify-center shrink-0">
+                  <Mail className="w-4 h-4 text-white" />
                 </div>
                 <div>
                   <p className="text-[10px] uppercase tracking-wider text-stone-400 font-semibold">
@@ -100,7 +100,7 @@ export default function HomeEnquirySection() {
                   </p>
                   <a
                     href={`mailto:${SITE_CONFIG.email}`}
-                    className="text-base font-semibold text-stone-900 hover:text-[#0a291e] transition-colors break-all block mt-0.5"
+                    className="text-base font-semibold text-stone-900 hover:text-black transition-colors break-all block mt-0.5"
                   >
                     {SITE_CONFIG.email}
                   </a>
@@ -114,8 +114,8 @@ export default function HomeEnquirySection() {
 
               {/* Instagram Item */}
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 rounded-full bg-[#0a291e] text-[#dfcaa2] flex items-center justify-center shrink-0">
-                  <InstagramIcon className="w-4 h-4 text-[#dfcaa2]" />
+                <div className="w-10 h-10 rounded-full bg-black text-white flex items-center justify-center shrink-0">
+                  <InstagramIcon className="w-4 h-4 text-white" />
                 </div>
                 <div>
                   <p className="text-[10px] uppercase tracking-wider text-stone-400 font-semibold">
@@ -125,7 +125,7 @@ export default function HomeEnquirySection() {
                     href={SITE_CONFIG.socials.instagram}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-sm font-semibold text-stone-900 hover:text-[#0a291e] transition-colors block mt-0.5"
+                    className="text-sm font-semibold text-stone-900 hover:text-black transition-colors block mt-0.5"
                   >
                     @planetroottravels
                   </a>
@@ -139,13 +139,13 @@ export default function HomeEnquirySection() {
             {/* Operating Hours & Guarantee */}
             <div className="pt-2 space-y-2.5">
               <div className="flex items-center gap-2.5 text-xs text-[#56655e]">
-                <Clock className="w-4 h-4 text-[#0a291e] shrink-0" />
+                <Clock className="w-4 h-4 text-stone-700 shrink-0" />
                 <span>
                   <strong>Operating Hours:</strong> {SITE_CONFIG.workingHours} (24/7 on-trip assistance)
                 </span>
               </div>
               <div className="flex items-start gap-2.5 text-xs text-[#56655e] leading-relaxed">
-                <ShieldCheck className="w-4 h-4 text-[#0a291e] shrink-0 mt-0.5" />
+                <ShieldCheck className="w-4 h-4 text-stone-700 shrink-0 mt-0.5" />
                 <span>
                   <strong>Verified Availability:</strong> We confirm live availability, room views, and partner rates before you make any commitment.
                 </span>

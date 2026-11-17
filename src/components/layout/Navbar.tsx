@@ -12,7 +12,7 @@ const NAV_LINKS = [
   { label: "Resorts", href: "#featured-resorts-section", targetId: "featured-resorts-section" },
   { label: "Packages", href: "#packages-section", targetId: "packages-section" },
   { label: "Destinations", href: "#destinations-section", targetId: "destinations-section" },
-  { label: "About Us", href: "#about-section", targetId: "about-section" },
+  { label: "About", href: "#about-section", targetId: "about-section" },
   { label: "Gallery", href: "#resort-gallery-section", targetId: "resort-gallery-section" },
   { label: "Contact", href: "#enquiry-section", targetId: "enquiry-section" },
 ];
@@ -51,27 +51,27 @@ export default function Navbar() {
 
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 z-40 bg-[#061d15]/95 backdrop-blur-md border-b border-white/10 text-white py-3.5 transition-all">
+      <header className="fixed top-0 left-0 right-0 z-40 bg-black/60 backdrop-blur-xl border-b border-white/[0.08] text-white py-3 transition-all duration-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
             {/* Brand Logo */}
             <a
               href="#home"
               onClick={(e) => scrollTo(e, "home")}
-              className="flex items-center transition-opacity duration-300 hover:opacity-90 py-0.5 cursor-pointer"
+              className="flex items-center transition-opacity duration-300 hover:opacity-85 py-0.5 cursor-pointer"
             >
               <Image
                 src="/images/planet-root-logo-gold.png"
                 alt="Planet Root Travels"
-                width={240}
-                height={55}
+                width={220}
+                height={50}
                 priority
-                className="h-10 sm:h-12 md:h-13 w-auto object-contain drop-shadow-sm"
+                className="h-9 sm:h-11 w-auto object-contain drop-shadow-sm"
               />
             </a>
 
-            {/* Desktop Navigation Links */}
-            <nav className="hidden lg:flex items-center gap-8">
+            {/* Desktop Minimal Navigation Links */}
+            <nav className="hidden lg:flex items-center gap-7">
               {NAV_LINKS.map((link) => {
                 const isActive = activeSection === link.targetId;
                 return (
@@ -79,52 +79,52 @@ export default function Navbar() {
                     key={link.label}
                     href={link.href}
                     onClick={(e) => scrollTo(e, link.targetId)}
-                    className={`text-xs sm:text-[13px] tracking-wide transition-all duration-200 relative py-1 cursor-pointer ${
+                    className={`text-xs tracking-wider uppercase transition-all duration-200 relative py-1 cursor-pointer font-medium ${
                       isActive
-                        ? "text-[#dfcaa2] font-semibold"
-                        : "text-stone-300 hover:text-white"
+                        ? "text-white font-semibold"
+                        : "text-stone-300/80 hover:text-white"
                     }`}
                   >
                     {link.label}
                     {isActive && (
-                      <span className="absolute bottom-0 left-0 right-0 h-[2px] bg-[#dfcaa2] rounded-full animate-fadeIn" />
+                      <span className="absolute bottom-0 left-0 right-0 h-[1.5px] bg-white rounded-full animate-fadeIn" />
                     )}
                   </a>
                 );
               })}
             </nav>
 
-            {/* Right Side: Book on WhatsApp Pill Button */}
-            <div className="hidden lg:flex items-center gap-4">
+            {/* Right Side: Minimal Transparent Button */}
+            <div className="hidden lg:flex items-center gap-3">
               <a
                 href={whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#c5a059] hover:bg-[#dfcaa2] text-[#061d15] text-xs font-semibold tracking-wide transition-all shadow-md cursor-pointer hover:scale-105"
+                className="inline-flex items-center gap-2 px-5 py-2 rounded-full border border-white/25 hover:border-white text-white hover:bg-white hover:text-black text-xs font-medium tracking-wider transition-all duration-300 shadow-sm cursor-pointer"
               >
-                <WhatsAppIcon className="w-4 h-4 text-[#061d15]" />
-                <span>Book on WhatsApp</span>
+                <WhatsAppIcon className="w-3.5 h-3.5" />
+                <span>WhatsApp</span>
               </a>
             </div>
 
-            {/* Mobile Actions */}
-            <div className="flex items-center gap-2 lg:hidden">
+            {/* Mobile Minimal Button & Hamburger */}
+            <div className="flex items-center gap-2.5 lg:hidden">
               <a
                 href={whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[11px] font-semibold px-3 py-1.5 rounded-full bg-[#c5a059] text-[#061d15] flex items-center gap-1 shadow-sm"
+                className="text-[11px] font-medium px-3 py-1.5 rounded-full border border-white/30 text-white hover:bg-white hover:text-black flex items-center gap-1.5 transition-all"
               >
-                <WhatsAppIcon className="w-3.5 h-3.5 text-[#061d15]" />
-                <span>WhatsApp</span>
+                <WhatsAppIcon className="w-3.5 h-3.5 text-[#25D366]" />
+                <span>Enquire</span>
               </a>
               <button
                 type="button"
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                className="p-2 text-stone-200 hover:text-white hover:bg-white/10 rounded-sm"
+                className="p-1.5 text-stone-300 hover:text-white hover:bg-white/10 rounded-md transition-colors"
                 aria-label="Toggle navigation menu"
               >
-                {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+                {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
               </button>
             </div>
           </div>
@@ -133,9 +133,9 @@ export default function Navbar() {
 
       {/* Mobile Slide-out Drawer */}
       {mobileMenuOpen && (
-        <div className="fixed inset-0 z-50 lg:hidden flex flex-col bg-[#061d15] text-white animate-fadeIn">
+        <div className="fixed inset-0 z-50 lg:hidden flex flex-col bg-[#0b0d0e]/98 backdrop-blur-2xl text-white animate-fadeIn">
           {/* Header */}
-          <div className="flex items-center justify-between px-6 py-4 border-b border-white/10 bg-[#0a291e]">
+          <div className="flex items-center justify-between px-6 py-4 border-b border-white/10 bg-black/40">
             <a
               href="#home"
               onClick={(e) => scrollTo(e, "home")}
@@ -144,17 +144,17 @@ export default function Navbar() {
               <Image
                 src="/images/planet-root-logo-gold.png"
                 alt="Planet Root Travels"
-                width={200}
-                height={46}
-                className="h-9 sm:h-10 w-auto object-contain drop-shadow-sm"
+                width={190}
+                height={42}
+                className="h-8 sm:h-9 w-auto object-contain drop-shadow-sm"
               />
             </a>
             <button
               onClick={() => setMobileMenuOpen(false)}
-              className="p-2 text-white hover:bg-white/10 rounded-md"
+              className="p-2 text-stone-300 hover:text-white hover:bg-white/10 rounded-md"
               aria-label="Close menu"
             >
-              <X className="w-6 h-6" />
+              <X className="w-5 h-5" />
             </button>
           </div>
 
@@ -167,8 +167,8 @@ export default function Navbar() {
                   key={link.label}
                   href={link.href}
                   onClick={(e) => scrollTo(e, link.targetId)}
-                  className={`block text-lg font-serif-luxury transition-colors ${
-                    isActive ? "text-[#dfcaa2] font-semibold" : "text-white/85 hover:text-[#c5a059]"
+                  className={`block text-base tracking-wide uppercase transition-colors font-medium ${
+                    isActive ? "text-white font-semibold" : "text-stone-300/80 hover:text-white"
                   }`}
                 >
                   {link.label}
@@ -176,14 +176,14 @@ export default function Navbar() {
               );
             })}
 
-            <div className="pt-6 border-t border-white/10 space-y-4">
+            <div className="pt-6 border-t border-white/10 space-y-3">
               <a
                 href={whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full py-3.5 rounded-full bg-[#c5a059] hover:bg-[#dfcaa2] text-[#061d15] font-semibold text-xs uppercase tracking-wider flex items-center justify-center gap-2 shadow-lg transition-colors"
+                className="w-full py-3 rounded-full bg-white text-black font-semibold text-xs uppercase tracking-wider flex items-center justify-center gap-2 shadow-lg transition-colors hover:bg-stone-200"
               >
-                <WhatsAppIcon className="w-4 h-4 text-[#061d15]" />
+                <WhatsAppIcon className="w-4 h-4 text-black" />
                 <span>Chat on WhatsApp</span>
               </a>
 
@@ -193,7 +193,7 @@ export default function Navbar() {
                   setMobileMenuOpen(false);
                   openEnquiryModal({});
                 }}
-                className="w-full py-3.5 rounded-full bg-white/10 text-white font-medium text-xs uppercase tracking-wider flex items-center justify-center gap-2 border border-white/20"
+                className="w-full py-3 rounded-full bg-transparent hover:bg-white/10 text-white font-medium text-xs uppercase tracking-wider flex items-center justify-center gap-2 border border-white/20 transition-colors"
               >
                 <span>For Enquiry</span>
               </button>

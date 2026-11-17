@@ -174,15 +174,15 @@ export default function PackagesPage() {
 
       {/* Bottom Custom Planning Box */}
       <section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mt-20">
-        <div className="bg-[#061d15] text-[#fcfbf7] p-8 sm:p-12 rounded-3xl shadow-2xl flex flex-col sm:flex-row items-center justify-between gap-6 border border-white/10">
+        <div className="bg-[#0e1113] text-[#fcfbf7] p-8 sm:p-12 rounded-3xl shadow-2xl flex flex-col sm:flex-row items-center justify-between gap-6 border border-white/10">
           <div className="max-w-xl text-center sm:text-left">
-            <span className="text-xs font-semibold tracking-[0.2em] uppercase text-[#c5a059] block mb-2">
+            <span className="text-xs font-medium tracking-[0.2em] uppercase text-stone-400 block mb-2">
               Looking for a Customized Itinerary?
             </span>
-            <h3 className="text-2xl sm:text-3xl font-serif-luxury text-white">
+            <h3 className="text-2xl sm:text-3xl font-sans font-light text-white">
               Craft Your Dream Trip Directly on WhatsApp
             </h3>
-            <p className="mt-2 text-xs sm:text-sm text-stone-300/80 font-light leading-relaxed">
+            <p className="mt-2 text-xs sm:text-sm text-stone-300 font-light leading-relaxed">
               Have specific travel dates, honeymoon preferences, multi-city flights, or family requirements? Chat directly with our senior travel specialists.
             </p>
           </div>
@@ -190,9 +190,9 @@ export default function PackagesPage() {
           <button
             type="button"
             onClick={() => openEnquiryModal({ destination: "Custom Itinerary" })}
-            className="px-7 py-3.5 bg-[#c5a059] text-[#061d15] hover:bg-[#dfcaa2] font-semibold text-xs sm:text-sm uppercase tracking-wider rounded-full transition-all shadow-md whitespace-nowrap cursor-pointer flex items-center gap-2"
+            className="px-7 py-3.5 bg-white text-black hover:bg-stone-200 font-medium text-xs sm:text-sm uppercase tracking-wider rounded-full transition-all shadow-md whitespace-nowrap cursor-pointer flex items-center gap-2"
           >
-            <WhatsAppIcon className="w-4 h-4 text-[#061d15]" />
+            <WhatsAppIcon className="w-4 h-4 text-black" />
             <span>Chat on WhatsApp</span>
           </button>
         </div>

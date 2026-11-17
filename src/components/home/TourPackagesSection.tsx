@@ -151,15 +151,15 @@ export default function TourPackagesSection() {
 
         {/* Bottom CTA Banner */}
         <div className="mt-12 text-center">
-          <div className="inline-flex flex-col sm:flex-row items-center gap-4 bg-[#061d15] text-white px-8 py-6 rounded-3xl shadow-xl border border-white/10">
+          <div className="inline-flex flex-col sm:flex-row items-center gap-4 bg-[#0e1113] text-white px-8 py-6 rounded-3xl shadow-xl border border-white/10">
             <div className="text-center sm:text-left">
-              <p className="text-xs text-[#dfcaa2] uppercase tracking-widest font-medium mb-0.5">Need a tailored itinerary?</p>
-              <p className="text-base sm:text-lg font-serif-luxury text-white">We build completely bespoke holiday plans</p>
+              <p className="text-xs text-stone-400 uppercase tracking-widest font-medium mb-0.5">Need a tailored itinerary?</p>
+              <p className="text-base sm:text-lg font-sans font-light text-white">We build completely bespoke holiday plans</p>
             </div>
             <button
               type="button"
               onClick={() => openEnquiryModal({ destination: "Anywhere in the World" })}
-              className="shrink-0 inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#c5a059] text-[#061d15] font-semibold text-sm tracking-wide hover:bg-[#dfcaa2] transition-colors cursor-pointer"
+              className="shrink-0 inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white text-black font-medium text-xs sm:text-sm uppercase tracking-wider hover:bg-stone-200 transition-colors cursor-pointer"
             >
               <span>Plan My Trip</span>
               <ArrowRight className="w-4 h-4" />
