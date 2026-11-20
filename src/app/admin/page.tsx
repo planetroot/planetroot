@@ -25,8 +25,10 @@ import {
   FileUp,
   FileCheck,
   RotateCcw,
+  Compass,
 } from "lucide-react";
 import { Resort } from "@/data/resorts";
+import PackagesAdmin from "@/components/admin/PackagesAdmin";
 
 const PRESET_DESTINATIONS = [
   "Wayanad, Kerala",
@@ -127,6 +129,7 @@ const PRESET_PHOTOS = [
 ];
 
 export default function AdminPage() {
+  const [adminSection, setAdminSection] = useState<"resorts" | "packages">("resorts");
   const [activeTab, setActiveTab] = useState<"add" | "list">("add");
   const [resorts, setResorts] = useState<Resort[]>([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -532,76 +535,116 @@ export default function AdminPage() {
         <div className="bg-[#072016] text-white rounded-2xl p-6 sm:p-8 mb-8 border border-[#c5a059]/20 shadow-lg relative overflow-hidden">
           <div className="absolute right-0 top-0 w-96 h-96 bg-[radial-gradient(circle_at_top_right,rgba(197,160,89,0.15),transparent_70%)] pointer-events-none" />
 
+          {/* Section Switcher: Resorts vs Tour Packages */}
+          <div className="flex flex-wrap items-center gap-2 mb-6 bg-black/40 p-1.5 rounded-xl border border-white/10 w-fit relative z-10">
+            <button
+              type="button"
+              onClick={() => setAdminSection("resorts")}
+              className={`inline-flex items-center gap-2 px-4 sm:px-5 py-2.5 rounded-lg text-xs font-semibold uppercase tracking-wider transition-all cursor-pointer ${
+                adminSection === "resorts"
+                  ? "bg-[#dfcaa2] text-[#072016] shadow-md"
+                  : "text-stone-300 hover:text-white hover:bg-white/5"
+              }`}
+            >
+              <Building2 className="w-4 h-4" />
+              <span>Resorts &amp; Villas ({resorts.length})</span>
+            </button>
+
+            <button
+              type="button"
+              onClick={() => setAdminSection("packages")}
+              className={`inline-flex items-center gap-2 px-4 sm:px-5 py-2.5 rounded-lg text-xs font-semibold uppercase tracking-wider transition-all cursor-pointer ${
+                adminSection === "packages"
+                  ? "bg-[#dfcaa2] text-[#072016] shadow-md"
+                  : "text-stone-300 hover:text-white hover:bg-white/5"
+              }`}
+            >
+              <Compass className="w-4 h-4" />
+              <span>Tour Packages</span>
+            </button>
+          </div>
+
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 relative z-10">
             <div>
               <div className="flex items-center gap-3 mb-2">
                 <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] font-semibold tracking-widest uppercase bg-[#c5a059]/15 text-[#dfcaa2] border border-[#c5a059]/30">
                   <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-                  Admin Panel
+                  Admin Portal
                 </span>
                 <span className="text-xs text-stone-400">Planet Root Travels</span>
               </div>
               <h1 className="text-2xl sm:text-3xl md:text-4xl font-serif-luxury text-white">
-                Resort <span className="text-[#dfcaa2]">Management</span>
+                {adminSection === "resorts" ? (
+                  <>Resort &amp; Villa <span className="text-[#dfcaa2]">Management</span></>
+                ) : (
+                  <>Tour Package <span className="text-[#dfcaa2]">Management</span></>
+                )}
               </h1>
               <p className="mt-1 text-xs sm:text-sm text-stone-300 font-light">
-                Add, edit, and manage verified luxury resorts, pool villas, and download brochures.
+                {adminSection === "resorts"
+                  ? "Add, edit, and manage verified luxury resorts, pool villas, and download brochures."
+                  : "Add, edit, and manage curated holiday itineraries, day-by-day schedules, and transparent pricing."}
               </p>
             </div>
 
             <div className="flex items-center gap-3">
               <Link
-                href="/#featured-resorts-section"
+                href={adminSection === "resorts" ? "/#featured-resorts-section" : "/packages"}
                 className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 hover:bg-white/15 text-stone-200 hover:text-white border border-white/15 text-xs font-medium tracking-wide transition-colors"
               >
-                <span>View Live Website</span>
+                <span>View Live {adminSection === "resorts" ? "Resorts" : "Packages"}</span>
                 <ExternalLink className="w-3.5 h-3.5 text-[#dfcaa2]" />
               </Link>
             </div>
           </div>
 
-          {/* Navigation Tabs */}
-          <div className="flex items-center gap-2 mt-8 border-t border-white/10 pt-4 relative z-10">
-            <button
-              onClick={() => {
-                if (editingResortId) resetForm();
-                setActiveTab("add");
-              }}
-              className={`inline-flex items-center gap-2 px-4 py-2 rounded-lg text-xs font-medium transition-all cursor-pointer ${
-                activeTab === "add"
-                  ? "bg-[#dfcaa2] text-[#072016] font-semibold shadow-sm"
-                  : "text-stone-300 hover:text-white hover:bg-white/5"
-              }`}
-            >
-              {editingResortId ? (
-                <>
-                  <Pencil className="w-3.5 h-3.5" />
-                  <span>Edit Resort</span>
-                </>
-              ) : (
-                <>
-                  <Plus className="w-3.5 h-3.5" />
-                  <span>Add New Resort</span>
-                </>
-              )}
-            </button>
+          {/* Resorts Navigation Tabs (Only shown when managing resorts) */}
+          {adminSection === "resorts" && (
+            <div className="flex items-center gap-2 mt-8 border-t border-white/10 pt-4 relative z-10">
+              <button
+                onClick={() => {
+                  if (editingResortId) resetForm();
+                  setActiveTab("add");
+                }}
+                className={`inline-flex items-center gap-2 px-4 py-2 rounded-lg text-xs font-medium transition-all cursor-pointer ${
+                  activeTab === "add"
+                    ? "bg-[#dfcaa2] text-[#072016] font-semibold shadow-sm"
+                    : "text-stone-300 hover:text-white hover:bg-white/5"
+                }`}
+              >
+                {editingResortId ? (
+                  <>
+                    <Pencil className="w-3.5 h-3.5" />
+                    <span>Edit Resort</span>
+                  </>
+                ) : (
+                  <>
+                    <Plus className="w-3.5 h-3.5" />
+                    <span>Add New Resort</span>
+                  </>
+                )}
+              </button>
 
-            <button
-              onClick={() => setActiveTab("list")}
-              className={`inline-flex items-center gap-2 px-4 py-2 rounded-lg text-xs font-medium transition-all cursor-pointer ${
-                activeTab === "list"
-                  ? "bg-[#dfcaa2] text-[#072016] font-semibold shadow-sm"
-                  : "text-stone-300 hover:text-white hover:bg-white/5"
-              }`}
-            >
-              <Building2 className="w-3.5 h-3.5" />
-              <span>All Resorts ({resorts.length})</span>
-            </button>
-          </div>
+              <button
+                onClick={() => setActiveTab("list")}
+                className={`inline-flex items-center gap-2 px-4 py-2 rounded-lg text-xs font-medium transition-all cursor-pointer ${
+                  activeTab === "list"
+                    ? "bg-[#dfcaa2] text-[#072016] font-semibold shadow-sm"
+                    : "text-stone-300 hover:text-white hover:bg-white/5"
+                }`}
+              >
+                <Building2 className="w-3.5 h-3.5" />
+                <span>All Resorts ({resorts.length})</span>
+              </button>
+            </div>
+          )}
         </div>
 
-        {/* TAB 1: ADD OR EDIT RESORT */}
-        {activeTab === "add" && (
+        {/* SECTION: TOUR PACKAGES */}
+        {adminSection === "packages" && <PackagesAdmin />}
+
+        {/* SECTION: RESORTS (TAB 1: ADD OR EDIT RESORT) */}
+        {adminSection === "resorts" && activeTab === "add" && (
           <form onSubmit={handleSubmit} className="space-y-8">
             {/* Editing Notice Banner */}
             {editingResortId && (
@@ -1295,8 +1338,8 @@ export default function AdminPage() {
           </form>
         )}
 
-        {/* TAB 2: MANAGE ALL RESORTS */}
-        {activeTab === "list" && (
+        {/* SECTION: RESORTS (TAB 2: MANAGE ALL RESORTS) */}
+        {adminSection === "resorts" && activeTab === "list" && (
           <div className="bg-white rounded-2xl p-6 sm:p-8 border border-stone-200/80 shadow-xs">
             <div className="flex items-center justify-between pb-4 mb-6 border-b border-stone-100">
               <div>

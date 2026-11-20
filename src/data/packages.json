@@ -1,0 +1,1915 @@
+[
+  {
+    "id": "pkg-munnar-escape",
+    "slug": "munnar-hill-station-escape",
+    "title": "Munnar Hill Station Escape",
+    "category": "Kerala",
+    "destination": "Munnar Highlands, Kerala",
+    "destinationSlug": "munnar",
+    "duration": "4 Days / 3 Nights",
+    "idealFor": "Couples, Mountain Enthusiasts & Nature Lovers",
+    "startingPrice": "From ₹22,500 / person",
+    "priceNote": "Includes private chauffeur, colonial tea bungalow stay, guided tea safari, and breakfast.",
+    "heroImage": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?auto=format&fit=crop&w=1920&q=85",
+    "gallery": [
+      "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "overview": "Ascend into the misty Western Ghats where emerald tea slopes stretch as far as the eye can see. Stay in a restored colonial planter estate, witness breathtaking sunrises over rolling peaks, and enjoy unhurried tea garden walks.",
+    "highlights": [
+      "3 nights in an authentic private colonial tea estate bungalow",
+      "4WD sunrise expedition to Kolukkumalai, the world's highest tea plantation",
+      "Interactive tea-plucking and artisanal tea factory tasting session",
+      "Scenic waterfall drives past Cheeyappara and Valara cascades"
+    ],
+    "dayByDay": [
+      {
+        "day": 1,
+        "title": "Scenic Ascent into Munnar Mist",
+        "description": "Arrive at Cochin Airport where your private chauffeur welcomes you. Wind upward through spice hills and waterfalls to Munnar. Check into your colonial tea bungalow and unwind by the fireplace.",
+        "highlights": [
+          "Waterfall photography stops",
+          "Welcome tea tasting",
+          "Fireside dinner"
+        ],
+        "mealsIncluded": "Dinner"
+      },
+      {
+        "day": 2,
+        "title": "High Peak Sunrise & Tea Garden Trails",
+        "description": "Early morning 4WD trip to catch the sunrise over Kolukkumalai peaks. Afternoon guided walk through emerald tea plantations and visit to the historic Munnar Tea Museum.",
+        "highlights": [
+          "4WD sunrise excursion",
+          "Master blender tea tasting",
+          "Colonial heritage stroll"
+        ],
+        "mealsIncluded": "Breakfast & Dinner"
+      },
+      {
+        "day": 3,
+        "title": "Mattupetty Lake & Eravikulam Wilderness",
+        "description": "Visit Mattupetty Dam, Echo Point, and Eravikulam National Park, home to the endangered Nilgiri Tahr. Enjoy high tea overlooking rolling tea ridges.",
+        "highlights": [
+          "Nilgiri Tahr wildlife sanctuary",
+          "Speedboat ride on Mattupetty Lake",
+          "Highland sunset views"
+        ],
+        "mealsIncluded": "Breakfast & Dinner"
+      },
+      {
+        "day": 4,
+        "title": "Mountain Farewells & Descent to Kochi",
+        "description": "Savor a leisurely breakfast on the terrace before descending back to Cochin International Airport for onward departure.",
+        "highlights": [
+          "Spiced estate breakfast",
+          "Spice shop stop",
+          "Chauffeur airport transfer"
+        ],
+        "mealsIncluded": "Breakfast"
+      }
+    ],
+    "accommodationDetails": {
+      "category": "Colonial Planter Heritage Bungalow",
+      "description": "Handcrafted stone fireplaces, timber floors, and private tea garden verandas.",
+      "stayType": "Private Estate Bungalow"
+    },
+    "transportArrangements": "Dedicated private air-conditioned sedan / SUV throughout the journey.",
+    "inclusions": [
+      "3 nights accommodation in premium tea estate bungalow",
+      "Daily gourmet planter breakfast and dinners",
+      "Dedicated AC vehicle with experienced local chauffeur",
+      "Kolukkumalai 4WD sunrise safari and park permits"
+    ],
+    "exclusions": [
+      "Airfare or train tickets",
+      "Personal tips and laundry",
+      "Lunches unless specified"
+    ],
+    "customizationOptions": [
+      "Upgrade to private heated pool villa",
+      "Add treehouse overnight stay"
+    ],
+    "cancellationTerms": "Free alteration up to 10 days before departure.",
+    "featured": true
+  },
+  {
+    "id": "pkg-wayanad-retreat",
+    "slug": "wayanad-nature-retreat",
+    "title": "Wayanad Nature Retreat",
+    "category": "Kerala",
+    "destination": "Vythiri & Rainforests, Wayanad",
+    "destinationSlug": "wayanad",
+    "duration": "4 Days / 3 Nights",
+    "idealFor": "Eco-Travelers, Families & Wilderness Explorers",
+    "startingPrice": "From ₹24,000 / person",
+    "priceNote": "Includes private treehouse or pool villa stay, all forest trails, and bamboo rafting.",
+    "heroImage": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1920&q=85",
+    "gallery": [
+      "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1502784444187-359ac186c5bb?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "overview": "Step into the virgin rainforest canopy of Wayanad. Sleep in handcrafted treehouses perched 60 feet above the forest floor, glide on serene bamboo rafts on Kuruva Island, and discover ancient prehistoric cave art.",
+    "highlights": [
+      "Handcrafted canopy treehouse stay suspended in ancient mahogany trees",
+      "Private bamboo rafting across the forested waterways of Kuruva Island",
+      "Guided trek to the Stone Age petroglyphs of Edakkal Caves",
+      "Cardamom, vanilla, and organic coffee plantation walk with herbalist"
+    ],
+    "dayByDay": [
+      {
+        "day": 1,
+        "title": "Arrival in the Rainforest Canopy",
+        "description": "Arrive via Calicut Airport (CCJ) and transfer through the scenic Thamarassery Ghat pass to Wayanad. Check into your rainforest treehouse or pool haven.",
+        "highlights": [
+          "Ghat mountain drive",
+          "Canopy check-in",
+          "Rainforest welcome drink"
+        ],
+        "mealsIncluded": "Dinner"
+      },
+      {
+        "day": 2,
+        "title": "Prehistoric Caves & Spice Walks",
+        "description": "Morning trek up Ambukuthi Hills to explore the prehistoric petroglyphs of Edakkal Caves. Afternoon walk through fragrant coffee and pepper plantations.",
+        "highlights": [
+          "Edakkal Cave carvings",
+          "Plantation spice walk",
+          "Traditional Malabar dinner"
+        ],
+        "mealsIncluded": "Breakfast & Dinner"
+      },
+      {
+        "day": 3,
+        "title": "Kuruva Island Bamboo Rafting & Waterfalls",
+        "description": "Glide on silent bamboo rafts along the protected river island of Kuruva. In the afternoon, visit Soochipara Waterfalls for a refreshing stream walk.",
+        "highlights": [
+          "Bamboo rafting expedition",
+          "River island picnic",
+          "Waterfall nature trail"
+        ],
+        "mealsIncluded": "Breakfast & Dinner"
+      },
+      {
+        "day": 4,
+        "title": "Banasura Dam & Calicut Transfer",
+        "description": "Visit Banasura Sagar Dam, India's largest earthen dam, before descending to Calicut for your flight or train home.",
+        "highlights": [
+          "Banasura Lake vistas",
+          "Local spice shopping",
+          "Airport drop-off"
+        ],
+        "mealsIncluded": "Breakfast"
+      }
+    ],
+    "accommodationDetails": {
+      "category": "Eco-Luxury Treehouse & Spring Pool Villa",
+      "description": "Built without harming trees, featuring natural stream plunge pools and forest decks.",
+      "stayType": "Rainforest Treehouse Villa"
+    },
+    "transportArrangements": "Dedicated private vehicle from Calicut Airport or Kannur Airport.",
+    "inclusions": [
+      "3 nights in luxury eco-sanctuary treehouse / pool villa",
+      "Daily breakfast and traditional Kerala dinners",
+      "Bamboo rafting permits and Edakkal cave entry",
+      "Dedicated chauffeur vehicle throughout"
+    ],
+    "exclusions": [
+      "Airfare",
+      "Personal expenses",
+      "Camera fees"
+    ],
+    "customizationOptions": [
+      "Upgrade to Stream Pool Villa",
+      "Add wildlife safari in Muthanga"
+    ],
+    "cancellationTerms": "Flexible alteration up to 7 days prior to check-in.",
+    "featured": true
+  },
+  {
+    "id": "pkg-alleppey-holiday",
+    "slug": "alleppey-backwater-holiday",
+    "title": "Alleppey Backwater Holiday",
+    "category": "Kerala",
+    "destination": "Alleppey & Vembanad Backwaters, Kerala",
+    "destinationSlug": "alleppey",
+    "duration": "3 Days / 2 Nights",
+    "idealFor": "Couples, Families & Slow Travelers",
+    "startingPrice": "From ₹18,500 / person",
+    "priceNote": "Includes 1 night private luxury houseboat + 1 night lakefront pool resort.",
+    "heroImage": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=1920&q=85",
+    "gallery": [
+      "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "overview": "Experience the magic of Kerala's backwaters. Glide through narrow palm-shaded village canals on your exclusive private Kettuvallam houseboat, followed by a stay in a restored heritage lakefront villa on Vembanad Lake.",
+    "highlights": [
+      "1 night aboard a dedicated private luxury Kettuvallam with private chef",
+      "1 night in a restored lakefront pool villa overlooking Vembanad Lake",
+      "Freshly prepared Karimeen fish and Malabar prawns cooked on board",
+      "Sunset village canoe excursion through narrow backwater canals"
+    ],
+    "dayByDay": [
+      {
+        "day": 1,
+        "title": "Boarding the Private Luxury Houseboat",
+        "description": "Board your private thatched houseboat in Alleppey by noon. Cruise through scenic canals, paddy fields, and coir-weaving hamlets. Savor a feast cooked by your chef on board.",
+        "highlights": [
+          "Welcome tender coconut",
+          "Scenic canal navigation",
+          "Candlelit dinner on water"
+        ],
+        "mealsIncluded": "Lunch, High Tea & Dinner"
+      },
+      {
+        "day": 2,
+        "title": "Transfer to Lakefront Heritage Resort",
+        "description": "Enjoy breakfast on the water as the houseboat cruises back to the jetty. Transfer to your lakeside heritage resort with private plunge pool. Enjoy an afternoon Ayurvedic spa treatment.",
+        "highlights": [
+          "Morning backwater cruise",
+          "Lakefront pool relaxation",
+          "Ayurvedic massage session"
+        ],
+        "mealsIncluded": "Breakfast & Dinner"
+      },
+      {
+        "day": 3,
+        "title": "Village Canoe Safari & Departure",
+        "description": "Early morning country canoe safari to witness village life awakening along the canals, followed by transfer to Kochi Airport or railway station.",
+        "highlights": [
+          "Village canoe ride",
+          "Traditional Kerala breakfast",
+          "Kochi transfer"
+        ],
+        "mealsIncluded": "Breakfast"
+      }
+    ],
+    "accommodationDetails": {
+      "category": "Private Kettuvallam Houseboat + Heritage Pool Villa",
+      "description": "Air-conditioned bedrooms with glass walls overlooking tranquil waters.",
+      "stayType": "Private Houseboat & Pool Villa"
+    },
+    "transportArrangements": "Private chauffeur vehicle from Kochi Airport throughout.",
+    "inclusions": [
+      "1 night private houseboat stay with all meals included",
+      "1 night heritage lakefront pool villa with breakfast",
+      "Dedicated chef and crew on houseboat",
+      "Private vehicle and chauffeur from/to Kochi"
+    ],
+    "exclusions": [
+      "Airfare",
+      "Personal expenses"
+    ],
+    "customizationOptions": [
+      "Extend to 2 nights on houseboat",
+      "Add Marari beach stay"
+    ],
+    "cancellationTerms": "Free alteration up to 7 days before arrival.",
+    "featured": true
+  },
+  {
+    "id": "pkg-vagamon-getaway",
+    "slug": "vagamon-weekend-getaway",
+    "title": "Vagamon Weekend Getaway",
+    "category": "Kerala",
+    "destination": "Pine Hills & Kurisumala, Vagamon",
+    "destinationSlug": "vagamon",
+    "duration": "3 Days / 2 Nights",
+    "idealFor": "Couples, Friends & Weekend Rejuvenation",
+    "startingPrice": "From ₹14,500 / person",
+    "priceNote": "Includes pine valley mountain chalet, bonfires, guided treks, and breakfast.",
+    "heroImage": "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1920&q=85",
+    "gallery": [
+      "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "overview": "Escape the city rush into the crisp pine-scented breezes of Vagamon. Stroll across rolling green velvet meadows, walk beneath towering pine forest canopies, and unwind around an evening mountain bonfire.",
+    "highlights": [
+      "2 nights in a private mountain chalet with valley-view balcony",
+      "Walks through the fragrant Vagamon Pine Forest and Kurisumala meadows",
+      "Cozy evening bonfire with warm spiced tea and roasted snacks",
+      "Visits to Marmala Waterfall and tranquil tea plantation trails"
+    ],
+    "dayByDay": [
+      {
+        "day": 1,
+        "title": "Ascent into Pine Breeze",
+        "description": "Scenic road journey from Kochi or Kottayam ascending into Vagamon's rolling green hills. Check into your mountain chalet and watch evening mist settle across the valley.",
+        "highlights": [
+          "Mountain drive",
+          "Chalet check-in",
+          "Evening fireside relaxation"
+        ],
+        "mealsIncluded": "Dinner"
+      },
+      {
+        "day": 2,
+        "title": "Pine Forests, Meadows & Marmala Falls",
+        "description": "Morning guided walk through the towering pine tree groves. In the afternoon, visit the rolling Kurisumala hillocks and hidden Marmala Waterfall.",
+        "highlights": [
+          "Pine forest photography",
+          "Green meadows walk",
+          "Waterfall excursion",
+          "Campfire dinner"
+        ],
+        "mealsIncluded": "Breakfast & Dinner"
+      },
+      {
+        "day": 3,
+        "title": "Tea Garden Morning & Descent",
+        "description": "Enjoy breakfast overlooking the tea hills before taking a scenic drive down the Western Ghats to Kottayam or Cochin.",
+        "highlights": [
+          "Sunrise tea walk",
+          "Fresh farm breakfast",
+          "Return transfer"
+        ],
+        "mealsIncluded": "Breakfast"
+      }
+    ],
+    "accommodationDetails": {
+      "category": "Mountain Chalet / Boutique Cottage",
+      "description": "Cozy stone and wood interiors with large panoramic windows facing pine slopes.",
+      "stayType": "Mountain Chalet"
+    },
+    "transportArrangements": "Private chauffeur vehicle from Kochi or Kottayam.",
+    "inclusions": [
+      "2 nights accommodation in valley-view chalet",
+      "Daily mountain breakfast and dinners",
+      "Bonfire and pine forest walking guide",
+      "All ground transportation"
+    ],
+    "exclusions": [
+      "Airfare",
+      "Personal laundry and tips"
+    ],
+    "customizationOptions": [
+      "Include tandem paragliding session",
+      "Add Jeep off-road safari"
+    ],
+    "cancellationTerms": "Free alteration up to 5 days before travel.",
+    "featured": true
+  },
+  {
+    "id": "pkg-thekkady-nature",
+    "slug": "thekkady-nature-experience",
+    "title": "Thekkady Nature Experience",
+    "category": "Kerala",
+    "destination": "Periyar Tiger Reserve, Thekkady",
+    "destinationSlug": "thekkady",
+    "duration": "3 Days / 2 Nights",
+    "idealFor": "Wildlife Enthusiasts, Families & Spice Explorers",
+    "startingPrice": "From ₹17,000 / person",
+    "priceNote": "Includes forest chalet stay, Periyar boat safari, plantation tour, and cultural shows.",
+    "heroImage": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1920&q=85",
+    "gallery": [
+      "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1502784444187-359ac186c5bb?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "overview": "Immerse in the aromatic cardamom and pepper hills of Thekkady. Watch wild elephant herds along the shores of Periyar Lake, stroll through organic spice estates, and witness ancient martial art rituals.",
+    "highlights": [
+      "2 nights in a handcrafted forest chalet overlooking spice valleys",
+      "Morning boat cruise on Lake Periyar to spot elephants and wildlife",
+      "Private guided walk through organic cardamom, clove, and pepper estates",
+      "Front-row seats for Kalaripayattu martial arts and Kathakali performances"
+    ],
+    "dayByDay": [
+      {
+        "day": 1,
+        "title": "Arrival in the Spice Capital",
+        "description": "Arrive in Thekkady and check into your elevated forest chalet. In the evening, attend a thrilling demonstration of Kalaripayattu, the world's oldest martial art.",
+        "highlights": [
+          "Spice valley welcome",
+          "Kalaripayattu martial art performance",
+          "Syrian Christian dinner"
+        ],
+        "mealsIncluded": "Dinner"
+      },
+      {
+        "day": 2,
+        "title": "Periyar Wildlife Safari & Spice Garden",
+        "description": "Early morning boat safari on Lake Periyar inside the tiger reserve to watch wild elephants and exotic birds. In the afternoon, tour a fragrant spice garden with a resident botanist.",
+        "highlights": [
+          "Periyar lake boat safari",
+          "Wildlife spotting",
+          "Organic spice garden walk"
+        ],
+        "mealsIncluded": "Breakfast & Dinner"
+      },
+      {
+        "day": 3,
+        "title": "Spice Bazaar Discovery & Return",
+        "description": "Explore the bustling Kumily spice bazaar to purchase fresh vanilla pods and cardamom before your return chauffeur transfer.",
+        "highlights": [
+          "Spice market shopping",
+          "Cardamom tea tasting",
+          "Airport / station transfer"
+        ],
+        "mealsIncluded": "Breakfast"
+      }
+    ],
+    "accommodationDetails": {
+      "category": "Forest & Spice Chalet",
+      "description": "Spacious stone chalets with panoramic timber balconies nestled amidst cardamom vines.",
+      "stayType": "Forest Chalet"
+    },
+    "transportArrangements": "Dedicated private AC vehicle throughout the itinerary.",
+    "inclusions": [
+      "2 nights stay in luxury forest chalet",
+      "Daily estate breakfast and dinners",
+      "Periyar Lake boat cruise tickets",
+      "Spice plantation walk and cultural show entry"
+    ],
+    "exclusions": [
+      "Airfare / Train tickets",
+      "Camera charges"
+    ],
+    "customizationOptions": [
+      "Add full-day bamboo rafting trek in tiger reserve"
+    ],
+    "cancellationTerms": "Free alteration up to 7 days before arrival.",
+    "featured": true
+  },
+  {
+    "id": "pkg-kerala-honeymoon",
+    "slug": "kerala-honeymoon-escape",
+    "title": "Kerala Honeymoon Escape",
+    "category": "Kerala",
+    "destination": "Munnar, Alleppey & Kovalam",
+    "destinationSlug": "munnar",
+    "duration": "6 Days / 5 Nights",
+    "idealFor": "Newlyweds & Romantic Couples",
+    "startingPrice": "From ₹39,500 / person",
+    "priceNote": "Includes candlelit dinners, floral pool villa decoration, private houseboat, and luxury transfers.",
+    "heroImage": "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=1920&q=85",
+    "gallery": [
+      "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "overview": "The ultimate romantic journey through Kerala. Begin amidst the cool, mist-veiled tea gardens of Munnar, cruise on a private air-conditioned houseboat in Alleppey, and conclude with golden sunsets over the Arabian Sea in a clifftop pool villa at Kovalam.",
+    "highlights": [
+      "2 nights in a private Munnar mountain pool chalet with fireplace",
+      "1 night aboard a dedicated private luxury Kettuvallam with floral honeymoon decor",
+      "2 nights in an Arabian Sea clifftop pool villa in Kovalam",
+      "Candlelit dinners, honeymoon cake, and special flower bed arrangements"
+    ],
+    "dayByDay": [
+      {
+        "day": 1,
+        "title": "Arrival in Kochi & Ascent to Munnar Mist",
+        "description": "Arrive at Kochi Airport and proceed on a scenic romantic drive to Munnar. Check into your mountain villa with honeymoon cake and floral welcome.",
+        "highlights": [
+          "Cheeyappara waterfall stops",
+          "Honeymoon welcome",
+          "Fireside candlelit dinner"
+        ],
+        "mealsIncluded": "Dinner"
+      },
+      {
+        "day": 2,
+        "title": "Tea Hills & Romantic Sunset Viewpoints",
+        "description": "Explore the tea garden trails of Munnar, visit Mattupetty lake for a quiet cruise, and enjoy a private sunset high tea.",
+        "highlights": [
+          "Tea gardens photo session",
+          "Private lake cruise",
+          "Honeymoon tea tasting"
+        ],
+        "mealsIncluded": "Breakfast & Dinner"
+      },
+      {
+        "day": 3,
+        "title": "Boarding the Private Alleppey Houseboat",
+        "description": "Descend to Alleppey to board your private luxury houseboat. Enjoy traditional Kerala cuisine and watch the backwaters turn gold at sunset.",
+        "highlights": [
+          "Private houseboat cruise",
+          "Candlelit dinner on water",
+          "Honeymoon floral decor"
+        ],
+        "mealsIncluded": "Lunch, High Tea & Dinner"
+      },
+      {
+        "day": 4,
+        "title": "Coastal Drive to Kovalam Clifftop Villa",
+        "description": "Cruise into the morning sun before heading south along the coastline to Kovalam. Check into your private pool villa overlooking the ocean.",
+        "highlights": [
+          "Morning cruise",
+          "Clifftop villa check-in",
+          "Sunset cocktail on cliff"
+        ],
+        "mealsIncluded": "Breakfast & Dinner"
+      },
+      {
+        "day": 5,
+        "title": "Kovalam Beachfront Serenity & Spa",
+        "description": "Indulge in a couple's Ayurvedic massage session, stroll along Lighthouse Beach, and enjoy an intimate seaside dinner.",
+        "highlights": [
+          "Couple Ayurvedic massage",
+          "Lighthouse beach stroll",
+          "Candlelit seaside dining"
+        ],
+        "mealsIncluded": "Breakfast & Dinner"
+      },
+      {
+        "day": 6,
+        "title": "Trivandrum Departure",
+        "description": "Savor a leisurely breakfast overlooking the ocean before transfer to Trivandrum Airport (TRV) for your journey home.",
+        "highlights": [
+          "Ocean view breakfast",
+          "Chauffeur airport transfer"
+        ],
+        "mealsIncluded": "Breakfast"
+      }
+    ],
+    "accommodationDetails": {
+      "category": "Private Pool Villas & Luxury Houseboat",
+      "description": "Carefully selected properties providing maximum privacy, private pools, and romantic views.",
+      "stayType": "Private Pool Villa & Houseboat"
+    },
+    "transportArrangements": "Dedicated chauffeur in luxury air-conditioned sedan throughout.",
+    "inclusions": [
+      "5 nights luxury accommodation with private pools",
+      "All meals on houseboat + daily breakfast and romantic dinners",
+      "Honeymoon special arrangements: floral bed, cake, candlelit dinners",
+      "Couple Ayurvedic massage session",
+      "Private vehicle throughout"
+    ],
+    "exclusions": [
+      "Airfare",
+      "Personal items"
+    ],
+    "customizationOptions": [
+      "Include helicopter transfer from Kochi to Munnar"
+    ],
+    "cancellationTerms": "Free alteration up to 14 days before arrival.",
+    "featured": true
+  },
+  {
+    "id": "pkg-manali",
+    "slug": "manali-himalayan-escape",
+    "title": "Manali Himalayan Escape",
+    "category": "Domestic",
+    "destination": "Solang Valley & Old Manali, Himachal Pradesh",
+    "destinationSlug": "manali",
+    "duration": "5 Days / 4 Nights",
+    "idealFor": "Mountain Seekers, Families & Snow Lovers",
+    "startingPrice": "From ₹26,500 / person",
+    "priceNote": "Includes boutique alpine cedar chalet, private SUV transfers, and Solang / Atal Tunnel excursion.",
+    "heroImage": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=1920&q=85",
+    "gallery": [
+      "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "overview": "Breathe the crisp pine air of the Himalayas. Stay in cozy wooden chalets overlooking snow-dusted peaks, drive through the engineering marvel of Atal Tunnel, and explore the apple orchards and cafes of Old Manali.",
+    "highlights": [
+      "4 nights in a premium cedar-wood boutique alpine chalet",
+      "Excursion through Atal Tunnel into the dramatic landscape of Sissu, Lahaul",
+      "Solang Valley adventure activities and cable car views",
+      "Exploration of historic Hadimba Temple and Old Manali riverside trails"
+    ],
+    "dayByDay": [
+      {
+        "day": 1,
+        "title": "Arrival in Kullu-Manali Valley",
+        "description": "Arrive at Bhuntar Airport (KUU) or Chandigarh and drive along the roaring Beas River to Manali. Check into your cedar chalet and enjoy mountain tea.",
+        "highlights": [
+          "Beas river drive",
+          "Alpine chalet check-in",
+          "Cozy dinner by fireplace"
+        ],
+        "mealsIncluded": "Dinner"
+      },
+      {
+        "day": 2,
+        "title": "Solang Valley & Atal Tunnel Excursion",
+        "description": "Drive through Atal Tunnel into the stark beauty of Sissu in Lahaul Valley. Afternoon cable car ride and snow fun in Solang Valley.",
+        "highlights": [
+          "Atal Tunnel crossing",
+          "Sissu waterfall",
+          "Solang Valley cable car"
+        ],
+        "mealsIncluded": "Breakfast & Dinner"
+      },
+      {
+        "day": 3,
+        "title": "Old Manali, Hadimba & Vashisht Hot Springs",
+        "description": "Visit the 16th-century wooden Hadimba Temple nestled in towering deodars. Relax at the natural sulfur hot springs of Vashisht and explore Old Manali cafes.",
+        "highlights": [
+          "Hadimba Temple",
+          "Vashisht hot springs",
+          "Old Manali cafe culture"
+        ],
+        "mealsIncluded": "Breakfast & Dinner"
+      },
+      {
+        "day": 4,
+        "title": "Naggar Castle & Apple Orchards",
+        "description": "Discover the ancient wood-and-stone architecture of Naggar Castle and Roerich Art Gallery overlooking the valley.",
+        "highlights": [
+          "Naggar Castle heritage",
+          "Apple orchard stroll",
+          "Traditional Himachali feast"
+        ],
+        "mealsIncluded": "Breakfast & Dinner"
+      },
+      {
+        "day": 5,
+        "title": "Farewell to the Himalayas",
+        "description": "Enjoy breakfast with snow peak views before your private transfer to Bhuntar or Chandigarh Airport.",
+        "highlights": [
+          "Himalayan breakfast",
+          "Airport transfer"
+        ],
+        "mealsIncluded": "Breakfast"
+      }
+    ],
+    "accommodationDetails": {
+      "category": "Boutique Alpine Cedar Chalet",
+      "description": "Heated rooms with hand-hewn cedar panels and panoramic snow mountain views.",
+      "stayType": "Alpine Chalet"
+    },
+    "transportArrangements": "Private dedicated SUV (Innova / Fortuner) throughout.",
+    "inclusions": [
+      "4 nights in luxury chalet accommodation",
+      "Daily breakfast and multi-course dinners",
+      "Atal Tunnel and Solang Valley permits and transfers",
+      "Dedicated chauffeur and mountain guide"
+    ],
+    "exclusions": [
+      "Airfare to Bhuntar/Chandigarh",
+      "Adventure sports charges"
+    ],
+    "customizationOptions": [
+      "Extend to Kasol & Parvati Valley"
+    ],
+    "cancellationTerms": "Free alteration up to 10 days before departure.",
+    "featured": true
+  },
+  {
+    "id": "pkg-kashmir",
+    "slug": "kashmir-paradise-valley",
+    "title": "Kashmir Paradise Valley",
+    "category": "Domestic",
+    "destination": "Srinagar, Gulmarg & Pahalgam, Kashmir",
+    "destinationSlug": "kashmir",
+    "duration": "6 Days / 5 Nights",
+    "idealFor": "Couples, Families & Photographers",
+    "startingPrice": "From ₹34,000 / person",
+    "priceNote": "Includes luxury Dal Lake houseboat, Gulmarg Gondola phase 1, and Pahalgam river valley stay.",
+    "heroImage": "https://images.unsplash.com/photo-1595815771614-ade9d652a65d?auto=format&fit=crop&w=1920&q=85",
+    "gallery": [
+      "https://images.unsplash.com/photo-1595815771614-ade9d652a65d?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1598091383021-15ddea10925d?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "overview": "Experience why Kashmir is called 'Heaven on Earth'. Glide on Dal Lake in a cushioned Shikara, ascend the famous Gulmarg Gondola to snowbound ridges, and wander the pine-fringed Lidder River meadows of Pahalgam.",
+    "highlights": [
+      "1 night on a carved walnut-wood luxury houseboat on tranquil Nigeen / Dal Lake",
+      "2 nights in Gulmarg with Phase 1 Gondola cable car ride to high snowfields",
+      "2 nights in Pahalgam beside the turquoise waters of the Lidder River",
+      "Sunset Shikara ride through floating lotus gardens and vegetable markets"
+    ],
+    "dayByDay": [
+      {
+        "day": 1,
+        "title": "Arrival in Srinagar & Dal Lake Houseboat",
+        "description": "Arrive at Srinagar Airport and check into your hand-carved heritage houseboat. Enjoy a sunset Shikara boat ride as golden light bathes the Zabarwan mountains.",
+        "highlights": [
+          "Warm Kahwa welcome",
+          "Sunset Shikara ride",
+          "Kashmiri Wazwan dinner"
+        ],
+        "mealsIncluded": "Dinner"
+      },
+      {
+        "day": 2,
+        "title": "Srinagar Mughal Gardens to Gulmarg Snows",
+        "description": "Visit Shalimar Bagh and Nishat Bagh before ascending to the meadow of flowers in Gulmarg. Check into your luxury mountain resort.",
+        "highlights": [
+          "Mughal terraced gardens",
+          "Scenic Gulmarg ascent",
+          "Evening snow walk"
+        ],
+        "mealsIncluded": "Breakfast & Dinner"
+      },
+      {
+        "day": 3,
+        "title": "Gulmarg Gondola Ride & Snowfields",
+        "description": "Board the famous Gulmarg Gondola to Kongdoori mountain ridge for panoramic views of Apharwat Peak and snow sports.",
+        "highlights": [
+          "Gondola cable car ride",
+          "Snow skiing / sledging",
+          "Fireside dinner"
+        ],
+        "mealsIncluded": "Breakfast & Dinner"
+      },
+      {
+        "day": 4,
+        "title": "Scenic Transfer to Pahalgam & Saffron Fields",
+        "description": "Drive past the saffron fields of Pampore and walnut orchards to Pahalgam, the Valley of Shepherds. Check into your river-view retreat.",
+        "highlights": [
+          "Pampore saffron fields",
+          "Lidder river valley",
+          "Riverbank tea walk"
+        ],
+        "mealsIncluded": "Breakfast & Dinner"
+      },
+      {
+        "day": 5,
+        "title": "Betaab Valley & Aru Valley Exploration",
+        "description": "Explore the picturesque Betaab Valley, named after the Bollywood classic, and the untouched pine meadows of Aru Valley.",
+        "highlights": [
+          "Betaab valley meadows",
+          "Aru pine forests",
+          "Pony ride trails"
+        ],
+        "mealsIncluded": "Breakfast & Dinner"
+      },
+      {
+        "day": 6,
+        "title": "Return to Srinagar Airport",
+        "description": "Enjoy breakfast along the Lidder River before transfer to Srinagar Airport for your return flight.",
+        "highlights": [
+          "Kashmiri breakfast",
+          "Airport transfer"
+        ],
+        "mealsIncluded": "Breakfast"
+      }
+    ],
+    "accommodationDetails": {
+      "category": "Heritage Houseboat & 5-Star Mountain Resorts",
+      "description": "Carved cedar houseboats with brass baths, and luxury alpine hotel rooms with central heating.",
+      "stayType": "Houseboat & Mountain Resort"
+    },
+    "transportArrangements": "Dedicated private luxury vehicle with experienced local driver.",
+    "inclusions": [
+      "5 nights luxury accommodation",
+      "Daily breakfast and dinners including Kashmiri specialties",
+      "Shikara boat ride on Dal Lake",
+      "Gulmarg Gondola Phase 1 tickets"
+    ],
+    "exclusions": [
+      "Airfare to Srinagar",
+      "Horse/pony rides",
+      "Phase 2 Gondola tickets"
+    ],
+    "customizationOptions": [
+      "Add Sonmarg day excursion",
+      "Upgrade to Phase 2 Gondola summit"
+    ],
+    "cancellationTerms": "Free alteration up to 14 days before arrival.",
+    "featured": true
+  },
+  {
+    "id": "pkg-lakshadweep",
+    "slug": "lakshadweep-coral-island-getaway",
+    "title": "Lakshadweep Coral Island Getaway",
+    "category": "Domestic",
+    "destination": "Agatti, Bangaram & Thinnakara Islands",
+    "destinationSlug": "lakshadweep",
+    "duration": "5 Days / 4 Nights",
+    "idealFor": "Beach Lovers, Divers & Seclusion Seekers",
+    "startingPrice": "From ₹38,000 / person",
+    "priceNote": "Includes island permits, beach cottages, boat transfers, and all meals on island.",
+    "heroImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1920&q=85",
+    "gallery": [
+      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "overview": "Discover India's most pristine tropical archipelago. White talcum beaches, turquoise lagoons with crystal clarity, swimming with sea turtles, and complete isolation from commercial tourism.",
+    "highlights": [
+      "4 nights in beachfront eco-cottages steps away from the turquoise lagoon",
+      "Snorkeling and scuba diving along vibrant, untouched coral reefs",
+      "Boat excursion to the uninhabited teardrop islands of Bangaram and Thinnakara",
+      "Complete assistance with entry permits and flight connections from Kochi"
+    ],
+    "dayByDay": [
+      {
+        "day": 1,
+        "title": "Flight from Kochi to Agatti Island",
+        "description": "Take the short scenic flight from Kochi Airport over turquoise atolls to Agatti. Transfer to your beachfront cottage and take your first swim in the calm lagoon.",
+        "highlights": [
+          "Scenic flight arrival",
+          "Lagoon check-in",
+          "Sunset beach walk"
+        ],
+        "mealsIncluded": "Lunch & Dinner"
+      },
+      {
+        "day": 2,
+        "title": "Lagoon Snorkeling & Marine Discovery",
+        "description": "Join resident marine guides for snorkeling over shallow coral gardens teeming with clownfish, parrotfish, and sea turtles.",
+        "highlights": [
+          "Guided reef snorkeling",
+          "Glass-bottom boat ride",
+          "Fresh coconut water"
+        ],
+        "mealsIncluded": "Breakfast, Lunch & Dinner"
+      },
+      {
+        "day": 3,
+        "title": "Day Excursion to Bangaram & Thinnakara",
+        "description": "Speedboat ride across the deep channel to the uninhabited tropical paradise of Bangaram. Enjoy a beach picnic on a deserted sandbank.",
+        "highlights": [
+          "Speedboat island hopping",
+          "Deserted sandbank picnic",
+          "Turquoise water swimming"
+        ],
+        "mealsIncluded": "Breakfast, Lunch & Dinner"
+      },
+      {
+        "day": 4,
+        "title": "Kayaking & Lagoon Sunset",
+        "description": "Spend a leisurely day paddleboarding or kayaking in the lagoon. Enjoy an evening beach barbecue under starlit tropical skies.",
+        "highlights": [
+          "Lagoon kayaking",
+          "Stargazing on sand",
+          "Seafood beach barbecue"
+        ],
+        "mealsIncluded": "Breakfast, Lunch & Dinner"
+      },
+      {
+        "day": 5,
+        "title": "Agatti Island to Kochi Return",
+        "description": "Final morning swim in the ocean before transfer to Agatti Airport for your flight back to Kochi.",
+        "highlights": [
+          "Island breakfast",
+          "Flight back to Kochi"
+        ],
+        "mealsIncluded": "Breakfast"
+      }
+    ],
+    "accommodationDetails": {
+      "category": "Beachfront Eco-Cottage",
+      "description": "Air-conditioned cottages constructed from natural wood and coconut thatch, right on the sand.",
+      "stayType": "Beachfront Cottage"
+    },
+    "transportArrangements": "Airport transfers on island and inter-island speedboats included.",
+    "inclusions": [
+      "4 nights beachfront cottage accommodation",
+      "All meals (Breakfast, Lunch, High Tea, Dinner) included throughout",
+      "Official Lakshadweep entry permit processing",
+      "Inter-island boat transfers and snorkeling equipment"
+    ],
+    "exclusions": [
+      "Flight tickets Kochi-Agatti (can be booked via concierge)",
+      "Scuba dive certifications"
+    ],
+    "advisoryNotice": "Lakshadweep requires mandatory government entry permits. Our concierge processes all documentation seamlessly for our guests.",
+    "customizationOptions": [
+      "Include introductory PADI Scuba Dive"
+    ],
+    "cancellationTerms": "Permits non-refundable; hotel flexible alteration with 14 days notice.",
+    "featured": true
+  },
+  {
+    "id": "pkg-singapore",
+    "slug": "singapore-futuristic-garden-city",
+    "title": "Singapore",
+    "category": "International",
+    "destination": "Marina Bay & Sentosa Island, Singapore",
+    "destinationSlug": "singapore",
+    "duration": "5 Days / 4 Nights",
+    "idealFor": "Modern Travelers, Families & Urban Explorers",
+    "startingPrice": "From ₹48,000 / person",
+    "priceNote": "Includes 4-star central hotel, Gardens by the Bay, Universal Studios, and airport transfers.",
+    "heroImage": "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=1920&q=85",
+    "gallery": [
+      "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1506351421178-63b52a2d2562?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "overview": "Step into the world's premier garden city. Marvel at the futuristic Supertrees and Cloud Forest, take a night safari into tropical wildlife habitats, and experience the thrilling rides of Sentosa Island.",
+    "highlights": [
+      "4 nights in a premier city-center hotel near Marina Bay",
+      "Gardens by the Bay entry with Cloud Forest & Flower Dome",
+      "Full day pass to Universal Studios Singapore on Sentosa Island",
+      "Marina Bay Sands SkyPark observation deck sunset view"
+    ],
+    "dayByDay": [
+      {
+        "day": 1,
+        "title": "Arrival in Singapore & Night River Cruise",
+        "description": "Arrive at Singapore Changi Airport and transfer to your central hotel. In the evening, enjoy a Clarke Quay bumboats cruise along the illuminated Singapore River.",
+        "highlights": [
+          "Changi airport transfer",
+          "Hotel check-in",
+          "Clarke Quay river cruise"
+        ],
+        "mealsIncluded": "Breakfast (from Day 2)"
+      },
+      {
+        "day": 2,
+        "title": "City Sights & Gardens by the Bay",
+        "description": "Explore Civic District, Merlion Park, and Little India. Spend the afternoon marveling at Gardens by the Bay and the indoor Cloud Forest waterfall.",
+        "highlights": [
+          "Merlion Park photo stop",
+          "Gardens by the Bay domes",
+          "Supertree light show"
+        ],
+        "mealsIncluded": "Breakfast"
+      },
+      {
+        "day": 3,
+        "title": "Sentosa Island & Universal Studios",
+        "description": "Cross over to Sentosa Island for a full day of excitement at Universal Studios Singapore, followed by the Wings of Time multi-sensory night show.",
+        "highlights": [
+          "Universal Studios Singapore",
+          "Sentosa beaches",
+          "Wings of Time show"
+        ],
+        "mealsIncluded": "Breakfast"
+      },
+      {
+        "day": 4,
+        "title": "Marina Bay Sands SkyPark & Night Safari",
+        "description": "Soak in panoramic skyline views from the Marina Bay Sands observation deck. In the evening, embark on the world-famous open tram Night Safari.",
+        "highlights": [
+          "MBS SkyPark panorama",
+          "Orchard Road shopping",
+          "Singapore Night Safari"
+        ],
+        "mealsIncluded": "Breakfast"
+      },
+      {
+        "day": 5,
+        "title": "Jewel Changi & Departure",
+        "description": "Explore the Rain Vortex and Canopy Park at Jewel Changi before boarding your flight home.",
+        "highlights": [
+          "Jewel Changi Rain Vortex",
+          "Changi airport departure"
+        ],
+        "mealsIncluded": "Breakfast"
+      }
+    ],
+    "accommodationDetails": {
+      "category": "4-Star / 5-Star Central City Hotel",
+      "description": "Centrally located property with rooftop pool and easy access to MRT stations.",
+      "stayType": "Luxury City Hotel"
+    },
+    "transportArrangements": "Private airport transfers and attraction transfers included.",
+    "inclusions": [
+      "4 nights accommodation with daily breakfast",
+      "Airport transfers in private vehicle",
+      "Gardens by the Bay (Flower Dome + Cloud Forest) tickets",
+      "Universal Studios Singapore 1-Day Pass",
+      "Night Safari with tram ride"
+    ],
+    "exclusions": [
+      "International flights",
+      "Singapore Tourist Visa fees",
+      "Meals not mentioned"
+    ],
+    "customizationOptions": [
+      "Upgrade to Marina Bay Sands with infinity pool access"
+    ],
+    "cancellationTerms": "Standard international package cancellation policy applies.",
+    "featured": true
+  },
+  {
+    "id": "pkg-thailand",
+    "slug": "thailand-tropical-island-escape",
+    "title": "Thailand",
+    "category": "International",
+    "destination": "Phuket & Krabi / Bangkok, Thailand",
+    "destinationSlug": "thailand",
+    "duration": "6 Days / 5 Nights",
+    "idealFor": "Beach Lovers, Couples & Adventure Enthusiasts",
+    "startingPrice": "From ₹36,500 / person",
+    "priceNote": "Includes beachfront pool resort, Phi Phi speedboat island tour, and cultural city sights.",
+    "heroImage": "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=1920&q=85",
+    "gallery": [
+      "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1506665531195-3566af2b4dfa?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "overview": "Experience the vibrant tropical shores of Thailand. Glide on high-speed boats past soaring limestone karsts, snorkel in turquoise waters at Maya Bay, and relax in beachfront pool resorts with authentic Thai hospitality.",
+    "highlights": [
+      "5 nights in a luxury 4-star beachfront resort in Phuket / Krabi",
+      "Full-day speedboat tour to Phi Phi Islands, Maya Bay, and Pileh Lagoon",
+      "Four Islands sunset catamaran cruise with snorkeling and buffet",
+      "Private transfers and curated street food evening tours"
+    ],
+    "dayByDay": [
+      {
+        "day": 1,
+        "title": "Arrival in Phuket & Beachfront Welcome",
+        "description": "Arrive at Phuket International Airport and transfer to your beachfront resort. Spend the evening relaxing by the pool or enjoying a traditional Thai massage.",
+        "highlights": [
+          "Private airport escort",
+          "Resort check-in",
+          "Sunset beach walk"
+        ],
+        "mealsIncluded": "Breakfast (from Day 2)"
+      },
+      {
+        "day": 2,
+        "title": "Phi Phi Islands & Maya Bay Speedboat Tour",
+        "description": "Embark on an exhilarating speedboat journey across the Andaman Sea to Phi Phi Don and Phi Phi Leh. Swim in the emerald waters of Pileh Lagoon and view iconic Maya Bay.",
+        "highlights": [
+          "Phi Phi islands speedboat",
+          "Pileh Lagoon cliff jumping",
+          "Snorkeling with colorful reef fish"
+        ],
+        "mealsIncluded": "Breakfast & Lunch"
+      },
+      {
+        "day": 3,
+        "title": "Phuket Old Town & Big Buddha",
+        "description": "Explore the colorful Sino-Portuguese architecture of Phuket Old Town, followed by a visit to the hilltop Big Buddha overlooking Chalong Bay.",
+        "highlights": [
+          "Phuket Old Town walk",
+          "Big Buddha panoramic viewpoint",
+          "Local night market"
+        ],
+        "mealsIncluded": "Breakfast"
+      },
+      {
+        "day": 4,
+        "title": "Transfer to Krabi & Cliffside Sunset",
+        "description": "Scenic transfer to Krabi. Check into your cliffside resort overlooking the dramatic limestone formations of Ao Nang.",
+        "highlights": [
+          "Coastal transfer",
+          "Krabi resort check-in",
+          "Ao Nang beach sunset"
+        ],
+        "mealsIncluded": "Breakfast"
+      },
+      {
+        "day": 5,
+        "title": "Four Islands Longtail Cruise",
+        "description": "Discover Phra Nang Cave Beach, Tup Island with its sandbar walkway, and Chicken Island on a traditional longtail boat.",
+        "highlights": [
+          "Four islands cruise",
+          "Tup Island sandbar",
+          "Snorkeling and cave exploration"
+        ],
+        "mealsIncluded": "Breakfast & Picnic Lunch"
+      },
+      {
+        "day": 6,
+        "title": "Departure",
+        "description": "Enjoy a leisurely tropical breakfast before your private transfer to Krabi or Phuket Airport for your return flight.",
+        "highlights": [
+          "Resort breakfast",
+          "Airport departure transfer"
+        ],
+        "mealsIncluded": "Breakfast"
+      }
+    ],
+    "accommodationDetails": {
+      "category": "Beachfront Luxury Resort",
+      "description": "Contemporary Thai villas with private balconies overlooking Andaman waters.",
+      "stayType": "Beach Resort"
+    },
+    "transportArrangements": "Private AC car transfers and shared luxury speedboat tours.",
+    "inclusions": [
+      "5 nights accommodation with daily breakfast",
+      "Phi Phi Islands speedboat tour with buffet lunch and snorkeling gear",
+      "Krabi Four Islands excursion",
+      "All ground airport transfers"
+    ],
+    "exclusions": [
+      "International flights",
+      "National Park conservation fees (paid on island)",
+      "Personal expenses"
+    ],
+    "customizationOptions": [
+      "Add Bangkok shopping 2-night extension"
+    ],
+    "cancellationTerms": "Standard international terms apply.",
+    "featured": true
+  },
+  {
+    "id": "pkg-malaysia",
+    "slug": "malaysia-culture-rainforest-gateway",
+    "title": "Malaysia",
+    "category": "International",
+    "destination": "Kuala Lumpur & Langkawi, Malaysia",
+    "destinationSlug": "malaysia",
+    "duration": "6 Days / 5 Nights",
+    "idealFor": "Families, Couples & Rainforest Explorers",
+    "startingPrice": "From ₹39,000 / person",
+    "priceNote": "Includes 5-star Kuala Lumpur hotel, Langkawi beach resort, cable car, and transfers.",
+    "heroImage": "https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=1920&q=85",
+    "gallery": [
+      "https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1508672019048-805b876b67e2?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "overview": "Experience the best of Malaysia. Gaze up at the glittering Petronas Twin Towers in Kuala Lumpur, explore the colorful limestone steps of Batu Caves, and escape to the ancient UNESCO rainforests and duty-free beaches of Langkawi.",
+    "highlights": [
+      "2 nights in Kuala Lumpur with Petronas Twin Towers & Batu Caves",
+      "3 nights in Langkawi beachfront resort bordering ancient rainforest",
+      "Langkawi SkyCab cable car ride over Mount Machinchang",
+      "Mangrove forest boat safari to feed wild eagles and spot otters"
+    ],
+    "dayByDay": [
+      {
+        "day": 1,
+        "title": "Arrival in Kuala Lumpur & City Lights",
+        "description": "Arrive at Kuala Lumpur International Airport (KLIA) and transfer to your 5-star hotel in Bukit Bintang. Visit the illuminated Petronas Towers at night.",
+        "highlights": [
+          "KLIA airport transfer",
+          "Petronas Twin Towers photo stop",
+          "Bukit Bintang night walk"
+        ],
+        "mealsIncluded": "Breakfast (from Day 2)"
+      },
+      {
+        "day": 2,
+        "title": "Batu Caves & Cultural Tour",
+        "description": "Climb the 272 vibrant colored steps to the limestone cathedral of Batu Caves. Afternoon visit to Merdeka Square and Chinatown.",
+        "highlights": [
+          "Batu Caves & Murugan statue",
+          "Chinatown street food",
+          "KL Tower views"
+        ],
+        "mealsIncluded": "Breakfast"
+      },
+      {
+        "day": 3,
+        "title": "Flight to Langkawi Rainforest Island",
+        "description": "Take the short domestic flight to Langkawi. Check into your island resort set between the turquoise Andaman Sea and ancient rainforest.",
+        "highlights": [
+          "Langkawi island arrival",
+          "Beach resort check-in",
+          "Sunset cocktail on sand"
+        ],
+        "mealsIncluded": "Breakfast"
+      },
+      {
+        "day": 4,
+        "title": "SkyCab Cable Car & SkyBridge",
+        "description": "Ride the world's steepest cable car up Mount Machinchang. Walk across the curved suspension SkyBridge suspended over tropical rainforest.",
+        "highlights": [
+          "SkyCab cable car",
+          "SkyBridge curved walkway",
+          "3D Art Museum"
+        ],
+        "mealsIncluded": "Breakfast"
+      },
+      {
+        "day": 5,
+        "title": "Kilim Geoforest Mangrove Boat Safari",
+        "description": "Cruise along the limestone rivers of Kilim Karst Geoforest Park. Watch wild Brahminy kites and white-bellied sea eagles feeding.",
+        "highlights": [
+          "Mangrove boat cruise",
+          "Wild eagle feeding",
+          "Bat cave and floating fish farm"
+        ],
+        "mealsIncluded": "Breakfast"
+      },
+      {
+        "day": 6,
+        "title": "Departure via KL",
+        "description": "Enjoy a final stroll on Cenang Beach before transfer to Langkawi Airport for your connecting flight home.",
+        "highlights": [
+          "Island breakfast",
+          "Duty-free shopping",
+          "Airport departure"
+        ],
+        "mealsIncluded": "Breakfast"
+      }
+    ],
+    "accommodationDetails": {
+      "category": "5-Star City Hotel + 4-Star Langkawi Beach Resort",
+      "description": "Infinity pools, city skyline views in KL, and tropical ocean verandas in Langkawi.",
+      "stayType": "City Hotel & Island Resort"
+    },
+    "transportArrangements": "Private airport and tour transfers throughout.",
+    "inclusions": [
+      "5 nights premium hotel & resort accommodation",
+      "Daily breakfast buffet",
+      "Batu Caves and Kuala Lumpur city tour",
+      "Langkawi SkyCab cable car tickets",
+      "Kilim Geoforest mangrove boat safari"
+    ],
+    "exclusions": [
+      "International airfare",
+      "Tourism tax (paid at hotel)",
+      "Personal expenses"
+    ],
+    "customizationOptions": [
+      "Add Genting Highlands day excursion"
+    ],
+    "cancellationTerms": "Standard international package cancellation policy applies.",
+    "featured": true
+  },
+  {
+    "id": "pkg-maldives-honeymoon",
+    "slug": "maldives-overwater-honeymoon",
+    "title": "Maldives Overwater Honeymoon",
+    "category": "Honeymoon",
+    "destination": "North Malé Atoll & South Malé, Maldives",
+    "destinationSlug": "maldives",
+    "duration": "6 Days / 5 Nights",
+    "idealFor": "Newlyweds & Couples Celebrating",
+    "startingPrice": "From ₹1,10,000 / couple",
+    "priceNote": "Includes overwater bungalow, all-inclusive meals, sunset cruise & couple's spa.",
+    "heroImage": "https://images.unsplash.com/photo-1573843981267-be1999ff37cd?auto=format&fit=crop&w=1920&q=85",
+    "gallery": [
+      "https://images.unsplash.com/photo-1573843981267-be1999ff37cd?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1540202404-a2f29016b523?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "overview": "Experience the pinnacle of romantic luxury — your own overwater glass-floor bungalow perched above a private turquoise lagoon. Wake to sunrise views, snorkel with manta rays, dine under the stars on a private sandbank, and surrender to the most intimate escape on earth.",
+    "highlights": [
+      "5 nights in a private overwater bungalow with glass floor panel over the lagoon",
+      "All-inclusive luxury dining: in-water breakfast, private sandbank dinner under the stars",
+      "Couple's signature Maldivian spa treatment with floating bath ritual",
+      "Sunset dolphin cruise and private snorkeling with manta rays"
+    ],
+    "dayByDay": [
+      {
+        "day": 1,
+        "title": "Arrival & Seaplane Transfer to Your Paradise",
+        "description": "Arrive at Velana International Airport, Malé and board your scenic seaplane transfer to your island resort. Check into your glass-floor overwater bungalow.",
+        "highlights": [
+          "Seaplane arrival over atolls",
+          "Champagne welcome",
+          "Sunset overwater deck"
+        ],
+        "mealsIncluded": "Dinner"
+      },
+      {
+        "day": 2,
+        "title": "In-Water Breakfast & Lagoon Snorkeling",
+        "description": "Enjoy breakfast served on your bungalow deck over the ocean. Afternoon private snorkeling safari in the lagoon's vibrant coral gardens.",
+        "highlights": [
+          "Over-water breakfast",
+          "Private snorkeling",
+          "Lagoon kayaking"
+        ],
+        "mealsIncluded": "Breakfast, Lunch & Dinner"
+      },
+      {
+        "day": 3,
+        "title": "Couple's Spa & Dolphin Sunset Cruise",
+        "description": "Indulge in a 90-minute couple's Maldivian hot stone massage. In the evening, sail out on a private dhoni for the legendary Maldives dolphin sunset.",
+        "highlights": [
+          "Couple's spa ritual",
+          "Sunset dolphin watching",
+          "Champagne sunset cocktails"
+        ],
+        "mealsIncluded": "Breakfast, Lunch & Dinner"
+      },
+      {
+        "day": 4,
+        "title": "Private Sandbank Picnic & Manta Ray Excursion",
+        "description": "Take a speedboat to a deserted private sandbank for a champagne picnic. Afternoon manta ray snorkeling expedition in the deep blue channel.",
+        "highlights": [
+          "Private sandbank picnic",
+          "Manta ray snorkeling",
+          "Underwater restaurant dinner"
+        ],
+        "mealsIncluded": "Breakfast, Lunch & Dinner"
+      },
+      {
+        "day": 5,
+        "title": "Free Day in Paradise",
+        "description": "A leisurely day entirely yours — kayaking, paddleboarding, or simply floating in the crystal lagoon. Evening: private beach dinner under a canopy of stars.",
+        "highlights": [
+          "Watersport freedom",
+          "Private beach dinner",
+          "Stargazing on sand"
+        ],
+        "mealsIncluded": "Breakfast, Lunch & Dinner"
+      },
+      {
+        "day": 6,
+        "title": "Farewell to the Maldives",
+        "description": "Final morning in paradise before seaplane or speedboat transfer to Malé for your departure flight.",
+        "highlights": [
+          "Last sunrise over lagoon",
+          "Departure transfer"
+        ],
+        "mealsIncluded": "Breakfast"
+      }
+    ],
+    "accommodationDetails": {
+      "category": "Overwater Villa / Bungalow",
+      "description": "Glass-floor overwater bungalows with direct lagoon access, outdoor bathtub on deck, and 180° ocean views.",
+      "stayType": "Luxury Overwater Bungalow"
+    },
+    "transportArrangements": "Seaplane or speedboat transfers from Malé International Airport included.",
+    "inclusions": [
+      "5 nights overwater bungalow accommodation",
+      "Full all-inclusive meal plan throughout",
+      "Seaplane / speedboat transfers",
+      "Couple's spa treatment (90 min)",
+      "Sunset dolphin cruise",
+      "Private sandbank picnic setup"
+    ],
+    "exclusions": [
+      "International flights to Malé",
+      "Scuba diving certification courses"
+    ],
+    "customizationOptions": [
+      "Upgrade to two-storey water villa with private pool",
+      "Add underwater restaurant reservation"
+    ],
+    "cancellationTerms": "Free alteration up to 21 days before arrival. 50% refund up to 14 days.",
+    "featured": true
+  },
+  {
+    "id": "pkg-bali-honeymoon",
+    "slug": "bali-romantic-escape",
+    "title": "Bali Romantic Escape",
+    "category": "Honeymoon",
+    "destination": "Ubud & Seminyak, Bali, Indonesia",
+    "destinationSlug": "bali",
+    "duration": "7 Days / 6 Nights",
+    "idealFor": "Couples, Honeymooners & Anniversary Celebrations",
+    "startingPrice": "From ₹65,000 / couple",
+    "priceNote": "Includes jungle cliff villa in Ubud, beachfront villa in Seminyak, couples spa, and sunset river rafting.",
+    "heroImage": "https://images.unsplash.com/photo-1537953773345-d172ccf13cf1?auto=format&fit=crop&w=1920&q=85",
+    "gallery": [
+      "https://images.unsplash.com/photo-1537953773345-d172ccf13cf1?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1555400038-63f5ba517a47?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1573790387438-4da905039392?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1517759544474-6ccb1a6e5a76?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "overview": "Fall in love all over again in the Island of Gods. Begin in the mystical emerald rice terraces and jungle cliffs of Ubud, then glide to the golden sunset shores of Seminyak. Bali weaves ancient temples, lush nature, and timeless romance into an unforgettable honeymoon canvas.",
+    "highlights": [
+      "3 nights in a private infinity-pool jungle cliff villa overlooking Ubud valley",
+      "3 nights in a designer beachfront villa in Seminyak with sunset views",
+      "Couple's traditional Balinese healing spa ritual with flower bath ceremony",
+      "Private romantic dinner on a Jimbaran seafood beach at sunset"
+    ],
+    "dayByDay": [
+      {
+        "day": 1,
+        "title": "Arrival in Bali & Ubud Jungle Villa Check-In",
+        "description": "Arrive at Ngurah Rai International Airport. Private driver escorts you to your jungle cliff villa in Ubud. Welcome with a Balinese flower bath and champagne.",
+        "highlights": [
+          "Private villa welcome",
+          "Flower bath ritual",
+          "Jungle cliff dinner"
+        ],
+        "mealsIncluded": "Dinner"
+      },
+      {
+        "day": 2,
+        "title": "Tegallalang Rice Terraces & Sacred Temple",
+        "description": "Walk hand-in-hand through the UNESCO-listed Tegallalang rice terraces. Visit Tirta Empul holy spring temple and witness a traditional Kecak fire dance at Uluwatu.",
+        "highlights": [
+          "Tegallalang rice terraces",
+          "Holy spring temple",
+          "Kecak fire dance at sunset"
+        ],
+        "mealsIncluded": "Breakfast & Dinner"
+      },
+      {
+        "day": 3,
+        "title": "Ayung River Rafting & Balinese Spa",
+        "description": "Morning white-water rafting through lush jungle gorges. Afternoon couple's Balinese healing massage and traditional Lulur scrub treatment.",
+        "highlights": [
+          "Ayung River rafting",
+          "Balinese Lulur spa",
+          "Floral couple's bath"
+        ],
+        "mealsIncluded": "Breakfast & Dinner"
+      },
+      {
+        "day": 4,
+        "title": "Transfer to Seminyak Beach Villa",
+        "description": "Morning at leisure before scenic drive to your Seminyak villa. Afternoon on the beach watching the famous Bali sunset with cocktails.",
+        "highlights": [
+          "Private beach villa check-in",
+          "Seminyak sunset",
+          "Designer beach club evening"
+        ],
+        "mealsIncluded": "Breakfast"
+      },
+      {
+        "day": 5,
+        "title": "Jimbaran Seafood Dinner & Nusa Penida Day Trip",
+        "description": "Full-day speed boat excursion to the dramatic cliffs and crystal lagoons of Nusa Penida. Romantic candlelit seafood dinner on Jimbaran Beach at night.",
+        "highlights": [
+          "Nusa Penida cliffs & lagoons",
+          "Manta ray snorkeling",
+          "Jimbaran beach dinner"
+        ],
+        "mealsIncluded": "Breakfast & Dinner"
+      },
+      {
+        "day": 6,
+        "title": "Free Beach Day & Spa",
+        "description": "Your day, your way — pool, beach, or a final spa session. Sunset cocktails at a Seminyak rooftop beach club.",
+        "highlights": [
+          "Beach & pool leisure",
+          "Sunset rooftop cocktails",
+          "Romantic farewell dinner"
+        ],
+        "mealsIncluded": "Breakfast & Dinner"
+      },
+      {
+        "day": 7,
+        "title": "Departure",
+        "description": "Leisurely breakfast at your villa before private transfer to Ngurah Rai Airport.",
+        "highlights": [
+          "Villa breakfast",
+          "Airport transfer"
+        ],
+        "mealsIncluded": "Breakfast"
+      }
+    ],
+    "accommodationDetails": {
+      "category": "Private Pool Jungle Villa & Beachfront Villa",
+      "description": "Hand-picked private villas with infinity pools, butler service, and romantic sunset vistas.",
+      "stayType": "Private Pool Villa"
+    },
+    "transportArrangements": "Private air-conditioned vehicle throughout. Speed boat for Nusa Penida included.",
+    "inclusions": [
+      "6 nights luxury private villa accommodation",
+      "Daily breakfast & romantic dinners",
+      "Couple's Balinese spa (Lulur scrub + massage)",
+      "Nusa Penida full-day speedboat excursion",
+      "Jimbaran Beach candlelit dinner setup",
+      "All private vehicle transfers"
+    ],
+    "exclusions": [
+      "International flights to Bali",
+      "Entrance fees at temples",
+      "Personal expenses"
+    ],
+    "customizationOptions": [
+      "Add helicopter tour of Bali's volcanoes",
+      "Upgrade to butler-service villa"
+    ],
+    "cancellationTerms": "Free alteration up to 14 days before departure.",
+    "featured": true
+  },
+  {
+    "id": "pkg-dubai-honeymoon",
+    "slug": "dubai-luxury-honeymoon",
+    "title": "Dubai Luxury Honeymoon",
+    "category": "Honeymoon",
+    "destination": "Dubai Marina & Palm Jumeirah, UAE",
+    "destinationSlug": "dubai",
+    "duration": "5 Days / 4 Nights",
+    "idealFor": "Newlyweds & Luxury Seekers",
+    "startingPrice": "From ₹85,000 / couple",
+    "priceNote": "Includes Palm Jumeirah 5-star resort, desert safari, Burj Khalifa sunset, and romantic dhow cruise.",
+    "heroImage": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1920&q=85",
+    "gallery": [
+      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1529290130-4ca3753253ae?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1555400038-63f5ba517a47?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "overview": "Experience the world's most glamorous city at its most romantic. Palm Jumeirah sunsets, sky-high cocktails above the clouds at Burj Khalifa, desert stargazing, and world-class fine dining create an extraordinary honeymoon unlike any other.",
+    "highlights": [
+      "4 nights at a 5-star Palm Jumeirah resort with private beach and infinity pool",
+      "Romantic sunset cocktails at At.mosphere lounge on Level 122 of Burj Khalifa",
+      "Golden desert safari with private camp dinner under billion stars",
+      "Dubai Marina luxury dhow dinner cruise with live music"
+    ],
+    "dayByDay": [
+      {
+        "day": 1,
+        "title": "Arrival in Dubai & Palm Resort Check-In",
+        "description": "Arrive at Dubai International Airport and transfer to your Palm Jumeirah luxury resort. Champagne welcome and honeymoon room setup with rose petals and chocolates.",
+        "highlights": [
+          "Palm Jumeirah resort",
+          "Honeymoon setup",
+          "Pool & beach access"
+        ],
+        "mealsIncluded": "Dinner"
+      },
+      {
+        "day": 2,
+        "title": "Burj Khalifa & Downtown Dubai",
+        "description": "Visit the iconic Dubai Mall, then ascend to the world-famous At.mosphere lounge at Level 122 of the Burj Khalifa for sunset cocktails above the clouds.",
+        "highlights": [
+          "Dubai Mall & Fountains",
+          "Burj Khalifa At.mosphere",
+          "Dubai Frame"
+        ],
+        "mealsIncluded": "Breakfast & Dinner"
+      },
+      {
+        "day": 3,
+        "title": "Gold Desert Safari & Private Dune Camp",
+        "description": "Dune bashing in a luxury 4WD through the golden Arabian desert. Private camel ride and romantic camp dinner under a sky of a billion stars.",
+        "highlights": [
+          "Dune bashing",
+          "Camel ride",
+          "Private starlight camp dinner"
+        ],
+        "mealsIncluded": "Breakfast & Dinner"
+      },
+      {
+        "day": 4,
+        "title": "Dubai Marina Dhow Cruise & Spa",
+        "description": "Morning at the private beach and infinity pool. Afternoon couple's spa with hammam ritual. Evening romantic dhow dinner cruise along Dubai Marina.",
+        "highlights": [
+          "Private beach morning",
+          "Couple's hammam spa",
+          "Dhow dinner cruise"
+        ],
+        "mealsIncluded": "Breakfast & Dinner"
+      },
+      {
+        "day": 5,
+        "title": "Departure",
+        "description": "Final morning with complimentary late checkout before private transfer to Dubai International Airport.",
+        "highlights": [
+          "Late checkout",
+          "Airport transfer"
+        ],
+        "mealsIncluded": "Breakfast"
+      }
+    ],
+    "accommodationDetails": {
+      "category": "5-Star Palm Jumeirah Luxury Resort",
+      "description": "Oceanfront rooms and suites with floor-to-ceiling views of the Arabian Gulf and direct private beach access.",
+      "stayType": "5-Star Luxury Resort"
+    },
+    "transportArrangements": "Private luxury sedan transfers throughout Dubai.",
+    "inclusions": [
+      "4 nights 5-star Palm Jumeirah accommodation",
+      "Daily breakfast & romantic dinners",
+      "At.mosphere Burj Khalifa sunset cocktails",
+      "Desert safari with private camp dinner",
+      "Dubai Marina dhow dinner cruise",
+      "Couple's hammam spa ritual"
+    ],
+    "exclusions": [
+      "International flights to Dubai",
+      "UAE visa fees",
+      "Personal shopping"
+    ],
+    "customizationOptions": [
+      "Upgrade to overwater villa at Atlantis",
+      "Add private helicopter city tour"
+    ],
+    "cancellationTerms": "Free alteration up to 14 days before arrival.",
+    "featured": true
+  },
+  {
+    "id": "pkg-custom-india",
+    "slug": "custom-india-heritage-trail",
+    "title": "Custom India Heritage Trail",
+    "category": "Custom",
+    "destination": "Rajasthan, Agra & Golden Triangle, India",
+    "destinationSlug": "golden-triangle",
+    "duration": "Flexible (7–14 Days)",
+    "idealFor": "History Lovers, Families & Groups with Specific Preferences",
+    "startingPrice": "From ₹30,000 / person",
+    "priceNote": "Fully customizable itinerary. Price varies based on group size, hotel category, and duration.",
+    "heroImage": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=1920&q=85",
+    "gallery": [
+      "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1562679299-8e9d617e0f63?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1598083571862-7b22a0ee8cb8?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1587553966371-30c76ef7b0e3?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "overview": "Your India, your way. From the timeless Taj Mahal at sunrise to painted havelis and royal palaces of Rajasthan — we design a bespoke heritage journey entirely around your dates, budget, and interests. No fixed groups, no compromises.",
+    "highlights": [
+      "Sunrise private Taj Mahal visit with no-crowd photographer access",
+      "Royal palace hotel stays: Rambagh, Umaid Bhawan, City Palace",
+      "Private heritage city walks with scholar guides in Jaipur & Jodhpur",
+      "Flexible duration from 7 to 14 days based on your preference"
+    ],
+    "dayByDay": [
+      {
+        "day": 1,
+        "title": "Consultation & Itinerary Design",
+        "description": "Contact our travel specialists via WhatsApp. We discuss your dates, interests, group size, and budget to craft your perfect personalised India journey.",
+        "highlights": [
+          "WhatsApp consultation",
+          "Customized itinerary",
+          "Hotel shortlist & approval"
+        ],
+        "mealsIncluded": "Per itinerary"
+      },
+      {
+        "day": 2,
+        "title": "Delhi — Gateway of India",
+        "description": "Begin at India Gate, Humayun's Tomb, and Qutub Minar. Private guide navigates the history of India's capital across epochs.",
+        "highlights": [
+          "India Gate & Rajpath",
+          "Humayun's Tomb",
+          "Chandni Chowk spice walk"
+        ],
+        "mealsIncluded": "Breakfast & Dinner"
+      },
+      {
+        "day": 3,
+        "title": "Agra & the Eternal Taj Mahal",
+        "description": "Private sunrise Taj Mahal visit with photography escort. Afternoon Agra Fort and Mehtab Bagh sunset view across the Yamuna.",
+        "highlights": [
+          "Sunrise Taj Mahal",
+          "Agra Fort",
+          "Yamuna river sunset"
+        ],
+        "mealsIncluded": "Breakfast & Dinner"
+      },
+      {
+        "day": 4,
+        "title": "Jaipur — Pink City of Palaces",
+        "description": "Amber Fort elephant safari, Hawa Mahal rooftop photography, and City Palace private tours.",
+        "highlights": [
+          "Amber Fort",
+          "Hawa Mahal",
+          "Royal textile market"
+        ],
+        "mealsIncluded": "Breakfast & Dinner"
+      },
+      {
+        "day": 5,
+        "title": "Jodhpur — Blue City",
+        "description": "Mehrangarh Fort's towering battlements and the cobalt-blue lanes of Jodhpur old city.",
+        "highlights": [
+          "Mehrangarh Fort",
+          "Blue city walk",
+          "Rooftop sunset café"
+        ],
+        "mealsIncluded": "Breakfast & Dinner"
+      },
+      {
+        "day": 6,
+        "title": "Udaipur — City of Lakes",
+        "description": "Boat ride on Lake Pichola to Jag Mandir Island, City Palace museum, and sunset cocktails at a heritage haveli rooftop.",
+        "highlights": [
+          "Lake Pichola boat ride",
+          "City Palace",
+          "Haveli rooftop dinner"
+        ],
+        "mealsIncluded": "Breakfast & Dinner"
+      },
+      {
+        "day": 7,
+        "title": "Departure or Extension",
+        "description": "Flexible departure from Udaipur or Jaipur, or extend to Pushkar, Ranthambore tiger safari, or Varanasi ghats.",
+        "highlights": [
+          "Flexible departure",
+          "Optional extension"
+        ],
+        "mealsIncluded": "Breakfast"
+      }
+    ],
+    "accommodationDetails": {
+      "category": "Heritage Palace Hotels & Boutique Havelis",
+      "description": "Choose from royal palace conversions, boutique heritage havelis, or luxury business hotels — entirely per your budget.",
+      "stayType": "Heritage Palace Hotel"
+    },
+    "transportArrangements": "Private air-conditioned luxury vehicle with English-speaking driver-guide throughout.",
+    "inclusions": [
+      "All hotel accommodations per agreed tier",
+      "Daily breakfast and selected dinners",
+      "Private AC vehicle with driver throughout",
+      "Entry fees to all monuments mentioned",
+      "English-speaking heritage guide"
+    ],
+    "exclusions": [
+      "Airfare",
+      "Personal expenses",
+      "Tips"
+    ],
+    "customizationOptions": [
+      "Add Ranthambore tiger safari",
+      "Include Varanasi Ganga Aarti",
+      "Add luxury train Maharajas' Express"
+    ],
+    "cancellationTerms": "Flexible based on custom agreement. Discuss with our team.",
+    "advisoryNotice": "This is a fully customizable itinerary. Chat with our WhatsApp travel specialists to design your perfect journey.",
+    "featured": true
+  },
+  {
+    "id": "pkg-custom-adventure",
+    "slug": "custom-adventure-expedition",
+    "title": "Custom Adventure Expedition",
+    "category": "Custom",
+    "destination": "Ladakh, Spiti Valley & Himalayan Passes, India",
+    "destinationSlug": "ladakh",
+    "duration": "Flexible (8–12 Days)",
+    "idealFor": "Adventure Seekers, Motorcyclists & High-Altitude Trekkers",
+    "startingPrice": "From ₹35,000 / person",
+    "priceNote": "Modular itinerary — choose your routes, stays, and adventure activities. Price on request.",
+    "heroImage": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1920&q=85",
+    "gallery": [
+      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "overview": "For the adventurers who refuse to follow the standard path. We design bespoke high-altitude expeditions across Ladakh's lunar landscapes, Spiti's ancient monasteries, and Himalayan passes that touch the sky. Every route is tailored to your fitness level, vehicle, and timeframe.",
+    "highlights": [
+      "Personalized route design across Leh–Nubra–Pangong or Spiti circuits",
+      "Royal Enfield motorcycle package OR private 4WD Innova Crysta with driver",
+      "Camping at Pangong Tso lakeside, one of the world's highest lakes",
+      "Photography workshops at Hemis monastery and ancient cliff villages"
+    ],
+    "dayByDay": [
+      {
+        "day": 1,
+        "title": "Leh Arrival & Acclimatization",
+        "description": "Arrive at Leh–Kushok Bakula Rimpochee Airport. Rest and acclimatize at your boutique heritage hotel. Short evening walk to Leh Palace.",
+        "highlights": [
+          "High-altitude acclimatization",
+          "Leh Palace visit",
+          "Ladakhi welcome dinner"
+        ],
+        "mealsIncluded": "Dinner"
+      },
+      {
+        "day": 2,
+        "title": "Nubra Valley via Khardung La Pass",
+        "description": "Cross the world-famous Khardung La pass at 5,359m into the Nubra Valley. Camp or stay in a luxury tent by the sand dunes and double-humped Bactrian camels.",
+        "highlights": [
+          "Khardung La summit",
+          "Bactrian camel ride",
+          "Sand dune camping"
+        ],
+        "mealsIncluded": "Breakfast & Dinner"
+      },
+      {
+        "day": 3,
+        "title": "Diskit Monastery & Hunder Dunes",
+        "description": "Early morning visit to the hilltop Diskit Monastery with its giant Maitreya Buddha statue. Walk through the unique cold desert dunes of Hunder.",
+        "highlights": [
+          "Diskit Monastery dawn",
+          "Maitreya Buddha",
+          "Dune sunrise photography"
+        ],
+        "mealsIncluded": "Breakfast & Dinner"
+      },
+      {
+        "day": 4,
+        "title": "Pangong Tso — The Mirror Lake",
+        "description": "Drive the high-altitude route to Pangong Tso, the stunning blue-green salt lake straddling India and China. Overnight by the lakeside in heated luxury tents.",
+        "highlights": [
+          "Pangong lake arrival",
+          "Colour-changing waters",
+          "Lakeside sunset"
+        ],
+        "mealsIncluded": "Breakfast, Lunch & Dinner"
+      },
+      {
+        "day": 5,
+        "title": "Return & Hemis Monastery",
+        "description": "Return to Leh via the Hemis Monastery, Ladakh's largest and richest gompa with its exceptional thangka paintings and ancient frescoes.",
+        "highlights": [
+          "Hemis Monastery",
+          "Buddhist prayer ceremony",
+          "Thiksey Monastery"
+        ],
+        "mealsIncluded": "Breakfast & Dinner"
+      },
+      {
+        "day": 6,
+        "title": "Free Day or Spiti Extension",
+        "description": "Rest in Leh or begin the epic Spiti circuit extension via Manali over three more days (optional).",
+        "highlights": [
+          "Leh market",
+          "Optional Spiti extension"
+        ],
+        "mealsIncluded": "Breakfast"
+      },
+      {
+        "day": 7,
+        "title": "Departure from Leh",
+        "description": "Morning flight departure from Leh Airport, or extend your adventure into Zanskar Valley.",
+        "highlights": [
+          "Airport departure",
+          "Optional extensions available"
+        ],
+        "mealsIncluded": "Breakfast"
+      }
+    ],
+    "accommodationDetails": {
+      "category": "Heritage Boutique Hotels & Luxury Tented Camps",
+      "description": "Carefully chosen mix of Ladakhi heritage homestays, boutique hotels, and exclusive luxury tented camps with heating.",
+      "stayType": "Boutique Hotel & Luxury Tent Camp"
+    },
+    "transportArrangements": "Royal Enfield motorcycle convoy OR private Innova Crysta 4WD with mountain-experienced driver.",
+    "inclusions": [
+      "All accommodations per agreed tier",
+      "Daily breakfast and dinners",
+      "Vehicle rental (motorcycle or 4WD) with driver/guide",
+      "Inner Line Permits for restricted zones",
+      "Adventure guide for high-altitude treks"
+    ],
+    "exclusions": [
+      "Flights to Leh",
+      "Helicopter rescue insurance (strongly recommended)",
+      "Personal gear"
+    ],
+    "customizationOptions": [
+      "Add Zanskar valley trekking",
+      "Include Tsomoriri Lake extension",
+      "Add photography workshop with local guide"
+    ],
+    "cancellationTerms": "Flexible cancellation on custom bookings. Contact us at least 10 days before.",
+    "advisoryNotice": "High-altitude travel requires medical fitness clearance. Our team assists with all preparation and safety planning.",
+    "featured": false
+  },
+  {
+    "id": "pkg-custom-family",
+    "slug": "custom-family-vacation",
+    "title": "Custom Family Vacation Planner",
+    "category": "Custom",
+    "destination": "Flexible — Any Destination of Your Choice",
+    "destinationSlug": "custom",
+    "duration": "Flexible (Any Duration)",
+    "idealFor": "Families with Children, Multi-Generational Groups",
+    "startingPrice": "Price on Request",
+    "priceNote": "Every detail tailored — from kid-friendly activities to elderly accessibility. Contact us on WhatsApp to begin.",
+    "heroImage": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=1920&q=85",
+    "gallery": [
+      "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1502784444187-359ac186c5bb?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1575039639629-9bb8e3c89c01?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "overview": "Planning a family holiday should be joyful, not stressful. Tell us how many are in your group, ages of children, accessibility needs, and your dream destination — we handle everything from kid-friendly hotels to custom activity schedules for every age group.",
+    "highlights": [
+      "Fully bespoke itinerary crafted around your family's ages and interests",
+      "Child-friendly hotel shortlisting with kids clubs and pools",
+      "Dedicated family travel consultant on WhatsApp for the entire trip",
+      "Comprehensive documentation support: visas, insurance, and permits"
+    ],
+    "dayByDay": [
+      {
+        "day": 1,
+        "title": "Discovery Call via WhatsApp",
+        "description": "Tell us your vision: destination, group size, children's ages, budget, and travel dates. We respond within hours with tailored options.",
+        "highlights": [
+          "WhatsApp consultation",
+          "Destination shortlist",
+          "Budget planning"
+        ],
+        "mealsIncluded": "Per itinerary"
+      },
+      {
+        "day": 2,
+        "title": "Customized Itinerary Presentation",
+        "description": "Within 24 hours, receive a detailed day-by-day family itinerary with hotel options, activities, and pricing.",
+        "highlights": [
+          "Full itinerary PDF",
+          "Hotel comparisons",
+          "Activity schedule"
+        ],
+        "mealsIncluded": "Per itinerary"
+      },
+      {
+        "day": 3,
+        "title": "Booking & Documentation",
+        "description": "Upon confirmation, we handle all hotel bookings, activity reservations, visa guidance, and travel insurance coordination.",
+        "highlights": [
+          "Full booking management",
+          "Visa guidance",
+          "Travel insurance support"
+        ],
+        "mealsIncluded": "Per itinerary"
+      }
+    ],
+    "accommodationDetails": {
+      "category": "Family-Friendly Resorts & Villas",
+      "description": "Selected for spacious family rooms, kids clubs, safe pools, and activities for all age groups.",
+      "stayType": "Family Resort / Private Villa"
+    },
+    "transportArrangements": "Private air-conditioned minivan or multi-vehicle convoy based on group size.",
+    "inclusions": [
+      "Complete customized itinerary design",
+      "Hotel and activity bookings",
+      "Private transportation arrangements",
+      "Dedicated WhatsApp travel support throughout",
+      "24/7 emergency assistance during travel"
+    ],
+    "exclusions": [
+      "Airfare (can be arranged)",
+      "Visa fees",
+      "Travel insurance premium"
+    ],
+    "customizationOptions": [
+      "Request a fully guided escorted tour",
+      "Add educational cultural activities for kids",
+      "Include special dietary meal planning"
+    ],
+    "cancellationTerms": "Flexible based on individual bookings. Discussed during planning.",
+    "advisoryNotice": "Contact us on WhatsApp to start planning your dream family holiday. We cover destinations across India and internationally.",
+    "featured": true
+  }
+]

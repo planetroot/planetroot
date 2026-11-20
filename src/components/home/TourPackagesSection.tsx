@@ -1,10 +1,10 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import { ArrowRight, MapPin, Clock } from "lucide-react";
 import { useEnquiryModal } from "@/context/EnquiryModalContext";
-import { TOUR_PACKAGES, type PackageCategory } from "@/data/packages";
+import { TOUR_PACKAGES, type TourPackage, type PackageCategory } from "@/data/packages";
 
 type FilterTab = "All" | PackageCategory;
 
@@ -19,9 +19,21 @@ const TABS: { label: string; value: FilterTab }[] = [
 
 export default function TourPackagesSection() {
   const [activeTab, setActiveTab] = useState<FilterTab>("All");
+  const [allPackages, setAllPackages] = useState<TourPackage[]>(TOUR_PACKAGES);
   const { openEnquiryModal } = useEnquiryModal();
 
-  const featured = TOUR_PACKAGES.filter((p) => p.featured);
+  useEffect(() => {
+    fetch("/api/packages")
+      .then((res) => (res.ok ? res.json() : null))
+      .then((data) => {
+        if (Array.isArray(data) && data.length > 0) {
+          setAllPackages(data);
+        }
+      })
+      .catch(() => {});
+  }, []);
+
+  const featured = allPackages.filter((p) => p.featured);
   const filtered = activeTab === "All"
     ? featured
     : featured.filter((p) => p.category === activeTab);

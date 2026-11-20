@@ -1,10 +1,10 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Clock, MapPin, ArrowRight } from "lucide-react";
-import { TOUR_PACKAGES, type PackageCategory } from "@/data/packages";
+import { TOUR_PACKAGES, type TourPackage, type PackageCategory } from "@/data/packages";
 import { useEnquiryModal } from "@/context/EnquiryModalContext";
 import { WhatsAppIcon } from "@/components/common/WhatsAppIcon";
 
@@ -21,12 +21,24 @@ const TABS: { label: string; value: FilterTab }[] = [
 
 export default function PackagesPage() {
   const [activeTab, setActiveTab] = useState<FilterTab>("All");
+  const [packages, setPackages] = useState<TourPackage[]>(TOUR_PACKAGES);
   const { openEnquiryModal } = useEnquiryModal();
+
+  useEffect(() => {
+    fetch("/api/packages")
+      .then((res) => (res.ok ? res.json() : null))
+      .then((data) => {
+        if (Array.isArray(data) && data.length > 0) {
+          setPackages(data);
+        }
+      })
+      .catch(() => {});
+  }, []);
 
   const filteredPackages =
     activeTab === "All"
-      ? TOUR_PACKAGES
-      : TOUR_PACKAGES.filter((pkg) => pkg.category === activeTab);
+      ? packages
+      : packages.filter((pkg) => pkg.category === activeTab);
 
   return (
     <div className="bg-[#fcfbf7] min-h-screen pt-28 pb-24">

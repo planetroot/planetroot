@@ -12,7 +12,8 @@ import {
   Mail,
 } from "lucide-react";
 import { WhatsAppIcon } from "@/components/common/WhatsAppIcon";
-import { TOUR_PACKAGES, TourPackage } from "@/data/packages";
+import { TourPackage } from "@/data/packages";
+import { getAllPackages, getPackageBySlug } from "@/lib/packages-storage";
 import EnquiryForm from "@/components/forms/EnquiryForm";
 import { SITE_CONFIG, createWhatsAppUrl } from "@/config/site";
 
@@ -21,14 +22,15 @@ interface PageProps {
 }
 
 export async function generateStaticParams() {
-  return TOUR_PACKAGES.map((pkg) => ({
+  const allPackages = getAllPackages();
+  return allPackages.map((pkg) => ({
     slug: pkg.slug,
   }));
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
-  const pkg = TOUR_PACKAGES.find((p) => p.slug === slug);
+  const pkg = getPackageBySlug(slug);
   if (!pkg) return { title: "Package Not Found" };
 
   return {
@@ -44,7 +46,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export default async function PackageDetailPage({ params }: PageProps) {
   const { slug } = await params;
-  const pkg = TOUR_PACKAGES.find((p) => p.slug === slug);
+  const pkg = getPackageBySlug(slug);
 
   if (!pkg) {
     notFound();
