@@ -13,13 +13,13 @@ export default function ExperiencesSection() {
         {/* Editorial Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-xs font-semibold tracking-[0.25em] uppercase text-[#dfcaa2] block mb-3">
-            The Sensory Dimension of Travel
+            EXPLORE BY TRAVEL STYLE
           </span>
           <h2 className="text-3xl sm:text-5xl font-serif-luxury text-white tracking-tight leading-tight">
-            Not Just Places. Feelings.
+            Curated Travel Experiences
           </h2>
           <p className="mt-4 text-base sm:text-lg text-[#fcfbf7]/80 font-light leading-relaxed font-sans-luxury">
-            True travel is measured not by stamps in a passport, but by the quiet wonder of a morning mist, the warmth of starlit conversations, and the profound renewal of unhurried solitude.
+            From secluded mountain pool villas and Ayurvedic wellness retreats to tranquil backwater houseboats and guided plantation walks.
           </p>
           <div className="divider-luxury-light w-32 mx-auto mt-6" />
         </div>
@@ -83,7 +83,7 @@ export default function ExperiencesSection() {
             href="/experiences"
             className="btn-luxury-gold text-xs tracking-widest inline-flex items-center gap-2"
           >
-            <span>Explore All 8 Sensory Escapes</span>
+            <span>Explore All Travel Experiences</span>
             <ArrowUpRight className="w-4 h-4" />
           </Link>
         </div>

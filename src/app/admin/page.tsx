@@ -511,12 +511,12 @@ export default function AdminPage() {
         <div
           className={`fixed top-24 right-6 z-50 flex items-center gap-3 px-5 py-3.5 rounded-lg shadow-xl border text-sm font-medium transition-all transform animate-in fade-in slide-in-from-top-4 duration-300 ${
             notification.type === "success"
-              ? "bg-[#0e3826] text-[#dfcaa2] border-[#c5a059]/40"
+              ? "bg-stone-900 text-white border-stone-700"
               : "bg-red-900 text-white border-red-700"
           }`}
         >
           {notification.type === "success" ? (
-            <CheckCircle2 className="w-5 h-5 text-[#dfcaa2] shrink-0" />
+            <CheckCircle2 className="w-5 h-5 text-emerald-400 shrink-0" />
           ) : (
             <AlertCircle className="w-5 h-5 text-red-300 shrink-0" />
           )}
@@ -532,18 +532,16 @@ export default function AdminPage() {
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Top Header Card */}
-        <div className="bg-[#072016] text-white rounded-2xl p-6 sm:p-8 mb-8 border border-[#c5a059]/20 shadow-lg relative overflow-hidden">
-          <div className="absolute right-0 top-0 w-96 h-96 bg-[radial-gradient(circle_at_top_right,rgba(197,160,89,0.15),transparent_70%)] pointer-events-none" />
-
+        <div className="bg-[#111315] text-white rounded-2xl p-6 sm:p-7 mb-8 border border-stone-800 shadow-sm relative">
           {/* Section Switcher: Resorts vs Tour Packages */}
-          <div className="flex flex-wrap items-center gap-2 mb-6 bg-black/40 p-1.5 rounded-xl border border-white/10 w-fit relative z-10">
+          <div className="flex flex-wrap items-center gap-2 mb-6 bg-stone-900/90 p-1.5 rounded-xl border border-stone-800 w-fit">
             <button
               type="button"
               onClick={() => setAdminSection("resorts")}
               className={`inline-flex items-center gap-2 px-4 sm:px-5 py-2.5 rounded-lg text-xs font-semibold uppercase tracking-wider transition-all cursor-pointer ${
                 adminSection === "resorts"
-                  ? "bg-[#dfcaa2] text-[#072016] shadow-md"
-                  : "text-stone-300 hover:text-white hover:bg-white/5"
+                  ? "bg-white text-stone-950 shadow-sm"
+                  : "text-stone-400 hover:text-white hover:bg-stone-800/50"
               }`}
             >
               <Building2 className="w-4 h-4" />
@@ -555,8 +553,8 @@ export default function AdminPage() {
               onClick={() => setAdminSection("packages")}
               className={`inline-flex items-center gap-2 px-4 sm:px-5 py-2.5 rounded-lg text-xs font-semibold uppercase tracking-wider transition-all cursor-pointer ${
                 adminSection === "packages"
-                  ? "bg-[#dfcaa2] text-[#072016] shadow-md"
-                  : "text-stone-300 hover:text-white hover:bg-white/5"
+                  ? "bg-white text-stone-950 shadow-sm"
+                  : "text-stone-400 hover:text-white hover:bg-stone-800/50"
               }`}
             >
               <Compass className="w-4 h-4" />
@@ -564,43 +562,43 @@ export default function AdminPage() {
             </button>
           </div>
 
-          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 relative z-10">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
             <div>
               <div className="flex items-center gap-3 mb-2">
-                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] font-semibold tracking-widest uppercase bg-[#c5a059]/15 text-[#dfcaa2] border border-[#c5a059]/30">
-                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-                  Admin Portal
+                <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-[11px] font-medium tracking-wide bg-stone-800 text-stone-300 border border-stone-700">
+                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
+                  Admin Dashboard
                 </span>
                 <span className="text-xs text-stone-400">Planet Root Travels</span>
               </div>
-              <h1 className="text-2xl sm:text-3xl md:text-4xl font-serif-luxury text-white">
+              <h1 className="text-2xl sm:text-3xl font-semibold text-white tracking-tight">
                 {adminSection === "resorts" ? (
-                  <>Resort &amp; Villa <span className="text-[#dfcaa2]">Management</span></>
+                  <>Resort &amp; Villa Management</>
                 ) : (
-                  <>Tour Package <span className="text-[#dfcaa2]">Management</span></>
+                  <>Tour Package Management</>
                 )}
               </h1>
-              <p className="mt-1 text-xs sm:text-sm text-stone-300 font-light">
+              <p className="mt-1 text-xs sm:text-sm text-stone-400 font-normal">
                 {adminSection === "resorts"
-                  ? "Add, edit, and manage verified luxury resorts, pool villas, and download brochures."
-                  : "Add, edit, and manage curated holiday itineraries, day-by-day schedules, and transparent pricing."}
+                  ? "Add, edit, and manage verified luxury resorts, pool villas, and brochures."
+                  : "Add, edit, and manage holiday packages, day-by-day itineraries, and pricing."}
               </p>
             </div>
 
             <div className="flex items-center gap-3">
               <Link
                 href={adminSection === "resorts" ? "/#featured-resorts-section" : "/packages"}
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 hover:bg-white/15 text-stone-200 hover:text-white border border-white/15 text-xs font-medium tracking-wide transition-colors"
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-stone-800 hover:bg-stone-700 text-stone-200 hover:text-white border border-stone-700 text-xs font-medium tracking-wide transition-colors"
               >
                 <span>View Live {adminSection === "resorts" ? "Resorts" : "Packages"}</span>
-                <ExternalLink className="w-3.5 h-3.5 text-[#dfcaa2]" />
+                <ExternalLink className="w-3.5 h-3.5 text-stone-400" />
               </Link>
             </div>
           </div>
 
           {/* Resorts Navigation Tabs (Only shown when managing resorts) */}
           {adminSection === "resorts" && (
-            <div className="flex items-center gap-2 mt-8 border-t border-white/10 pt-4 relative z-10">
+            <div className="flex items-center gap-2 mt-6 border-t border-stone-800 pt-4">
               <button
                 onClick={() => {
                   if (editingResortId) resetForm();
@@ -608,8 +606,8 @@ export default function AdminPage() {
                 }}
                 className={`inline-flex items-center gap-2 px-4 py-2 rounded-lg text-xs font-medium transition-all cursor-pointer ${
                   activeTab === "add"
-                    ? "bg-[#dfcaa2] text-[#072016] font-semibold shadow-sm"
-                    : "text-stone-300 hover:text-white hover:bg-white/5"
+                    ? "bg-white text-stone-950 font-semibold shadow-sm"
+                    : "text-stone-400 hover:text-white hover:bg-stone-800/50"
                 }`}
               >
                 {editingResortId ? (
@@ -629,8 +627,8 @@ export default function AdminPage() {
                 onClick={() => setActiveTab("list")}
                 className={`inline-flex items-center gap-2 px-4 py-2 rounded-lg text-xs font-medium transition-all cursor-pointer ${
                   activeTab === "list"
-                    ? "bg-[#dfcaa2] text-[#072016] font-semibold shadow-sm"
-                    : "text-stone-300 hover:text-white hover:bg-white/5"
+                    ? "bg-white text-stone-950 font-semibold shadow-sm"
+                    : "text-stone-400 hover:text-white hover:bg-stone-800/50"
                 }`}
               >
                 <Building2 className="w-3.5 h-3.5" />
@@ -697,7 +695,7 @@ export default function AdminPage() {
                     required
                     value={name}
                     onChange={(e) => setName(e.target.value)}
-                    placeholder="e.g. Vythiri Mist Sanctuary, Wayanad"
+                    placeholder="e.g. Vythiri Mist Resort, Wayanad"
                     className="w-full px-4 py-2.5 rounded-lg border border-stone-200 focus:border-[#0e3826] focus:ring-1 focus:ring-[#0e3826] outline-hidden text-sm text-[#181d1a] bg-stone-50/50"
                   />
                 </div>
@@ -758,7 +756,7 @@ export default function AdminPage() {
                     type="text"
                     value={tagline}
                     onChange={(e) => setTagline(e.target.value)}
-                    placeholder="e.g. Glass-fronted infinity pool sanctuary immersed in rainforest mist."
+                    placeholder="e.g. Luxury hillside private pool villa immersed in rainforest mist."
                     className="w-full px-4 py-2.5 rounded-lg border border-stone-200 focus:border-[#0e3826] focus:ring-1 focus:ring-[#0e3826] outline-hidden text-sm text-[#181d1a] bg-stone-50/50"
                   />
                 </div>
@@ -948,7 +946,7 @@ export default function AdminPage() {
                   />
                   <label
                     htmlFor="hero-file-input"
-                    className={`inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-[#0e3826] text-[#dfcaa2] text-xs font-semibold uppercase tracking-wider cursor-pointer hover:bg-[#072016] transition-colors ${
+                    className={`inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-stone-900 text-white text-xs font-medium cursor-pointer hover:bg-black transition-colors ${
                       isUploading ? "opacity-50 pointer-events-none" : ""
                     }`}
                   >
@@ -1260,7 +1258,7 @@ export default function AdminPage() {
                   />
                   <label
                     htmlFor="brochure-file-input"
-                    className={`inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-[#0e3826] text-[#dfcaa2] text-xs font-semibold uppercase tracking-wider cursor-pointer hover:bg-[#072016] transition-colors ${
+                    className={`inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-stone-900 text-white text-xs font-medium cursor-pointer hover:bg-black transition-colors ${
                       isUploadingBrochure ? "opacity-50 pointer-events-none" : ""
                     }`}
                   >
@@ -1317,7 +1315,7 @@ export default function AdminPage() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className={`w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3 rounded-full bg-[#0e3826] text-[#dfcaa2] hover:bg-[#072016] text-xs font-semibold tracking-wider uppercase transition-all shadow-md cursor-pointer ${
+                  className={`w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3 rounded-full bg-stone-900 text-white hover:bg-black text-xs font-semibold tracking-wider uppercase transition-all shadow-md cursor-pointer ${
                     isSubmitting ? "opacity-60 pointer-events-none" : ""
                   }`}
                 >

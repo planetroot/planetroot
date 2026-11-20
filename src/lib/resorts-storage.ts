@@ -52,13 +52,13 @@ export function createResort(newResortData: Partial<Resort>): Resort {
     id,
     slug,
     name: newResortData.name || "Untitled Luxury Resort",
-    tagline: newResortData.tagline || "Curated luxury sanctuary by Planet Root Travels.",
+    tagline: newResortData.tagline || "Verified luxury resort & villa by Planet Root Travels.",
     destination: newResortData.destination || "Wayanad, Kerala",
     destinationSlug: (newResortData.destination || "wayanad").toLowerCase().split(",")[0].trim().replace(/\s+/g, "-"),
     locationSummary: newResortData.locationSummary || `${newResortData.destination || "Kerala"}, India.`,
     category: (newResortData.category as Resort["category"]) || "Private Pool Villa",
-    description: newResortData.description || "A breathtaking sanctuary handpicked by Planet Root Travels.",
-    longDescription: newResortData.longDescription || newResortData.description || "A secluded luxury haven offering unmatched privacy and nature escapes.",
+    description: newResortData.description || "A breathtaking resort handpicked by Planet Root Travels.",
+    longDescription: newResortData.longDescription || newResortData.description || "A secluded luxury stay offering privacy, stunning views, and nature escapes.",
     heroImage: newResortData.heroImage || "/images/zeno-village/zeno-infinity-pool-valley.jpg",
     galleryImages: newResortData.galleryImages && newResortData.galleryImages.length > 0
       ? newResortData.galleryImages

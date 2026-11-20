@@ -60,7 +60,7 @@ export const TOUR_PACKAGES: TourPackage[] = [
       "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
       "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80",
     ],
-    overview: "Ascend into the misty Western Ghats where emerald tea slopes stretch as far as the eye can see. Stay in a restored colonial planter estate, witness breathtaking sunrises over rolling peaks, and enjoy unhurried tea garden walks.",
+    overview: "Ascend into the misty Western Ghats where emerald tea slopes stretch as far as the eye can see. Stay in a restored colonial planter estate, witness breathtaking sunrises over rolling peaks, and enjoy peaceful tea garden walks.",
     highlights: [
       "3 nights in an authentic private colonial tea estate bungalow",
       "4WD sunrise expedition to Kolukkumalai, the world's highest tea plantation",
@@ -176,7 +176,7 @@ export const TOUR_PACKAGES: TourPackage[] = [
     },
     transportArrangements: "Dedicated private vehicle from Calicut Airport or Kannur Airport.",
     inclusions: [
-      "3 nights in luxury eco-sanctuary treehouse / pool villa",
+      "3 nights in luxury eco-resort treehouse / pool villa",
       "Daily breakfast and traditional Kerala dinners",
       "Bamboo rafting permits and Edakkal cave entry",
       "Dedicated chauffeur vehicle throughout",

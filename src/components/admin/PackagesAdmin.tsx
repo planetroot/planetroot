@@ -68,7 +68,7 @@ const PRESET_PHOTOS = [
     url: "https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=1920&q=85",
   },
   {
-    name: "Bali Jungle Sanctuary",
+    name: "Bali Jungle Resort",
     url: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1920&q=85",
   },
   {
@@ -511,7 +511,7 @@ export default function PackagesAdmin() {
         <div
           className={`fixed top-4 right-4 z-50 flex items-center gap-3 px-5 py-3.5 rounded-xl shadow-2xl border text-sm font-medium transition-all ${
             notification.type === "success"
-              ? "bg-[#072016] text-[#dfcaa2] border-[#dfcaa2]/40"
+              ? "bg-stone-900 text-white border-stone-700"
               : "bg-red-950 text-red-200 border-red-500/40"
           }`}
         >
@@ -540,7 +540,7 @@ export default function PackagesAdmin() {
             }}
             className={`inline-flex items-center gap-2 px-4 py-2 rounded-lg text-xs font-semibold uppercase tracking-wider transition-all cursor-pointer ${
               activeTab === "add"
-                ? "bg-[#072016] text-[#dfcaa2] shadow-sm"
+                ? "bg-stone-900 text-white shadow-sm"
                 : "text-stone-600 hover:text-black hover:bg-stone-100"
             }`}
           >
@@ -561,7 +561,7 @@ export default function PackagesAdmin() {
             onClick={() => setActiveTab("list")}
             className={`inline-flex items-center gap-2 px-4 py-2 rounded-lg text-xs font-semibold uppercase tracking-wider transition-all cursor-pointer ${
               activeTab === "list"
-                ? "bg-[#072016] text-[#dfcaa2] shadow-sm"
+                ? "bg-stone-900 text-white shadow-sm"
                 : "text-stone-600 hover:text-black hover:bg-stone-100"
             }`}
           >
@@ -573,7 +573,7 @@ export default function PackagesAdmin() {
         <Link
           href="/packages"
           target="_blank"
-          className="inline-flex items-center gap-1.5 text-xs text-stone-600 hover:text-[#072016] font-medium"
+          className="inline-flex items-center gap-1.5 text-xs text-stone-600 hover:text-black font-medium"
         >
           <span>View Public Packages Page</span>
           <ExternalLink className="w-3 h-3" />
@@ -807,7 +807,7 @@ export default function PackagesAdmin() {
                     onClick={() => setImageSelectorMode("preset")}
                     className={`px-3 py-1.5 rounded-lg text-xs font-medium cursor-pointer ${
                       imageSelectorMode === "preset"
-                        ? "bg-[#072016] text-[#dfcaa2]"
+                        ? "bg-stone-900 text-white"
                         : "text-stone-600 hover:bg-stone-100"
                     }`}
                   >
@@ -818,7 +818,7 @@ export default function PackagesAdmin() {
                     onClick={() => setImageSelectorMode("upload")}
                     className={`px-3 py-1.5 rounded-lg text-xs font-medium cursor-pointer ${
                       imageSelectorMode === "upload"
-                        ? "bg-[#072016] text-[#dfcaa2]"
+                        ? "bg-stone-900 text-white"
                         : "text-stone-600 hover:bg-stone-100"
                     }`}
                   >
@@ -829,7 +829,7 @@ export default function PackagesAdmin() {
                     onClick={() => setImageSelectorMode("url")}
                     className={`px-3 py-1.5 rounded-lg text-xs font-medium cursor-pointer ${
                       imageSelectorMode === "url"
-                        ? "bg-[#072016] text-[#dfcaa2]"
+                        ? "bg-stone-900 text-white"
                         : "text-stone-600 hover:bg-stone-100"
                     }`}
                   >
@@ -1297,7 +1297,7 @@ export default function PackagesAdmin() {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-[#072016] text-[#dfcaa2] hover:bg-[#0e3826] text-xs font-semibold uppercase tracking-wider transition-all shadow-md cursor-pointer disabled:opacity-50"
+              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-stone-900 text-white hover:bg-black text-xs font-semibold uppercase tracking-wider transition-all shadow-md cursor-pointer disabled:opacity-50"
             >
               {editingPkgId ? (
                 <>
@@ -1337,7 +1337,7 @@ export default function PackagesAdmin() {
                 resetForm();
                 setActiveTab("add");
               }}
-              className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-[#072016] text-[#dfcaa2] text-xs font-semibold uppercase tracking-wider hover:bg-[#0e3826] transition-colors cursor-pointer self-start sm:self-auto"
+              className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-stone-900 text-white text-xs font-semibold uppercase tracking-wider hover:bg-black transition-colors cursor-pointer self-start sm:self-auto"
             >
               <Plus className="w-3.5 h-3.5" />
               <span>Add Package</span>

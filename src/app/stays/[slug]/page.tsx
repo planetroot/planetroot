@@ -182,7 +182,7 @@ export default async function ResortDetailPage({ params }: PageProps) {
                 Property Overview
               </span>
               <h2 className="text-2xl sm:text-3xl font-serif-luxury text-[#181d1a] mb-4">
-                The Essence of the Sanctuary
+                About This Property
               </h2>
               <p className="text-sm sm:text-base text-[#525a55] font-light leading-relaxed mb-6 font-sans-luxury">
                 {resort.longDescription}

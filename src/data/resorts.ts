@@ -145,7 +145,7 @@ export const RESORTS: Resort[] = [
     id: "resort-mountain-shadow",
     slug: "mountain-shadow-resort-wayanad",
     name: "Mountain Shadow",
-    tagline: "Eco-luxury sanctuary perched on an exclusive peninsula surrounded by lake waters.",
+    tagline: "Eco-luxury resort perched on an exclusive peninsula surrounded by lake waters.",
     destination: "Meppadi, Wayanad",
     destinationSlug: "wayanad",
     locationSummary: "Set on a private waterfront peninsula in Meppadi overlooking Karapuzha reservoir and Chembra Peak.",
@@ -206,7 +206,7 @@ export const RESORTS: Resort[] = [
     destinationSlug: "wayanad",
     locationSummary: "Historic 200-acre coffee, pepper and clove estate in Sultan Bathery, near Edakkal Caves.",
     category: "Heritage Backwater Villa",
-    description: "A heritage sanctuary rooted in the planter era of the 1800s, featuring restored colonial suites, elevated canopy treehouses, and private swimming pool villas inside aromatic spice groves.",
+    description: "A heritage retreat rooted in the planter era of the 1800s, featuring restored colonial suites, elevated canopy treehouses, and private swimming pool villas inside aromatic spice groves.",
     longDescription: "Step into an era of graceful hospitality at Pepper Trail. Nestled amidst 200 acres of working coffee, clove, and pepper plantations, the estate preserves ancestral heritage with antique four-poster beds, hand-carved teak verandas, and open courtyards. Reside in private pool villas secluded amidst flowering shrubs or treehouses 40 feet in ancient trees.",
     heroImage: "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1920&q=85",
     galleryImages: [
@@ -294,7 +294,7 @@ export const RESORTS: Resort[] = [
   {
     id: "resort-alleppey",
     slug: "alleppey-lakefront-heritage-pool-sanctuary",
-    name: "Alleppey Lakefront Heritage Sanctuary",
+    name: "Alleppey Lakefront Heritage Villa",
     tagline: "Restored Kerala Nalukettu courtyards bordering the tranquil Vembanad Lake.",
     destination: "Vembanad Backwaters, Alleppey",
     destinationSlug: "alleppey",

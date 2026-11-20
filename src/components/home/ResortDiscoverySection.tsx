@@ -212,7 +212,7 @@ export default function ResortDiscoverySection() {
               {/* Description */}
               <div>
                 <h4 className="text-sm uppercase tracking-wider font-semibold text-stone-800 mb-2">
-                  About the Sanctuary
+                  Property Details
                 </h4>
                 <p className="text-sm text-stone-600 font-light leading-relaxed">
                   {selectedResort.longDescription || selectedResort.description}

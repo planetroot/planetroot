@@ -5,9 +5,9 @@ import { ArrowRight, Heart, Compass } from "lucide-react";
 import { EXPERIENCES } from "@/data/experiences";
 
 export const metadata: Metadata = {
-  title: "Sensory Experiences | Not Just Places. Feelings. | PLANET ROOT",
+  title: "Travel Experiences & Holiday Themes | PLANET ROOT",
   description:
-    "Discover the emotional dimension of luxury travel with Planet Root: private villa solitude, sunrise mountain awakenings, dark-sky stargazing, barefoot beachfront ease, and restorative spa sanctuaries.",
+    "Explore bespoke holiday experiences with Planet Root: private rainforest pool villas, authentic Ayurvedic therapies, mountain treks, backwater houseboats, and coastal retreats.",
 };
 
 export default function ExperiencesPage() {
@@ -17,13 +17,13 @@ export default function ExperiencesPage() {
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
         <div className="text-center max-w-3xl mx-auto">
           <span className="text-xs font-semibold tracking-[0.25em] uppercase text-[#dfcaa2] block mb-2">
-            The Philosophy of Feeling
+            Curated Travel Experiences
           </span>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-serif-luxury text-white tracking-tight">
-            Not Just Places. Feelings.
+            Distinctive Ways to Travel
           </h1>
           <p className="mt-4 text-base sm:text-lg text-[#fcfbf7]/80 font-light leading-relaxed">
-            The most profound journeys are remembered not by itineraries, but by the quiet stillness of the soul, the warmth of the sunrise on high snow lines, and the wonder of midnight skies.
+            From secluded rainforest pool villas and restorative Ayurvedic treatments to private backwater cruises and highland plantation walks.
           </p>
           <div className="divider-luxury-light w-28 mx-auto mt-6" />
         </div>
@@ -73,7 +73,7 @@ export default function ExperiencesPage() {
                   {/* Sensations */}
                   <div className="space-y-2 mb-8">
                     <span className="text-[10px] uppercase font-semibold tracking-wider text-[#dfcaa2] block mb-1">
-                      Sensory Dimensions:
+                      Experience Highlights:
                     </span>
                     <div className="flex flex-wrap gap-2">
                       {exp.keySensations.map((sens, i) => (

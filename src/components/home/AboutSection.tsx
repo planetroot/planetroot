@@ -16,7 +16,7 @@ export default function AboutSection() {
             <div className="relative aspect-4/3 w-full overflow-hidden rounded-3xl shadow-xl">
               <Image
                 src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1600&q=80"
-                alt="Luxury resort sanctuary curated by Planet Root Travels"
+                alt="Luxury resort curated by Planet Root Travels"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover"

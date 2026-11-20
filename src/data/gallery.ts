@@ -42,7 +42,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     category: "Private Pool Villas",
     location: "900 Kandi, Wayanad",
     image: "/images/zeno-village/zeno-pool-forest-panoramic.jpg",
-    caption: "Panoramic mountain-water pool surrounded by towering trees on a secluded hillside sanctuary.",
+    caption: "Panoramic mountain-water pool surrounded by towering trees on a secluded hillside retreat.",
   },
   {
     id: "gal-zeno-5",
@@ -90,7 +90,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     category: "Mountain Stays",
     location: "Pine Hills, Vagamon",
     image: "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1600&q=85",
-    caption: "Tranquil mountain chalets surrounded by whispering pines and rolling green Kurisumala meadows.",
+    caption: "Tranquil mountain chalets surrounded by pine trees and rolling green Kurisumala meadows.",
   },
   {
     id: "gal-10",

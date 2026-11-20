@@ -35,7 +35,7 @@ export default function HomeEnquirySection() {
                 Plan Your Journey With Our Travel Specialists
               </h2>
               <p className="mt-3 text-sm sm:text-base text-[#56655e] font-light leading-relaxed font-sans-luxury">
-                Whether you desire an overwater villa in Maldives, a tailored international tour, a quiet Kerala private pool sanctuary, or a custom itinerary, we craft every detail around your schedule and budget.
+                Whether you desire an overwater villa in Maldives, an international tour, a quiet Kerala private pool villa, or a custom itinerary, we craft every detail around your schedule and budget.
               </p>
             </div>
 

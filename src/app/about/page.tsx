@@ -83,10 +83,10 @@ export default function AboutPage() {
             <div className="p-6 bg-[#f6f1e8] border border-[#0e3826]/10 rounded-xs my-6">
               <h3 className="text-sm font-semibold uppercase tracking-wider text-[#0e3826] mb-2 flex items-center gap-2">
                 <ShieldCheck className="w-4 h-4 text-[#0e3826]" />
-                <span>Our Guiding Curation Standard</span>
+                <span>Our Quality Standard</span>
               </h3>
               <p className="text-xs sm:text-sm text-[#525a55] leading-relaxed">
-                We believe true luxury is personal, authentic, and unhurried. Every sanctuary in our collection is evaluated for its natural surroundings, privacy, clean verified amenities, and genuine hospitality.
+                Every property in our portfolio is evaluated for location quality, guest privacy, clean amenities, and dependable hospitality before we recommend it.
               </p>
             </div>
 

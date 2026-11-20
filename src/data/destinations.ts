@@ -94,7 +94,7 @@ export const DESTINATIONS: Destination[] = [
     name: "Vagamon",
     tagline: "Serene Pine Forests, Rolling Meadows & Quiet Hills",
     shortDescription:
-      "A peaceful highland hideaway of dense pine forests, green velvet hillocks, tea gardens, and unhurried mountain serenity.",
+      "A peaceful highland hideaway of dense pine forests, green velvet hillocks, tea gardens, and quiet mountain air.",
     editorialQuote:
       "“Where gentle mist weaves between pine needle trails and green meadows touch the sky.”",
     longDescription:
@@ -166,7 +166,7 @@ export const DESTINATIONS: Destination[] = [
     editorialQuote:
       "“Inhale the intoxicating scent of crushed cardamom as wild elephants graze along the water's edge.”",
     longDescription:
-      "Thekkady is the sensory heart of Kerala’s spice-growing highlands. Cardamom, cinnamon, nutmeg, and black pepper flourish in rich mountain soils. Stay in elevated stone chalets overlooking misty forest valleys, embark on boat safaris along Lake Periyar to observe wild elephant herds and otters, and attend authentic Kalaripayattu martial arts rituals and Kathakali theater performances.",
+      "Thekkady is the heart of Kerala’s spice-growing highlands. Cardamom, cinnamon, nutmeg, and black pepper flourish in rich mountain soils. Stay in elevated stone chalets overlooking misty forest valleys, embark on boat safaris along Lake Periyar to observe wild elephant herds and otters, and attend authentic Kalaripayattu martial arts rituals and Kathakali theater performances.",
     heroImage:
       "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1920&q=85",
     secondaryImage:

@@ -43,19 +43,19 @@ export default function HeroSection() {
         {/* Minimal Centered Editorial Content */}
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-32 sm:pt-40 pb-20 sm:pb-24">
           {/* Subtle Agency Eyebrow */}
-          <p className="text-[11px] sm:text-xs font-medium tracking-[0.3em] uppercase text-stone-300 mb-5">
-            Planet Root Travels • Beyond Borders
+          <p className="text-[11px] sm:text-xs font-medium tracking-[0.25em] uppercase text-stone-300 mb-5">
+            PLANET ROOT TRAVELS
           </p>
 
           {/* Professional Typography Headline */}
           <h1 className="text-4xl sm:text-6xl md:text-7xl font-sans font-light tracking-tight text-white leading-[1.08] mb-6">
-            Curated Stays &amp; <br />
-            <span className="font-semibold text-white">Tailored Holidays</span>
+            Kerala Resorts &amp; <br />
+            <span className="font-semibold text-white">Custom Tour Packages</span>
           </h1>
 
           {/* Clean Editorial Subtitle */}
           <p className="text-sm sm:text-base md:text-lg text-stone-200 font-light max-w-2xl mx-auto leading-relaxed mb-9">
-            Handcrafted private pool villas, backwater houseboats, romantic honeymoon retreats, and custom holiday escapes across Kerala and premier global destinations.
+            Handpicked private pool villas, luxury houseboats, and personalized holiday packages with direct WhatsApp booking.
           </p>
 
           {/* White and Transparent Minimal Action Buttons */}
